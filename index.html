@@ -35,7 +35,12 @@
       <img src="colors logo.jpg" alt="OSWAL Logo" class="logo-img" />
       <span class="brand">OSWAL GIFT 'N' STATIONERY</span>
     </div>
-    <ul class="nav-links">
+    <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="primary-navigation" class="nav-links">
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#featured">Featured</a></li>
       <li class="dropdown">
@@ -262,6 +267,45 @@
   <script src="js/category-cart.js"></script>
   <script src="js/product-variants.js"></script>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.querySelector('.navbar');
+      var toggle = document.querySelector('.nav-toggle');
+      var dropdown = document.querySelector('.navbar .dropdown');
+      var dropdownToggle = document.querySelector('.navbar .dropdown-toggle');
+
+      if (toggle && navbar) {
+        toggle.addEventListener('click', function () {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!expanded));
+          navbar.classList.toggle('nav-open');
+          if (expanded && dropdown) {
+            dropdown.classList.remove('dropdown-open');
+          }
+        });
+      }
+
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener('click', function (event) {
+          if (window.innerWidth <= 768) {
+            event.preventDefault();
+            dropdown.classList.toggle('dropdown-open');
+          }
+        });
+      }
+
+      document.addEventListener('click', function (event) {
+        if (window.innerWidth > 768) return;
+        if (!navbar.contains(event.target)) {
+          if (navbar.classList.contains('nav-open')) {
+            navbar.classList.remove('nav-open');
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
+          }
+          if (dropdown) dropdown.classList.remove('dropdown-open');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
