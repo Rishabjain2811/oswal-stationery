@@ -15,8 +15,16 @@ app.use((req, res, next) => {
   next();
 });
 app.use(cors({ origin: true, credentials: true, methods: ['GET','POST','OPTIONS'], allowedHeaders: ['Content-Type'] }));
-app.use(express.json());
+app.use(express.json({ limit: '1mb' }));
 app.use(cookieParser());
+
+// Error handler for JSON parsing errors
+app.use((err, req, res, next) => {
+  if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
+    return res.status(400).json({ error: 'Invalid JSON in request body' });
+  }
+  next(err);
+});
 
 // Simple health check for the API
 app.get('/api/auth/ping', (req, res) => {
@@ -28,6 +36,19 @@ app.use('/api/auth', authRoutes);
 
 // Then serve static files
 app.use(express.static(rootDir));
+
+// 404 handler - return JSON instead of HTML
+app.use((req, res) => {
+  res.status(404).json({ error: 'Not found' });
+});
+
+// Global error handler - must be last
+app.use((err, req, res, next) => {
+  console.error('Unhandled error:', err);
+  res.status(err.status || 500).json({ 
+    error: err.message || 'Internal server error'
+  });
+});
 
 // Initialize database and start server
 db.initializeDatabase().then(function() {
