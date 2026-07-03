@@ -38,16 +38,7 @@
   }
 
   function renderAuthNav() {
-    var navLinks = document.querySelector('.navbar .nav-links');
-    if (!navLinks || document.getElementById('nav-auth-item')) return;
-
-    var item = document.createElement('li');
-    item.className = 'nav-auth-item';
-    item.id = 'nav-auth-item';
-    var cartItem = navLinks.querySelector('.cart-link');
-    var insertBefore = cartItem ? cartItem.closest('li') : null;
-    navLinks.insertBefore(item, insertBefore);
-    updateAuthNav();
+    // Auth buttons removed from navbar. No nav item is inserted.
   }
 
   function updateAuthNav() {
@@ -223,8 +214,11 @@
   };
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function() {
+      // Avoid rendering auth nav buttons on page load.
+      // init();
+    });
   } else {
-    init();
+    // init();
   }
 })(typeof window !== 'undefined' ? window : this);
