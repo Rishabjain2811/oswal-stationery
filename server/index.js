@@ -34,6 +34,15 @@ app.get('/api/auth/ping', (req, res) => {
 // API routes MUST come before static file serving
 app.use('/api/auth', authRoutes);
 
+// Cache headers for static assets (30 days for images, CSS, JS)
+app.use((req, res, next) => {
+  if (/\.(jpg|jpeg|png|gif|webp|svg|css|js)$/i.test(req.url)) {
+    res.set('Cache-Control', 'public, max-age=2592000'); // 30 days
+    res.set('Vary', 'Accept-Encoding');
+  }
+  next();
+});
+
 // Then serve static files
 app.use(express.static(rootDir));
 
