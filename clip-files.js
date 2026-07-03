@@ -1,141 +1,141 @@
-const clipFiles = [
-  { id: 1, name: 'A4 Clip File', desc: 'Classic A4 size, strong clip.', image: 'CL212F.jpg' },
-  { id: 2, name: 'A5 Clip File', desc: 'Compact A5, easy to carry.', image: 'CL804F.jpg' },
-  { id: 3, name: 'Transparent Clip File', desc: 'Crystal clear, sturdy clip.', image: 'CL3022F.jpg' },
-  { id: 4, name: 'Pastel Clip File', desc: 'Soft pastel shades, smooth finish.', image: 'CL1043F.jpg' },
-  { id: 5, name: 'Heavy Duty Clip File', desc: 'Extra thick, for frequent use.', image: 'CL2029F.jpg' },
-  { id: 6, name: 'Frosted Clip File', desc: 'Frosted texture, premium look.', image: 'CL1034F.jpg' },
-  { id: 7, name: 'Clip File with Index', desc: 'Includes index tab for labeling.', image: 'CL1027F.jpg' },
-  { id: 8, name: 'Clip File XL', desc: 'Extra large for bulky documents.', image: 'CL212F.jpg' },
-  { id: 9, name: 'Clip File - Blue', desc: 'Vibrant blue, sturdy clip.', image: 'CL804F.jpg' },
-  { id: 10, name: 'Clip File - Green', desc: 'Fresh green, durable plastic.', image: 'CL3022F.jpg' },
-  { id: 11, name: 'Clip File - Pink', desc: 'Chic pink, stylish and strong.', image: 'CL1043F.jpg' },
+const categoryProducts = [
+  {
+    "id": 10,
+    "name": "Punchless Clip Files",
+    "desc": "Premium Punchless Clip Files",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL421A", "CL422F"],
+      "size": ["A4", "FC"],
+      "thickness": ["Punchless clip", "Punchless clip"],
+      "packing": ["24/192/Ctn", "24/192/Ctn"],
+      "colours": ["Pink", "Green", "Blue", "Orange"]
+    },
+    "image": "Punchless Clip.jpeg",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "name": "Spring Clip Files",
+    "desc": "Premium Spring Clip Files",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL431A", "CL432F"],
+      "size": ["A4", "FC"],
+      "thickness": ["Spring clip", "Spring clip"],
+      "packing": ["24/192/Ctn", "24/192/Ctn"],
+      
+      "colours": ["Pink", "Green", "Blue", "Orange"]
+    },
+    "image": "Spring Clip.png",
+    "imageClass": "product-image-large",
+
+    "featured": false
+  },
+  {
+    "id": 12,
+    "name": "Dual Clip Files",
+    "desc": "Premium Dual Clip Files",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL451A", "CL452F"],
+      "size": ["A4", "FC"],
+      "thickness": ["Long Liver + Viro Clip", "Long Liver + Viro Clip"],
+      "packing": ["24/192/Ctn", "24/192/Ctn"],
+      
+      "colours": ["Pink", "Green", "Blue", "Orange"]
+    },
+    "image": "dual clip.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 13,
+    "name": "Ring Binders",
+    "desc": "Premium Ring Binders",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL820A","CL820F"],
+      "size": ["A4", "FC"],
+      "thickness": ["1mm", "1mm"],
+      "packing": ["50/100/200/Ctn", "50/100/200/Ctn"],
+      
+      "colours": ["Blue", "Grey"]
+    },
+    
+    "image": "ring binder.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "name": "Ring Binders",
+    "desc": "Premium Ring Binders",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL720A","CL720F"],
+      "size": ["A4", "FC"],
+      "thickness": ["1.1mm", "1.1mm"],
+      "packing": ["50/100/200/Ctn", "50/100/200/Ctn"],
+      "colours": ["Blue"]
+    },
+    "image": "ring binder2.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 15,
+    "name": "Ring Binders",
+    "desc": "Premium Ring Binders",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL521A","CL522F"],
+      "size": ["A4", "FC"],
+      "thickness": ["1.2mm", "1.2mm"],
+      "packing": ["24/96/Ctn", "24/96/Ctn"],
+      "colours": ["Blue", "Pink", "Green", "Orange"]
+    },
+    "image": "ring binder3.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "name": "Ring Binders",
+    "desc": "Premium Ring Binders",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL516A"],
+      "size": ["A4"],
+      "thickness": ["16mm ‘O’ Ring /0.85mm"],
+      "packing": ["24/96/Ctn"],
+      "colours": ["Blue", "Pink", "Green", "Orange"]
+    },
+    "image": "ring binder4.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  
 ];
 
-let cart = [];
+var CATEGORY = 'Clip Files Series';
 
-function updateCartCount() {
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  document.getElementById('cart-count').textContent = count;
-}
-
-function animateCartCount() {
-  const el = document.getElementById('cart-count');
-  const icon = document.querySelector('.cart-icon');
-  el.style.transform = 'scale(1.3)';
-  if (icon) {
-    icon.classList.add('animated');
-    setTimeout(() => icon.classList.remove('animated'), 400);
-  }
-  setTimeout(() => { el.style.transform = 'scale(1)'; }, 200);
-}
-
-function addToCart(product, qty = 1) {
-  if (qty < 1) return;
-  const existing = cart.find(item => item.id === product.id);
-  if (existing) {
-    existing.qty += qty;
-  } else {
-    cart.push({ ...product, qty });
-  }
-  updateCartCount();
-  animateCartCount();
-}
-
-function removeFromCart(productId) {
-  cart = cart.filter(item => item.id !== productId);
-  updateCartCount();
-  renderCart();
-}
-
-function renderCart() {
-  const cartSection = document.querySelector('.cart-section');
-  const cartItemsDiv = document.getElementById('cart-items');
-  if (cart.length === 0) {
-    cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
-    cartSection.classList.add('active');
-    return;
-  }
-  cartItemsDiv.innerHTML = cart.map(item => `
-    <div class="cart-item">
-      <span class="cart-item-title">${item.name}</span>
-      <span class="cart-item-qty">x${item.qty}</span>
-      <button class="cart-item-remove" data-id="${item.id}">&times;</button>
-    </div>
-  `).join('');
-  cartSection.classList.add('active');
-  cartItemsDiv.querySelectorAll('.cart-item-remove').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const id = parseInt(this.getAttribute('data-id'));
-      removeFromCart(id);
-    });
-  });
-}
-
-const sendBtn = document.getElementById('send-whatsapp');
-sendBtn.addEventListener('click', function() {
-  if (cart.length === 0) return;
-  const business = 'OSWAL GIFT N STATIONERY';
-  let message = `Hello, I would like to order the following Clip Files from ${business}:%0A%0A`;
-  cart.forEach(item => {
-    message += `*${item.name}* (x${item.qty})%0A`;
-  });
-  const url = `https://wa.me/919841137922?text=${message}`;
-  window.open(url, '_blank');
-});
-
-function renderClipFiles() {
-  const container = document.getElementById('clip-files-products');
-  container.innerHTML = clipFiles.map(product => `
-    <div class="product-card">
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <div class="product-title">${product.name}</div>
-      <div class="product-desc">${product.desc}</div>
-      <div class="quantity-group">
-        <button class="quantity-btn" data-action="decrease" data-id="${product.id}">-</button>
-        <input type="number" class="quantity-input" min="1" value="1" data-id="${product.id}" />
-        <button class="quantity-btn" data-action="increase" data-id="${product.id}">+</button>
-      </div>
-      <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-    </div>
-  `).join('');
-  clipFiles.forEach(product => {
-    const id = product.id;
-    const input = container.querySelector(`.quantity-input[data-id="${id}"]`);
-    container.querySelector(`.quantity-btn[data-action="decrease"][data-id="${id}"]`).addEventListener('click', () => {
-      let val = parseInt(input.value) || 1;
-      if (val > 1) val--;
-      input.value = val;
-    });
-    container.querySelector(`.quantity-btn[data-action="increase"][data-id="${id}"]`).addEventListener('click', () => {
-      let val = parseInt(input.value) || 1;
-      val++;
-      input.value = val;
-    });
-    input.addEventListener('input', function() {
-      if (parseInt(this.value) < 1 || isNaN(parseInt(this.value))) this.value = 1;
-    });
-    container.querySelector(`.add-to-cart[data-id="${id}"]`).addEventListener('click', () => {
-      const qty = parseInt(input.value) || 1;
-      addToCart(product, qty);
-    });
+function renderProducts() {
+  OswalCategoryPage.renderProductCards({
+    containerId: 'clip-files-products',
+    products: categoryProducts,
+    category: CATEGORY
   });
 }
 
 const cartLink = document.querySelector('.cart-link');
-cartLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  document.querySelector('.cart-section').classList.add('active');
-  renderCart();
-  document.getElementById('cart').scrollIntoView({ behavior: 'smooth' });
-});
-window.addEventListener('click', function(e) {
-  const cartSection = document.querySelector('.cart-section');
-  if (cartSection.classList.contains('active') && !cartSection.contains(e.target) && !cartLink.contains(e.target)) {
-    cartSection.classList.remove('active');
-  }
-});
-
+if(cartLink) {
+    cartLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = 'cart.html';
+    });
+}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;
@@ -152,7 +152,7 @@ window.addEventListener('scroll', setActiveNavLink);
 window.addEventListener('load', setActiveNavLink);
 
 function revealOnScroll() {
-  const reveals = document.querySelectorAll('section, .product-card, .cart-section');
+  const reveals = document.querySelectorAll('section, .product-card');
   const windowHeight = window.innerHeight;
   reveals.forEach(el => {
     const top = el.getBoundingClientRect().top;
@@ -165,5 +165,4 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-renderClipFiles();
-updateCartCount(); 
+renderProducts();

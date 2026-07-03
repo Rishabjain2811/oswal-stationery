@@ -1,141 +1,759 @@
-const buttonFiles = [
-  { id: 1, name: 'A4 Button File', desc: 'Classic A4 size, assorted colors.', image: 'CL1027F.jpg' },
-  { id: 2, name: 'A5 Button File', desc: 'Compact A5 size, easy to carry.', image: 'CL1034F.jpg' },
-  { id: 3, name: 'Transparent Button File', desc: 'Crystal clear, see-through design.', image: 'CL1043F.jpg' },
-  { id: 4, name: 'Pastel Button File', desc: 'Soft pastel shades, smooth finish.', image: 'CL2029F.jpg' },
-  { id: 5, name: 'Heavy Duty Button File', desc: 'Extra thick, for frequent use.', image: 'CL212F.jpg' },
-  { id: 6, name: 'Frosted Button File', desc: 'Frosted texture, premium look.', image: 'CL3022F.jpg' },
-  { id: 7, name: 'Button File with Index', desc: 'Includes index tab for labeling.', image: 'CL804F.jpg' },
-  { id: 8, name: 'Button File XL', desc: 'Extra large for bulky documents.', image: 'CL1027F.jpg' },
-  { id: 9, name: 'Button File - Blue', desc: 'Vibrant blue, sturdy snap.', image: 'CL1034F.jpg' },
-  { id: 10, name: 'Button File - Green', desc: 'Fresh green, durable plastic.', image: 'CL1043F.jpg' },
-  { id: 11, name: 'Button File - Pink', desc: 'Chic pink, stylish and strong.', image: 'CL2029F.jpg' },
+const categoryProducts = [
+  {
+    "id": 35,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL303"],
+      "size": ["CHQ"],
+      "thickness": ["-"],
+      "packing": ["250/1000/Ctn"],
+      "colours": ["Blue", "Black","Pink","Green","Red"]
+    },
+    "image": "CL303.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 36,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL503A"],
+      "size": ["A3"],
+      "thickness": ["-"],
+      "packing": ["60/240/Ctn"],
+      "colours": ["Blue", "Yellow","Green","Red"]
+    },
+    "image": "CL503A.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 37,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL603F"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["50/200/Ctn"],
+      "colours": ["Blue", "Yellow","Green","Pink","Orange"]
+    },
+    "image": "CL603F.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 38,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL703FT"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["90/360/Ctn"],
+      "colours": ["Blue", "Black","Green","Pink"]
+    },
+    "image": "CL703FT.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 39,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL803F"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["50/200/Ctn"],
+      "colours": ["Blue", "Purple","Green","Yellow","Orange"]
+    },
+    "image": "CL803F.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 40,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL903F"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["50/200/Ctn"],
+      "colours": ["Blue","Red","Green","Yellow","Orange"]
+    },
+    "image": "CL903F.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 41,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL605F"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["30/120/Ctn"],
+      "colours": ["Blue","Pink","Green","Yellow","Orange"]
+    },
+    "image": "CL605F.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 42,
+    "name": "Stitched button Bags",
+    "desc": "Premium button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["IKON 603ECO"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["100/400/Ctn"],
+      "colours": ["Blue","Red","Green","Yellow"]
+    },
+    "image": "603ECO.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+      "id": 43,
+    "name": "Envelope Bags",
+    "desc": "Premium Envelope button bags",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL114F"],
+      "size": ["FC"],
+      "thickness": ["-"],
+      "packing": ["360/720/Ctn"],
+      "colours": ["Clear"]
+    },
+    "image": "CL114F.png",
+    "imageClass": "product-image-large",
+    "featured": false
+  },
+  {
+    "id": 44,
+  "name": "Envelope Bags",
+  "desc": "Premium Envelope button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL119F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Clear"]
+  },
+  "image": "CL119F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 45,
+"name": "Printed Button Bags",
+"desc": "Premium Printed button bags",
+"description": "",
+"specs": {
+  "itemCode": ["CL801"],
+  "size": ["A7"],
+  "thickness": ["Plain"],
+  "packing": ["720/1440/Ctn"],
+  "colours": ["Clear","Blue","Red","Green","Yellow"]
+},
+"image": "CL801.png",
+"imageClass": "product-image-large",
+"featured": false
+},
+ {
+  "id": 46,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL802"],
+    "size": ["A5"],
+    "thickness": ["Plain"],
+    "packing": ["300/1200/Ctn"],
+    "colours": ["Clear","Blue","Red","Green","Yellow"]
+  },
+  "image": "CL802.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 47,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL804F"],
+    "size": ["FC"],
+    "thickness": ["Plain"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Clear","Blue","Red","Green","Yellow"]
+  },
+  "image": "CL804F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 48,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL805F"],
+    "size": ["FC"],
+    "thickness": ["Pastel Colours"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Purple","Pink","Blue","Yellow"]
+  },
+  "image": "CL805F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 49,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1000F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Clear","Purple","Pink","Blue","Green","Indigo"]
+  },
+  "image": "CL1000F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 50,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1027F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["240/720/Ctn"],
+    "colours": ["Pink","Blue","Green","Orange"]
+  },
+  "image": "CL1027F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 51,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1032F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Clear"]
+  },
+  "image": "CL1032F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 52,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1034F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Pink","Blue","Green","Yellow"]
+  },
+  "image": "CL1034F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 53,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1041F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["240/480/Ctn"],
+    "colours": ["Pink","Blue","Purple","Orange"]
+  },
+  "image": "CL1041F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 54,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1042F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["240/480/Ctn"],
+    "colours": ["Pink","Blue","Green","Yellow"]
+  },
+  "image": "CL1042F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 55,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1043F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Clear","Pink","Blue","Green","Yellow"]
+  },
+  "image": "CL1043F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 56,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL1044F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Indigo","Pink","Blue","Green"]
+  },
+  "image": "CL1044F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 57,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2000F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["480/960/Ctn"],
+    "colours": ["Indigo","Pink","Blue","Green","Orange"]
+  },
+  "image": "CL2000F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 58,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2001F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["480/960/Ctn"],
+    "colours": ["Indigo","Pink","Blue","Green","Orange"]
+  },
+  "image": "CL2001.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 59,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2002F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Pink","Blue","Green","Yellow"]
+  },
+  "image": "CL2002F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 60,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2003F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Pink","Blue","Green","Orange"]
+  },
+  "image": "CL2003F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 61,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2004F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Pink","Blue","Red","Yellow"]
+  },
+  "image": "CL2004F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 62,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2005F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Green","Blue","Orange","Light Orange"]
+  },
+  "image": "CL2005F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 63,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2029F"],
+    "size": ["FC"],
+    "thickness": ["Top Loading"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Green","Blue","Orange","Pink"]
+  },
+  "image": "CL2029F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 64,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2030F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Green","Blue","Yellow","Pink","Red"]
+  },
+  "image": "CL2030F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 65,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2401F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Grey","Dark Blue","Red","Light Blue"]
+  },
+  "image": "CL2401F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 66,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL2402F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Orange","Blue","Indigo","Green"]
+  },
+  "image": "CL2402F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 67,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL3000F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Orange","Blue","Indigo","Green","Pink","Yellow"]
+  },
+  "image": "CL3000F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 68,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL3020F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["White"]
+  },
+  "image": "CL3020F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 69,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL3021F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green"]
+  },
+  "image": "CL3021F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 70,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL3022F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["White"]
+  },
+  "image": "CL3022F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 71,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL3026F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green"]
+  },
+  "image": "CL3026F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 72,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL4000F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": []
+  },
+  "image": "CL4000F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 73,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL5000F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": []
+  },
+  "image": "CL5000F.png",
+  "imageClass": "product-image-large",
+  "featured": true
+},
+{
+  "id": 74,
+  "name": "Printed Button Bags",
+  "desc": "Premium Printed button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL209F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["360/720/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green","Red"]
+  },
+  "image": "CL209F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 75,
+  "name": "Double Pocket Bags",
+  "desc": "Premium Double Pocket bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL211F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["300/600/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green","Red"]
+  },
+  "image": "CL211F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 76,
+  "name": "Double Pocket Bags",
+  "desc": "Premium Double Pocket bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL212F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["300/600/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green","Red"]
+  },
+  "image": "CL212F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 77,
+  "name": "Double Pocket Bags",
+  "desc": "Premium Double Pocket bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL236F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["240/480/Ctn"],
+    "colours": ["Orange","Blue","Pink","Green","Red"]
+  },
+  "image": "CL236F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 78,
+  "name": "Premium Button Bags",
+  "desc": "Premium Button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL402F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["180/360/Ctn"],
+    "colours": ["Orange","Blue","Yellow","Green","Red"]
+  },
+  "image": "CL402F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 79,
+  "name": "Premium Button Bags",
+  "desc": "Premium Button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL408F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["60/240/Ctn"],
+    "colours": ["Yellow","Aqua","Pink","Blue"]
+  },
+  "image": "CL408F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
+{
+  "id": 80,
+  "name": "Premium Button Bags",
+  "desc": "Premium Button bags",
+  "description": "",
+  "specs": {
+    "itemCode": ["CL410F"],
+    "size": ["FC"],
+    "thickness": ["-"],
+    "packing": ["125/500/Ctn"],
+    "colours": ["Clear","Green","Red","Blue","Yellow"]
+  },
+  "image": "CL410F.png",
+  "imageClass": "product-image-large",
+  "featured": false
+},
 ];
 
-let cart = [];
+var CATEGORY = 'Button Bags Series';
 
-function updateCartCount() {
-  const count = cart.reduce((sum, item) => sum + item.qty, 0);
-  document.getElementById('cart-count').textContent = count;
-}
-
-function animateCartCount() {
-  const el = document.getElementById('cart-count');
-  const icon = document.querySelector('.cart-icon');
-  el.style.transform = 'scale(1.3)';
-  if (icon) {
-    icon.classList.add('animated');
-    setTimeout(() => icon.classList.remove('animated'), 400);
-  }
-  setTimeout(() => { el.style.transform = 'scale(1)'; }, 200);
-}
-
-function addToCart(product, qty = 1) {
-  if (qty < 1) return;
-  const existing = cart.find(item => item.id === product.id);
-  if (existing) {
-    existing.qty += qty;
-  } else {
-    cart.push({ ...product, qty });
-  }
-  updateCartCount();
-  animateCartCount();
-}
-
-function removeFromCart(productId) {
-  cart = cart.filter(item => item.id !== productId);
-  updateCartCount();
-  renderCart();
-}
-
-function renderCart() {
-  const cartSection = document.querySelector('.cart-section');
-  const cartItemsDiv = document.getElementById('cart-items');
-  if (cart.length === 0) {
-    cartItemsDiv.innerHTML = '<p>Your cart is empty.</p>';
-    cartSection.classList.add('active');
-    return;
-  }
-  cartItemsDiv.innerHTML = cart.map(item => `
-    <div class="cart-item">
-      <span class="cart-item-title">${item.name}</span>
-      <span class="cart-item-qty">x${item.qty}</span>
-      <button class="cart-item-remove" data-id="${item.id}">&times;</button>
-    </div>
-  `).join('');
-  cartSection.classList.add('active');
-  cartItemsDiv.querySelectorAll('.cart-item-remove').forEach(btn => {
-    btn.addEventListener('click', function() {
-      const id = parseInt(this.getAttribute('data-id'));
-      removeFromCart(id);
-    });
-  });
-}
-
-const sendBtn = document.getElementById('send-whatsapp');
-sendBtn.addEventListener('click', function() {
-  if (cart.length === 0) return;
-  const business = 'OSWAL GIFT N STATIONERY';
-  let message = `Hello, I would like to order the following Button Files from ${business}:%0A%0A`;
-  cart.forEach(item => {
-    message += `*${item.name}* (x${item.qty})%0A`;
-  });
-  const url = `https://wa.me/919841137922?text=${message}`;
-  window.open(url, '_blank');
-});
-
-function renderButtonFiles() {
-  const container = document.getElementById('button-files-products');
-  container.innerHTML = buttonFiles.map(product => `
-    <div class="product-card">
-      <img src="${product.image}" alt="${product.name}" class="product-image" />
-      <div class="product-title">${product.name}</div>
-      <div class="product-desc">${product.desc}</div>
-      <div class="quantity-group">
-        <button class="quantity-btn" data-action="decrease" data-id="${product.id}">-</button>
-        <input type="number" class="quantity-input" min="1" value="1" data-id="${product.id}" />
-        <button class="quantity-btn" data-action="increase" data-id="${product.id}">+</button>
-      </div>
-      <button class="add-to-cart" data-id="${product.id}">Add to Cart</button>
-    </div>
-  `).join('');
-  buttonFiles.forEach(product => {
-    const id = product.id;
-    const input = container.querySelector(`.quantity-input[data-id="${id}"]`);
-    container.querySelector(`.quantity-btn[data-action="decrease"][data-id="${id}"]`).addEventListener('click', () => {
-      let val = parseInt(input.value) || 1;
-      if (val > 1) val--;
-      input.value = val;
-    });
-    container.querySelector(`.quantity-btn[data-action="increase"][data-id="${id}"]`).addEventListener('click', () => {
-      let val = parseInt(input.value) || 1;
-      val++;
-      input.value = val;
-    });
-    input.addEventListener('input', function() {
-      if (parseInt(this.value) < 1 || isNaN(parseInt(this.value))) this.value = 1;
-    });
-    container.querySelector(`.add-to-cart[data-id="${id}"]`).addEventListener('click', () => {
-      const qty = parseInt(input.value) || 1;
-      addToCart(product, qty);
-    });
+function renderProducts() {
+  OswalCategoryPage.renderProductCards({
+    containerId: 'button-files-products',
+    products: categoryProducts,
+    category: CATEGORY
   });
 }
 
 const cartLink = document.querySelector('.cart-link');
-cartLink.addEventListener('click', function(e) {
-  e.preventDefault();
-  document.querySelector('.cart-section').classList.add('active');
-  renderCart();
-  document.getElementById('cart').scrollIntoView({ behavior: 'smooth' });
-});
-window.addEventListener('click', function(e) {
-  const cartSection = document.querySelector('.cart-section');
-  if (cartSection.classList.contains('active') && !cartSection.contains(e.target) && !cartLink.contains(e.target)) {
-    cartSection.classList.remove('active');
-  }
-});
-
+if(cartLink) {
+    cartLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.location.href = 'cart.html';
+    });
+}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;
@@ -152,7 +770,7 @@ window.addEventListener('scroll', setActiveNavLink);
 window.addEventListener('load', setActiveNavLink);
 
 function revealOnScroll() {
-  const reveals = document.querySelectorAll('section, .product-card, .cart-section');
+  const reveals = document.querySelectorAll('section, .product-card');
   const windowHeight = window.innerHeight;
   reveals.forEach(el => {
     const top = el.getBoundingClientRect().top;
@@ -165,5 +783,4 @@ function revealOnScroll() {
 window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
-renderButtonFiles();
-updateCartCount(); 
+renderProducts();
