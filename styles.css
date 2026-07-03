@@ -150,28 +150,37 @@ section,
   border: none;
   background: transparent;
   cursor: pointer;
-  padding: 0.6rem;
+  padding: 0.5rem;
   margin-left: 1rem;
+  width: 26px;
+  height: 24px;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 60;
 }
 
 .nav-toggle span {
   display: block;
-  width: 22px;
-  height: 2px;
+  width: 18px;
+  height: 3px;
   border-radius: 2px;
   background: var(--text-main);
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition: transform 0.25s var(--ease-out), opacity 0.25s var(--ease-out);
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.02) inset;
 }
 
 .nav-toggle span:not(:last-child) {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 }
 
 .navbar.nav-open .nav-toggle span:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
 }
 
 .navbar.nav-open .nav-toggle span:nth-child(2) {
@@ -179,7 +188,7 @@ section,
 }
 
 .navbar.nav-open .nav-toggle span:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .nav-search-item {
@@ -530,6 +539,22 @@ section,
 }
 
 @media (max-width: 768px) {
+  /* Ensure hamburger bars are visible on mobile: force high-contrast color and top stacking */
+  .nav-toggle {
+    z-index: 120 !important;
+  }
+
+  .nav-toggle span {
+    background: #111 !important;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.03) inset;
+    opacity: 1 !important;
+  }
+
+  /* Slightly increase thickness for better visibility on small screens */
+  .nav-toggle span {
+    height: 3px !important;
+  }
+
   .featured-scroll {
     gap: 1.5rem;
     padding-bottom: 1.5rem;
@@ -1858,5 +1883,41 @@ body.auth-modal-open {
 
   .product-detail-gallery {
     position: static;
+  }
+}
+
+/* Mobile: fixed black hamburger button at top-right */
+@media (max-width: 768px) {
+  .nav-toggle {
+    position: fixed !important;
+    top: 12px !important;
+    right: 12px !important;
+    padding: 6px !important;
+    background: transparent !important;
+    border-radius: 0 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: inline-flex !important;
+    box-shadow: none !important;
+    z-index: 99999 !important;
+    border: 0;
+  }
+
+  .nav-toggle span {
+    width: 18px !important;
+    height: 2.5px !important;
+    background: #111 !important;
+    border-radius: 2px !important;
+    margin-bottom: 3px !important;
+    box-shadow: none !important;
+  }
+
+  .nav-toggle span:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .nav-toggle:focus {
+    outline: 2px solid rgba(0,0,0,0.06) !important;
+    outline-offset: 2px !important;
   }
 }
