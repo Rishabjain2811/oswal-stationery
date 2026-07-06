@@ -28,7 +28,7 @@ const categoryProducts = [
       
       "colours": ["Pink", "Green", "Blue", "Orange"]
     },
-    "image": "Spring Clip.png",
+    "image": "Spring clip.png",
     "imageClass": "product-image-large",
 
     "featured": false
@@ -46,7 +46,7 @@ const categoryProducts = [
       
       "colours": ["Pink", "Green", "Blue", "Orange"]
     },
-    "image": "dual clip.png",
+    "image": "Dual clip.png",
     "imageClass": "product-image-large",
     "featured": false
   },
