@@ -7,11 +7,26 @@
   var store = global.OswalCartStore;
   if (!store) return;
 
+  function ensureMobileCartBadge() {
+    if (!document.body) return;
+    if (document.querySelector('.cart-badge-mobile')) return;
+
+    var badge = document.createElement('a');
+    badge.className = 'cart-badge-mobile';
+    badge.href = 'cart.html';
+    badge.setAttribute('aria-label', 'Open cart');
+    badge.innerHTML = '<span class="cart-mobile-icon">🛒</span><span class="cart-mobile-count">0</span>';
+    document.body.appendChild(badge);
+  }
+
   function updateBadge() {
-    var el = document.getElementById('cart-count');
-    if (!el) return;
+    ensureMobileCartBadge();
+
+    var desktopEl = document.getElementById('cart-count');
+    var mobileCountEl = document.querySelector('.cart-mobile-count');
     var total = store.getTotalCount();
-    el.textContent = total;
+    if (desktopEl) desktopEl.textContent = total;
+    if (mobileCountEl) mobileCountEl.textContent = total;
   }
 
   function wireBrandHomeLink() {
