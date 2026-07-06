@@ -1064,6 +1064,23 @@ function directWhatsApp() {
   window.open('https://wa.me/919841137768?text=' + encodeURIComponent(message), '_blank');
 }
 
+function ensureMobileCartBadge() {
+  if (document.querySelector('.cart-badge-mobile')) return;
+
+  var badge = document.createElement('a');
+  badge.className = 'cart-badge-mobile';
+  badge.href = 'cart.html';
+  badge.setAttribute('aria-label', 'Open cart');
+  badge.innerHTML = '<span class="cart-mobile-icon">🛒</span><span class="cart-mobile-count">0</span>';
+  document.body.appendChild(badge);
+}
+
+function updateMobileCartBadge() {
+  var badgeCount = document.querySelector('.cart-mobile-count');
+  var total = window.OswalCartStore ? window.OswalCartStore.getTotalCount() : 0;
+  if (badgeCount) badgeCount.textContent = total;
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   var sendWhatsAppBtn = document.getElementById('send-whatsapp');
   var directWhatsAppBtn = document.getElementById('direct-whatsapp');
@@ -1071,4 +1088,16 @@ document.addEventListener('DOMContentLoaded', function () {
   if (directWhatsAppBtn) directWhatsAppBtn.addEventListener('click', directWhatsApp);
   var cartItemsEl = document.getElementById('cart-items');
   if (cartItemsEl && typeof renderCart === 'function') renderCart();
+  ensureMobileCartBadge();
+  updateMobileCartBadge();
 });
+
+window.addEventListener('pageshow', function () {
+  ensureMobileCartBadge();
+  updateMobileCartBadge();
+});
+
+window.addEventListener('load', function () {
+  updateMobileCartBadge();
+});
+
