@@ -27,13 +27,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

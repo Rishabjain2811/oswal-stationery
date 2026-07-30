@@ -1,13 +1,13 @@
 const categoryProducts = [
   {
     "id": 30,
-    "name": "600 Card Albumn",
-    "desc": "Premium Card Albumn",
+    "name": "Visiting Card Holder",
+    "desc": "Premium Card Holder",
     "description": "",
     "specs": {
       "itemCode": ["CL40K"],
       "size": ["Pocket Size"],
-      "thickness": ["Name Card Holder"],
+      "thickness": ["40 Cards Holder"],
       "packing": ["100/500/Ctn"],
       "colours": ["Blue","Yellow", "Red"]
     },
@@ -17,15 +17,15 @@ const categoryProducts = [
   },
   {
     "id": 31,
-    "name": "Name Card Albumn",
-    "desc": "Premium Card Albumn",
+    "name": "Buisness Cards Holder",
+    "desc": "Premium Card Holder",
     "description": "",
     "specs": {
       "itemCode": ["CL120K","CL240K","CL480K"],
       "size": ["120 Cards","240 Cards", "480 Cards"],
-      "thickness": ["Name Card Holder- with case","Name Card Holder- with case","Name Card Holder- with case"],
+      "thickness": ["120 Cards Holder with case","240 Cards Holder with case","480 Cards Holder with case"],
       "packing": ["48/192/Ctn","24/96/Ctn","12/48/Ctn"],
-      "colours": []
+      "colours": ["Grey","Blue","Red","Green"]
     },
     "image": "CL240K.png",
     "imageClass": "product-image-large",
@@ -33,15 +33,15 @@ const categoryProducts = [
   },
   {
     "id": 32,
-    "name": "600 Card Albumn",
+    "name": "Buisness Cards Albumn",
     "desc": "Premium Card Albumn",
     "description": "",
     "specs": {
-      "itemCode": ["600 IC (ICON)"],
+      "itemCode": ["ICON 600IC"],
       "size": ["A4"],
-      "thickness": ["Visiting Card Albumn"],
+      "thickness": ["600 Card Albumn with Index"],
       "packing": ["18/72/Ctn"],
-      "colours": ["Blue"]
+      "colours": ["Blue","Grey"]
     },
     "image": "CL600.png",
     "imageClass": "product-image-large",
@@ -60,13 +60,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

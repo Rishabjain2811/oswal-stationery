@@ -38,6 +38,19 @@
     navLinks.insertBefore(item, insertBefore);
   }
 
+  function injectMobileSearchBar() {
+    if (document.getElementById('mobile-product-search')) return;
+
+    var featuredSection = document.querySelector('.featured-section');
+    if (!featuredSection) return;
+
+    var mobileSearchSection = document.getElementById('mobile-search');
+    if (!mobileSearchSection) return;
+
+    var form = mobileSearchSection.querySelector('.mobile-search-form');
+    if (!form) return;
+  }
+
   function renderResults(results, container) {
     if (!results.length) {
       container.innerHTML = '<div class="nav-search-empty">No products found.</div>';
@@ -112,6 +125,71 @@
     });
   }
 
+  function wireMobileSearchForm() {
+    var form = document.getElementById('mobile-product-search');
+    var input = document.getElementById('mobile-search-input');
+    var results = document.getElementById('mobile-search-results');
+    if (!form || !input || !results || !global.OswalSearchIndex) return;
+
+    function runSearch() {
+      var matches = global.OswalSearchIndex.search(input.value, 8);
+      renderMobileResults(matches, results);
+    }
+
+    input.addEventListener('input', runSearch);
+    input.addEventListener('focus', runSearch);
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var matches = global.OswalSearchIndex.search(input.value, 1);
+      if (matches.length) {
+        navigateToEntry(matches[0]);
+      } else {
+        runSearch();
+      }
+    });
+
+    results.addEventListener('click', function (event) {
+      var button = event.target.closest('.mobile-search-result');
+      if (!button) return;
+      global.location.href = buildResultUrl({
+        page: button.dataset.page,
+        productId: button.dataset.productId,
+        matchedCode: button.dataset.code || ''
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!form.contains(event.target)) hideResults(results);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') hideResults(results);
+    });
+  }
+
+  function renderMobileResults(results, container) {
+    if (!results.length) {
+      container.innerHTML = '<div class="mobile-search-empty">No products found.</div>';
+      container.hidden = false;
+      return;
+    }
+
+    container.innerHTML = results.map(function (entry) {
+      var codeLabel = entry.matchedCode || (entry.codes && entry.codes[0]) || '';
+      return '<button type="button" class="mobile-search-result" data-page="' + escapeHtml(entry.page) +
+        '" data-code="' + escapeHtml(codeLabel) +
+        '" data-product-id="' + entry.productId + '">' +
+        '<span class="mobile-search-result-code">' + escapeHtml(entry.productName) + '</span>' +
+        '<span class="mobile-search-result-meta">' +
+        (codeLabel ? escapeHtml(codeLabel) + ' · ' : '') +
+        escapeHtml(entry.category) +
+        '</span>' +
+        '</button>';
+    }).join('');
+    container.hidden = false;
+  }
+
   function normalizeCode(value) {
     return global.OswalSearchIndex
       ? global.OswalSearchIndex.normalizeQuery(value)
@@ -171,6 +249,8 @@
   function init() {
     injectSearchBar();
     wireSearchForm();
+    injectMobileSearchBar();
+    wireMobileSearchForm();
     applyDeepLink();
     global.setTimeout(applyDeepLink, 400);
   }

@@ -109,7 +109,7 @@
       '<div class="product-detail-actions">' +
       '<div class="quantity-group">' +
       '<button class="quantity-btn" data-action="decrease" data-id="' + id + '">-</button>' +
-      '<input type="number" class="quantity-input" min="0" value="1" data-id="' + id + '" />' +
+      '<input type="text" class="quantity-input" min="0" value="1 Ctn" data-id="' + id + '" />' +
       '<button class="quantity-btn" data-action="increase" data-id="' + id + '">+</button>' +
       '</div>' +
       '<button class="cta-btn add-to-cart-detail" data-id="' + id + '">Add to Cart</button>' +

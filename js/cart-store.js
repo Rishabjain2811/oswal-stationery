@@ -51,7 +51,7 @@
   }
 
   /**
-   * Add or merge item. Item shape: { id, name, quantity?, category }
+   * Add or merge item. Item shape: { id, name, quantity?, category?, image? }
    */
   function addItem(item) {
     var cart = readFromStorage();
@@ -59,6 +59,7 @@
     var category = item.category || '';
     var qty = Math.max(1, Number(item.quantity) || Number(item.qty) || 1);
     var name = item.name || 'Product';
+    var image = item.image || '';
     var existing = cart.find(function (i) {
       return i.id === id && (i.category || '') === category;
     });
@@ -70,6 +71,7 @@
         name: name,
         quantity: qty,
         category: category,
+        image: image,
       });
     }
     return setCart(cart);

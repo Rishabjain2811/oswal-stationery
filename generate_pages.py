@@ -43,6 +43,22 @@ html_template = """<!DOCTYPE html>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | OSWAL GIFT N STATIONERY</title>
+  <meta name="description" content="OSWAL GIFT N STATIONERY offers premium files, folders, stationery, office supplies, report covers, clip files, clear books, document bags, and organizer accessories in India.">
+  <meta name="keywords" content="oswal, gift, stationery, files, folders, office supplies, report cover files, sheet protectors, clip files, clear books, document bags, zipper bags, conference folders">
+  <meta name="author" content="OSWAL GIFT N STATIONERY">
+  <link rel="canonical" href="https://oswalgiftnstationery.co.in">
+  <meta property="og:title" content="OSWAL GIFT N STATIONERY | Files, Folders & Stationery">
+  <meta property="og:description" content="Discover premium stationery, office files, folders, bags and organizers at OSWAL GIFT N STATIONERY.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oswalgiftnstationery.co.in">
+  <meta property="og:image" content="https://oswalgiftnstationery.co.in/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OSWAL GIFT N STATIONERY | Files, Folders & Stationery">
+  <meta name="twitter:description" content="Discover premium stationery, office files, folders, bags and organizers at OSWAL GIFT N STATIONERY.">
+  <meta name="twitter:image" content="https://oswalgiftnstationery.co.in/favicon.png">
+  <meta name="theme-color" content="#fffdf8">
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"Organization","name":"OSWAL GIFT N STATIONERY","url":"https://oswalgiftnstationery.co.in","logo":"https://oswalgiftnstationery.co.in/favicon.png","description":"Stationery, files, folders, organizers and office supplies from OSWAL GIFT N STATIONERY."}}</script>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">

@@ -7,7 +7,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL10A","CL20A","CL30A","CL40A","CL60A","CL80A","CL100A"],
       "size": ["A4","A4","A4","A4","A4","A4","A4"],
-      "thickness": ["10 Pocket","20 Pocket","30 Pocket","40 Pocket","60 Pocket","80 Pocket","100 Pocket"],
+      "thickness": ["10 Pocket","20 Pocket","30 Pocket","40 Pocket","60 Pocket","80 Pocket with case","100 Pocket with case"],
       "packing": ["24/96/Ctn","12/144/Ctn","12/120/Ctn","12/96/Ctn","12/72/Ctn","6/24/Ctn","6/24/Ctn"],
       "colours": ["Blue", "Pink", "Green", "Orange"]
     },
@@ -94,6 +94,22 @@ const categoryProducts = [
     "image": "B4 PP.png",
     "imageClass": "product-image-large",
     "featured": false
+  },
+  {
+    "id": 20,
+    "name": "B4 Certificate File",
+    "desc": "Premium B4 Certificate file",
+    "description": "",
+    "specs": {
+      "itemCode": ["ICON 771","ICON 772","ICON 773","ICON 774"],
+      "size": ["B4","B4","B4","B4"],
+      "thickness": ["10 Pocket","20 Pocket","30 Pocket","40 Pocket"],
+      "packing": ["12/48/Ctn","12/48/Ctn","10/40/Ctn","10/40/Ctn"],
+      "colours": ["Blue"]
+    },
+    "image": "Icon771.png",
+    "imageClass": "product-image-large",
+    "featured": false
   }
   
 ];
@@ -108,13 +124,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

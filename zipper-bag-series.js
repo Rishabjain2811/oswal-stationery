@@ -9,7 +9,7 @@ const categoryProducts = [
       "size": ["B6","A5","B5","A4","B4"],
       "thickness": ["","","0.18mm , Matte Texture , P.P Material. (For All)","",""],
       "packing": ["480/1920/Ctn","480/960/Ctn","480/960/Ctn","240/480/Ctn","240/480/Ctn"],
-      "colours": ["Blue","Clear","Pink","Yellow","Green"]
+      "colours": ["Clear"]
     },
     "image": "CLP53.png",
     "imageClass": "product-image-large",
@@ -39,9 +39,9 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["","","Satin  Zipper  Bag","","",""],
       "size": ["B6","A5","B5","A4","B4","A3"],
-      "thickness": ["","","Net Partition, Chain Zip Runner , Satin Finished Material. (For All)","","",""],
-      "packing": ["//Ctn","//Ctn","//Ctn","//Ctn","//Ctn"],
-      "colours": ["Green","Orange","Blue","Pink","Red","Yellow"]
+      "thickness": ["","","Net Partition (For All)","","",""],
+      "packing": ["10/720/2880/Ctn","10/600/2400/Ctn","10/500/2000/Ctn","10/300/1200/Ctn","10/240/960/Ctn","10/200/800/Ctn"],
+      "colours": ["Green","White","Blue","Red","Yellow"]
     },
     "image": "Satin.png",
     "imageClass": "product-image-large",
@@ -55,9 +55,9 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["","","Mesh  Zipper  Bag","",""],
       "size": ["B6","A5","B5","A4","B4"],
-      "thickness": ["","", "Chain Zip Runner , Mesh Texture. (For All)","",""],
+      "thickness": ["","", "Mesh Texture (For All)","",""],
       "packing": ["300/1200/Ctn","240/960/Ctn","240/960/Ctn","180/720/Ctn","180/540/Ctn"],
-      "colours": ["Green","Blue","Red","Yellow","Clear"]
+      "colours": ["Green","White","Blue","Red","Yellow"]
     },
     "image": "Mesh.png",
     "imageClass": "product-image-large",
@@ -75,13 +75,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

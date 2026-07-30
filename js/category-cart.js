@@ -6,6 +6,17 @@
     return qty;
   }
 
+  function formatQty(qty) {
+    return qty + ' Ctn';
+  }
+
+  function parseQty(value) {
+    if (typeof value === 'string') {
+      value = value.replace('Ctn', '').replace(/\s/g, '');
+    }
+    return normalizeQty(value);
+  }
+
   function wireQuantityInput(input) {
     if (!input) return;
     var group = input.closest('.quantity-group');
@@ -13,25 +24,34 @@
     var decreaseBtn = group.querySelector('[data-action="decrease"]');
     var increaseBtn = group.querySelector('[data-action="increase"]');
 
+    // Set initial value with suffix
+    input.value = formatQty(parseQty(input.value));
+
     if (decreaseBtn) {
       decreaseBtn.addEventListener('click', function () {
-        var val = normalizeQty(input.value);
+        var val = parseQty(input.value);
         if (val > 0) val--;
-        input.value = val;
+        input.value = formatQty(val);
       });
     }
     if (increaseBtn) {
       increaseBtn.addEventListener('click', function () {
-        input.value = normalizeQty(input.value) + 1;
+        var val = parseQty(input.value);
+        input.value = formatQty(val + 1);
       });
     }
     input.addEventListener('input', function () {
-      input.value = normalizeQty(input.value);
+      var val = parseQty(input.value);
+      input.value = formatQty(val);
+    });
+    input.addEventListener('blur', function () {
+      var val = parseQty(input.value);
+      input.value = formatQty(val);
     });
   }
 
   function addItem(product, qty, category, selectedCode, selectedColour) {
-    var amount = normalizeQty(qty);
+    var amount = parseQty(qty);
     if (!global.OswalCartStore) return false;
     if (amount < 1) {
       alert('Please select a quantity greater than 0.');
@@ -46,6 +66,7 @@
       name: line.name,
       quantity: amount,
       category: category,
+      image: product.image,
     });
     return true;
   }
@@ -98,19 +119,8 @@
       return '<div class="product-card" id="product-' + id + '">' +
         linkedImage +
         '<a href="' + detailUrl + '" class="product-title product-title-link">' + product.name + '</a>' +
-        renderDescriptionBox(product) +
-        (variants ? variants.renderSpecTable(product) : '') +
-        (variants ? variants.renderCodePicker(product, 'item-' + id, dataAttrs) : '') +
-        (variants ? variants.renderColourPicker(product, 'item-' + id, dataAttrs) : '') +
-        '<div class="quantity-group">' +
-        '<button class="quantity-btn" data-action="decrease" data-id="' + id + '">-</button>' +
-        '<input type="number" class="quantity-input" min="0" value="0" data-id="' + id + '" />' +
-        '<button class="quantity-btn" data-action="increase" data-id="' + id + '">+</button>' +
-        '</div>' +
-        '<div class="product-card-actions">' +
-        '<a href="' + detailUrl + '" class="view-details-btn">View Details</a>' +
-        '<button class="add-to-cart" data-id="' + id + '">Add to Cart</button>' +
-        '</div>' +
+        (product.code ? '<div class="item-code-label">Item Code: ' + product.code + '</div>' : '') +
+        '<a href="' + detailUrl + '" class="view-details-text">View Details</a>' +
         '</div>';
     }).join('');
 

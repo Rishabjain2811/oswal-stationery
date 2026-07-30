@@ -7,7 +7,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL010"],
       "size": ["A4"],
-      "thickness": ["Transparent Color PP Colour Index Divider , Set of 10 sheet with Name Tag"],
+      "thickness": ["Transparent Color Index With Tab ,<br> Set of 10 sheet with Name Tag"],
       "packing": ["80/160/Ctn"],
       "colours": ["Brown"]
     },
@@ -23,7 +23,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["N5","N10","N12","N15","N20","N31"],
       "size": ["A4","A4","A4","A4","A4","A4"],
-      "thickness": ["","","","Multi-Hole PP Material Index Sheet","",""],
+      "thickness": ["","","","11Hole PP Material Index Sheet","",""],
       "packing": ["125/5000/Ctn","70/180/Ctn","60/240/Ctn","50/200/Ctn","40/160/Ctn","25/100/Ctn"],
       "colours": ["Pink"]
     },
@@ -39,7 +39,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["NZ"],
       "size": ["A4"],
-      "thickness": ["Multi-Hole PP Material Index Sheet"],
+      "thickness": ["11Hole PP Material Index Sheet"],
       "packing": ["40/160/Ctn"],
       "colours": ["Pink"]
     },
@@ -59,13 +59,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

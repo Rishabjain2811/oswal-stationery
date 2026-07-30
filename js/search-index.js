@@ -33,26 +33,6 @@
     ]
   },
   {
-    "productId": 30,
-    "productName": "600 Card Albumn",
-    "searchName": "600 card albumn",
-    "category": "Visiting Card Holders Series",
-    "page": "card-holders.html",
-    "codes": [
-      "CL40K"
-    ]
-  },
-  {
-    "productId": 32,
-    "productName": "600 Card Albumn",
-    "searchName": "600 card albumn",
-    "category": "Visiting Card Holders Series",
-    "page": "card-holders.html",
-    "codes": [
-      "600 IC (ICON)"
-    ]
-  },
-  {
     "productId": 17,
     "productName": "A3 Designer Display Book",
     "searchName": "a3 designer display book",
@@ -76,6 +56,19 @@
     ]
   },
   {
+    "productId": 20,
+    "productName": "B4 Certificate File",
+    "searchName": "b4 certificate file",
+    "category": "Clear Books Series",
+    "page": "clear-books.html",
+    "codes": [
+      "ICON 771",
+      "ICON 772",
+      "ICON 773",
+      "ICON 774"
+    ]
+  },
+  {
     "productId": 19,
     "productName": "B4 PP Display File Zip Closure",
     "searchName": "b4 pp display file zip closure",
@@ -89,24 +82,216 @@
     ]
   },
   {
-    "productId": 46,
-    "productName": "Cheque Book Expanding Bags",
-    "searchName": "cheque book expanding bags",
+    "productId": 32,
+    "productName": "Buisness Cards Albumn",
+    "searchName": "buisness cards albumn",
+    "category": "Visiting Card Holders Series",
+    "page": "card-holders.html",
+    "codes": [
+      "ICON 600IC"
+    ]
+  },
+  {
+    "productId": 31,
+    "productName": "Buisness Cards Holder",
+    "searchName": "buisness cards holder",
+    "category": "Visiting Card Holders Series",
+    "page": "card-holders.html",
+    "codes": [
+      "CL120K",
+      "CL240K",
+      "CL480K"
+    ]
+  },
+  {
+    "productId": 55,
+    "productName": "CHEQUE BOOKS EXPANDING",
+    "searchName": "cheque books expanding",
     "category": "Document Bags / Expanding Files Series",
     "page": "document-bags.html",
     "codes": [
-      "CL4406",
+      "CL4406"
+    ]
+  },
+  {
+    "productId": 56,
+    "productName": "CHEQUE BOOKS EXPANDING",
+    "searchName": "cheque books expanding",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
       "CL4409"
     ]
   },
   {
-    "productId": 62,
+    "productId": 63,
     "productName": "Conference Files",
     "searchName": "conference files",
     "category": "PP & Leatherite Conference Files / Hotel Files",
     "page": "conference-folders.html",
     "codes": [
       "CL9001A"
+    ]
+  },
+  {
+    "productId": 64,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CL102A"
+    ]
+  },
+  {
+    "productId": 65,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP24"
+    ]
+  },
+  {
+    "productId": 66,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP25"
+    ]
+  },
+  {
+    "productId": 67,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP31"
+    ]
+  },
+  {
+    "productId": 68,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP37"
+    ]
+  },
+  {
+    "productId": 69,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP45"
+    ]
+  },
+  {
+    "productId": 70,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP50"
+    ]
+  },
+  {
+    "productId": 71,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP66"
+    ]
+  },
+  {
+    "productId": 72,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP10"
+    ]
+  },
+  {
+    "productId": 73,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP96"
+    ]
+  },
+  {
+    "productId": 74,
+    "productName": "Conference Files",
+    "searchName": "conference files",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "page": "conference-folders.html",
+    "codes": [
+      "CP100"
+    ]
+  },
+  {
+    "productId": 54,
+    "productName": "D/S PP COATED RING BINDER WITH FRONT VIEW POCKET",
+    "searchName": "d s pp coated ring binder with front view pocket",
+    "category": "Paper Board Files Series",
+    "page": "paper-board-files.html",
+    "codes": [
+      "CL501"
+    ]
+  },
+  {
+    "productId": 60,
+    "productName": "DELUXE EXECUTIVE DISPLAY BAGS",
+    "searchName": "deluxe executive display bags",
+    "category": "Leatherite Executive Bags Series",
+    "page": "leatherite-executive-bags.html",
+    "codes": [
+      "CP401-10",
+      "CP401-20",
+      "CP401-30",
+      "CP401-40"
+    ]
+  },
+  {
+    "productId": 61,
+    "productName": "DELUXE EXECUTIVE DISPLAY BAGS",
+    "searchName": "deluxe executive display bags",
+    "category": "Leatherite Executive Bags Series",
+    "page": "leatherite-executive-bags.html",
+    "codes": [
+      "CP400-10",
+      "CP400-20",
+      "CP400-30",
+      "CP400-40"
+    ]
+  },
+  {
+    "productId": 66,
+    "productName": "DESK ORGANIZER",
+    "searchName": "desk organizer",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "10 Folder A3",
+      "20 Folder A3",
+      "30 Folder A3",
+      "10 Folder A4",
+      "20 Folder A4",
+      "30 Folder A4"
     ]
   },
   {
@@ -142,6 +327,27 @@
     ]
   },
   {
+    "productId": 57,
+    "productName": "DOCUMENT CASE",
+    "searchName": "document case",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL812F"
+    ]
+  },
+  {
+    "productId": 58,
+    "productName": "DOCUMENT CASE",
+    "searchName": "document case",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "STYLO DC A4",
+      "STYLO DC FC"
+    ]
+  },
+  {
     "productId": 73,
     "productName": "Document Case",
     "searchName": "document case",
@@ -149,16 +355,6 @@
     "page": "stationery-products.html",
     "codes": [
       "CL318A"
-    ]
-  },
-  {
-    "productId": 47,
-    "productName": "Document Cases",
-    "searchName": "document cases",
-    "category": "Document Bags / Expanding Files Series",
-    "page": "document-bags.html",
-    "codes": [
-      "CL812F"
     ]
   },
   {
@@ -243,47 +439,122 @@
     ]
   },
   {
-    "productId": 60,
-    "productName": "Executive Bags with Display Leaves",
-    "searchName": "executive bags with display leaves",
+    "productId": 62,
+    "productName": "EXECUTIVE BAGS WITH MULTIFUNCTIONAL ZIP PAD FOLIO WITH 4 RING",
+    "searchName": "executive bags with multifunctional zip pad folio with 4 ring",
     "category": "Leatherite Executive Bags Series",
     "page": "leatherite-executive-bags.html",
-    "codes": []
-  },
-  {
-    "productId": 61,
-    "productName": "Executive Bags with Multifunctional Zip Pad Folio with 2 Ring",
-    "searchName": "executive bags with multifunctional zip pad folio with 2 ring",
-    "category": "Leatherite Executive Bags Series",
-    "page": "leatherite-executive-bags.html",
-    "codes": []
+    "codes": [
+      "CP131"
+    ]
   },
   {
     "productId": 44,
-    "productName": "Expanding Files",
+    "productName": "EXPANDING FILES",
     "searchName": "expanding files",
     "category": "Document Bags / Expanding Files Series",
     "page": "document-bags.html",
     "codes": [
-      "CL813F",
-      "CL1212F",
-      "CL8821",
-      "CL8065F",
-      "CL6016F",
-      "CL6018",
-      "CL6026F",
-      "CL6028F"
+      "CL813F"
     ]
   },
   {
     "productId": 45,
-    "productName": "Expanding Wallets",
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL1212F"
+    ]
+  },
+  {
+    "productId": 46,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL8821F"
+    ]
+  },
+  {
+    "productId": 47,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL8065F"
+    ]
+  },
+  {
+    "productId": 48,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL6016F"
+    ]
+  },
+  {
+    "productId": 49,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL6018F"
+    ]
+  },
+  {
+    "productId": 50,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL6026F"
+    ]
+  },
+  {
+    "productId": 51,
+    "productName": "EXPANDING FILES",
+    "searchName": "expanding files",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL6028F"
+    ]
+  },
+  {
+    "productId": 52,
+    "productName": "EXPANDING WALLETS",
     "searchName": "expanding wallets",
     "category": "Document Bags / Expanding Files Series",
     "page": "document-bags.html",
     "codes": [
-      "CL8057A",
-      "CL8071A",
+      "CL8057A"
+    ]
+  },
+  {
+    "productId": 53,
+    "productName": "EXPANDING WALLETS",
+    "searchName": "expanding wallets",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
+      "CL8071A"
+    ]
+  },
+  {
+    "productId": 54,
+    "productName": "EXPANDING WALLETS",
+    "searchName": "expanding wallets",
+    "category": "Document Bags / Expanding Files Series",
+    "page": "document-bags.html",
+    "codes": [
       "CL816A"
     ]
   },
@@ -311,12 +582,26 @@
     ]
   },
   {
-    "productId": 55,
-    "productName": "Info Folder",
-    "searchName": "info folder",
+    "productId": 59,
+    "productName": "INFORMATION FOLDER",
+    "searchName": "information folder",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
-    "codes": []
+    "codes": [
+      "INFO FOLDER A3",
+      "INFO FOLDER A4"
+    ]
+  },
+  {
+    "productId": 65,
+    "productName": "INFORMATION STAND",
+    "searchName": "information stand",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "10 Folder A3",
+      "10/20 Folder A4"
+    ]
   },
   {
     "productId": 2,
@@ -331,20 +616,24 @@
     ]
   },
   {
-    "productId": 54,
-    "productName": "Magnetic Card Case",
+    "productId": 57,
+    "productName": "MAGNETIC CARD CASE",
     "searchName": "magnetic card case",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
-    "codes": []
+    "codes": [
+      "CL504"
+    ]
   },
   {
-    "productId": 56,
-    "productName": "Magnetic Panel Folder",
-    "searchName": "magnetic panel folder",
+    "productId": 58,
+    "productName": "MAGNETIC CARD CASE",
+    "searchName": "magnetic card case",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
-    "codes": []
+    "codes": [
+      "CL508"
+    ]
   },
   {
     "productId": 43,
@@ -357,39 +646,14 @@
     ]
   },
   {
-    "productId": 64,
-    "productName": "Models , CP56, CP66, CP96, CP10, CP100, CP131)",
-    "searchName": "models cp56 cp66 cp96 cp10 cp100 cp131",
-    "category": "PP & Leatherite Conference Files / Hotel Files",
-    "page": "conference-folders.html",
+    "productId": 62,
+    "productName": "MULTI-ROTARY WALL UNIT",
+    "searchName": "multi rotary wall unit",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
     "codes": [
-      "CP24",
-      "CP25",
-      "CP31",
-      "CP37",
-      "CP45"
-    ]
-  },
-  {
-    "productId": 63,
-    "productName": "Multifunctional Conference Files",
-    "searchName": "multifunctional conference files",
-    "category": "PP & Leatherite Conference Files / Hotel Files",
-    "page": "conference-folders.html",
-    "codes": [
-      "CL102A"
-    ]
-  },
-  {
-    "productId": 31,
-    "productName": "Name Card Albumn",
-    "searchName": "name card albumn",
-    "category": "Visiting Card Holders Series",
-    "page": "card-holders.html",
-    "codes": [
-      "CL120K",
-      "CL240K",
-      "CL480K"
+      "5 Folder",
+      "10 Folder"
     ]
   },
   {
@@ -415,12 +679,15 @@
     ]
   },
   {
-    "productId": 59,
-    "productName": "Peel and Stick Sheet",
-    "searchName": "peel and stick sheet",
+    "productId": 64,
+    "productName": "PEEL & STICK SHEET",
+    "searchName": "peel stick sheet",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
-    "codes": []
+    "codes": [
+      "1 Folder A3",
+      "1 Folder A4"
+    ]
   },
   {
     "productId": 66,
@@ -502,8 +769,8 @@
     ]
   },
   {
-    "productId": 65,
-    "productName": "Presentation Files",
+    "productId": 62,
+    "productName": "Presentation files",
     "searchName": "presentation files",
     "category": "PP & Leatherite Conference Files / Hotel Files",
     "page": "conference-folders.html",
@@ -824,15 +1091,42 @@
   },
   {
     "productId": 53,
-    "productName": "PVC Clear Card Case",
+    "productName": "PVC CLEAR CARD CASE",
     "searchName": "pvc clear card case",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
     "codes": [
-      "CL201",
-      "CL202",
-      "CL203",
-      "CL204"
+      "CL201(T)"
+    ]
+  },
+  {
+    "productId": 54,
+    "productName": "PVC CLEAR CARD CASE",
+    "searchName": "pvc clear card case",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "CL202(T)"
+    ]
+  },
+  {
+    "productId": 55,
+    "productName": "PVC CLEAR CARD CASE",
+    "searchName": "pvc clear card case",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "CL203(B)"
+    ]
+  },
+  {
+    "productId": 56,
+    "productName": "PVC CLEAR CARD CASE",
+    "searchName": "pvc clear card case",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "CL204(B)"
     ]
   },
   {
@@ -1058,8 +1352,21 @@
   },
   {
     "productId": 1,
-    "productName": "Strip File",
-    "searchName": "strip file",
+    "productName": "Strip File A4",
+    "searchName": "strip file a4",
+    "category": "Report Cover Files",
+    "page": "report-cover-files.html",
+    "codes": [
+      "CL10 (Ikon)",
+      "CL12",
+      "CL22",
+      "CL286"
+    ]
+  },
+  {
+    "productId": 101,
+    "productName": "Strip File FC",
+    "searchName": "strip file fc",
     "category": "Report Cover Files",
     "page": "report-cover-files.html",
     "codes": [
@@ -1080,20 +1387,47 @@
     ]
   },
   {
-    "productId": 58,
-    "productName": "Wall Hangers",
-    "searchName": "wall hangers",
-    "category": "Display Solution Products Series",
-    "page": "display-files.html",
-    "codes": []
+    "productId": 30,
+    "productName": "Visiting Card Holder",
+    "searchName": "visiting card holder",
+    "category": "Visiting Card Holders Series",
+    "page": "card-holders.html",
+    "codes": [
+      "CL40K"
+    ]
   },
   {
-    "productId": 57,
-    "productName": "Wall Unit Bracket with Folders",
-    "searchName": "wall unit bracket with folders",
+    "productId": 63,
+    "productName": "WALL HANGER",
+    "searchName": "wall hanger",
     "category": "Display Solution Products Series",
     "page": "display-files.html",
-    "codes": []
+    "codes": [
+      "1 Folder A3",
+      "1 Folder A4"
+    ]
+  },
+  {
+    "productId": 60,
+    "productName": "WALL UNIT STAND",
+    "searchName": "wall unit stand",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "5 Folder",
+      "10 Folder"
+    ]
+  },
+  {
+    "productId": 61,
+    "productName": "WALL UNIT STAND",
+    "searchName": "wall unit stand",
+    "category": "Display Solution Products Series",
+    "page": "display-files.html",
+    "codes": [
+      "Supreme Wall Unit A3",
+      "Supreme Wall Unit A4"
+    ]
   }
 ];
 

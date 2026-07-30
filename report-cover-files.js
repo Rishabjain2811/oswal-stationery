@@ -1,12 +1,28 @@
 const categoryProducts = [
   {
     "id": 1,
-    "name": "Strip File",
-    "desc": "Clear strip files for A4/FC documents.",
+    "name": "Strip File A4 ",
+    "desc": "Clear strip files for A4 documents.",
     "description": "",
     "specs": {
       "itemCode": ["CL10 (Ikon)", "CL12", "CL22", "CL286"],
-      "size": ["A4/FC", "A4/FC", "A4/FC", "A4/FC"],
+      "size": ["A4", "A4", "A4", "A4"],
+      "thickness": ["  0.10mm", "  0.12mm", "  0.22mm", "  0.32mm"],
+      "packing": ["10/1500/Ctn", "10/1300/Ctn", "10/1000/Ctn", "10/180/720/Ctn"],
+      "colour": "Clear"
+    },
+    "image": "CL10.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 101,
+    "name": "Strip File FC",
+    "desc": "Clear strip files for FC documents.",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL10 (Ikon)", "CL12", "CL22", "CL286"],
+      "size": ["FC", "FC", "FC", "FC"],
       "thickness": ["  0.10mm", "  0.12mm", "  0.22mm", "  0.32mm"],
       "packing": ["10/1500/Ctn", "10/1300/Ctn", "10/1000/Ctn", "10/180/720/Ctn"],
       "colour": "Clear"
@@ -125,13 +141,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

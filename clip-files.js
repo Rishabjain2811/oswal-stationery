@@ -28,7 +28,7 @@ const categoryProducts = [
       
       "colours": ["Pink", "Green", "Blue", "Orange"]
     },
-    "image": "Spring Clip.png",
+    "image": "Spring clip.png",
     "imageClass": "product-image-large",
 
     "featured": false
@@ -46,7 +46,7 @@ const categoryProducts = [
       
       "colours": ["Pink", "Green", "Blue", "Orange"]
     },
-    "image": "dual clip.png",
+    "image": "Dual clip.png",
     "imageClass": "product-image-large",
     "featured": false
   },
@@ -129,13 +129,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

@@ -7,7 +7,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL303"],
       "size": ["CHQ"],
-      "thickness": ["-"],
+      "thickness": ["Expandable Cloth"],
       "packing": ["250/1000/Ctn"],
       "colours": ["Blue", "Black","Pink","Green","Red"]
     },
@@ -23,7 +23,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL503A"],
       "size": ["A3"],
-      "thickness": ["-"],
+      "thickness": ["Expandable Cloth"],
       "packing": ["60/240/Ctn"],
       "colours": ["Blue", "Yellow","Green","Red"]
     },
@@ -55,7 +55,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL703FT"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Top Loading Exp'dable Cloth"],
       "packing": ["90/360/Ctn"],
       "colours": ["Blue", "Black","Green","Pink"]
     },
@@ -71,7 +71,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL803F"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Exp'dable Cloth"],
       "packing": ["50/200/Ctn"],
       "colours": ["Blue", "Purple","Green","Yellow","Orange"]
     },
@@ -87,7 +87,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL903F"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Exp'dable Cloth"],
       "packing": ["50/200/Ctn"],
       "colours": ["Blue","Red","Green","Yellow","Orange"]
     },
@@ -103,7 +103,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL605F"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Exp'dable Cloth with Partition"],
       "packing": ["30/120/Ctn"],
       "colours": ["Blue","Pink","Green","Yellow","Orange"]
     },
@@ -119,7 +119,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["IKON 603ECO"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Exp'dable Cloth"],
       "packing": ["100/400/Ctn"],
       "colours": ["Blue","Red","Green","Yellow"]
     },
@@ -135,7 +135,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL114F"],
       "size": ["FC"],
-      "thickness": ["-"],
+      "thickness": ["Top Loading Button Envelop with Gusset"],
       "packing": ["360/720/Ctn"],
       "colours": ["Clear"]
     },
@@ -151,7 +151,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL119F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["Top Loading String Envelop with Gusset"],
     "packing": ["360/720/Ctn"],
     "colours": ["Clear"]
   },
@@ -231,7 +231,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL1000F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["6 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Clear","Purple","Pink","Blue","Green","Indigo"]
   },
@@ -343,7 +343,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL1044F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Indigo","Pink","Blue","Green"]
   },
@@ -359,7 +359,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2000F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["6 Combo Designs"],
     "packing": ["480/960/Ctn"],
     "colours": ["Indigo","Pink","Blue","Green","Orange"]
   },
@@ -423,7 +423,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2004F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Pink","Blue","Red","Yellow"]
   },
@@ -439,7 +439,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2005F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Green","Blue","Orange","Light Orange"]
   },
@@ -455,7 +455,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2029F"],
     "size": ["FC"],
-    "thickness": ["Top Loading"],
+    "thickness": ["Top Loading with 4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Green","Blue","Orange","Pink"]
   },
@@ -471,7 +471,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2030F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["Top Loading "],
     "packing": ["360/720/Ctn"],
     "colours": ["Green","Blue","Yellow","Pink","Red"]
   },
@@ -487,7 +487,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2401F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Grey","Dark Blue","Red","Light Blue"]
   },
@@ -503,7 +503,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL2402F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Orange","Blue","Indigo","Green"]
   },
@@ -519,7 +519,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL3000F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["6 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Orange","Blue","Indigo","Green","Pink","Yellow"]
   },
@@ -535,7 +535,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL3020F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["6 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["White"]
   },
@@ -551,7 +551,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL3021F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["4 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["Orange","Blue","Pink","Green"]
   },
@@ -567,7 +567,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL3022F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["3 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": ["White"]
   },
@@ -599,7 +599,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL4000F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["12 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": []
   },
@@ -615,7 +615,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL5000F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["12 Combo Designs"],
     "packing": ["360/720/Ctn"],
     "colours": []
   },
@@ -631,7 +631,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL209F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["My Clear Bag/0.14mm"],
     "packing": ["360/720/Ctn"],
     "colours": ["Orange","Blue","Pink","Green","Red"]
   },
@@ -647,7 +647,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL211F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["Top Loading "],
     "packing": ["300/600/Ctn"],
     "colours": ["Orange","Blue","Pink","Green","Red"]
   },
@@ -663,7 +663,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL212F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["Side Loading "],
     "packing": ["300/600/Ctn"],
     "colours": ["Orange","Blue","Pink","Green","Red"]
   },
@@ -679,7 +679,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL236F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["D/Pkt with Exp'dable Gusset "],
     "packing": ["240/480/Ctn"],
     "colours": ["Orange","Blue","Pink","Green","Red"]
   },
@@ -695,7 +695,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL402F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["0.50mm/Glossy Bag "],
     "packing": ["180/360/Ctn"],
     "colours": ["Orange","Blue","Yellow","Green","Red"]
   },
@@ -711,7 +711,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL408F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["0.35m/Double side Pkt"],
     "packing": ["60/240/Ctn"],
     "colours": ["Yellow","Aqua","Pink","Blue"]
   },
@@ -727,7 +727,7 @@ const categoryProducts = [
   "specs": {
     "itemCode": ["CL410F"],
     "size": ["FC"],
-    "thickness": ["-"],
+    "thickness": ["Verticle Stripes with 2 Buttons"],
     "packing": ["125/500/Ctn"],
     "colours": ["Clear","Green","Red","Blue","Yellow"]
   },
@@ -747,13 +747,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

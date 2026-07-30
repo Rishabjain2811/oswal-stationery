@@ -1,20 +1,52 @@
 const categoryProducts = [
   {
     "id": 60,
-    "name": "Executive Bags with Display Leaves",
-    "desc": "Premium Executive Bags with Display Leaves",
+    "name": "DELUXE EXECUTIVE DISPLAY BAGS",
+    "desc": "DELUXE EXECUTIVE DISPLAY BAGS",
     "description": "",
-    "image": "CL1027F.jpg",
+    "specs": {
+      "itemCode": ["CP401-10","CP401-20","CP401-30","CP401-40"],
+      "size": ["FC","FC","FC","FC"],
+      "thickness": ["10 Pockets","20 Pockets","30 Pockets","40 Pockets"],
+      "packing": ["10/60/Ctn","10/60/Ctn","10/60/Ctn","10/60/Ctn"],
+      "colour": ["Red","Yellow","Brown"]
+    },
+    "image": "CP401-10.png",
+    "imageClass": "product-image-large",
     "featured": true
   },
   {
     "id": 61,
-    "name": "Executive Bags with Multifunctional Zip Pad Folio with 2 Ring",
-    "desc": "Premium Executive Bags with Multifunctional Zip Pad Folio with 2 Ring",
+    "name": "DELUXE EXECUTIVE DISPLAY BAGS",
+    "desc": "DELUXE EXECUTIVE DISPLAY BAGS",
     "description": "",
-    "image": "CL1027F.jpg",
-    "featured": false
-  }
+    "specs": {
+      "itemCode": ["CP400-10","CP400-20","CP400-30","CP400-40"],
+      "size": ["B4","B4","B4","B4"],
+      "thickness": ["10 Pockets","20 Pockets","30 Pockets","40 Pockets"],
+      "packing": ["10/60/Ctn","10/60/Ctn","10/60/Ctn","10/60/Ctn"],
+      "colour": ["Red","Yellow","Brown"]
+    },
+    "image": "CP401-10.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 62,
+    "name": "EXECUTIVE BAGS WITH MULTIFUNCTIONAL ZIP PAD FOLIO WITH 4 RING",
+    "desc": "EXECUTIVE BAGS WITH MULTIFUNCTIONAL ZIP PAD FOLIO WITH 4 RING",
+    "description": "",
+    "specs": {
+      "itemCode": ["CP131"],
+      "size": ["FC"],
+      "thickness": ["Premium Leatherite Executive Bag with 4 Ring & Display Leaves"],
+      "packing": ["6/42/Ctn"],
+      "colour": ["Red","Black","Brown","Tan"]
+    },
+    "image": "CP131.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
 ];
 
 var CATEGORY = 'Leatherite Executive Bags Series';
@@ -27,13 +59,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

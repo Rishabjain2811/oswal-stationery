@@ -128,11 +128,12 @@
       ? product.images
       : (product.image ? [product.image] : []);
     if (!images.length) return '';
+    var altText = product.name + ' - ' + (product.desc || product.description || 'Premium office stationery from OSWAL Gift N Stationery Chennai');
     if (images.length === 1) {
-      return '<img src="' + images[0] + '" alt="' + product.name + '" class="product-image ' + imageClass + '" />';
+      return '<img src="' + images[0] + '" alt="' + altText + '" class="product-image ' + imageClass + '" loading="lazy" />';
     }
     return '<div class="product-image-row">' + images.map(function (src, index) {
-      return '<img src="' + src + '" alt="' + product.name + ' ' + (index + 1) + '" class="product-image ' + imageClass + '" />';
+      return '<img src="' + src + '" alt="' + altText + ' - Image ' + (index + 1) + '" class="product-image ' + imageClass + '" loading="lazy" />';
     }).join('') + '</div>';
   }
 

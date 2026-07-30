@@ -93,68 +93,6 @@
     }
   },
   {
-    "key": "card-holders.html::30",
-    "page": "card-holders.html",
-    "category": "Visiting Card Holders Series",
-    "product": {
-      "id": 30,
-      "name": "600 Card Albumn",
-      "desc": "Premium Card Albumn",
-      "description": "",
-      "specs": {
-        "itemCode": [
-          "CL40K"
-        ],
-        "size": [
-          "Pocket Size"
-        ],
-        "thickness": [
-          "Name Card Holder"
-        ],
-        "packing": [
-          "100/500/Ctn"
-        ],
-        "colours": [
-          "Blue",
-          "Yellow",
-          "Red"
-        ]
-      },
-      "image": "CL40K.jpeg",
-      "imageClass": "product-image-large"
-    }
-  },
-  {
-    "key": "card-holders.html::32",
-    "page": "card-holders.html",
-    "category": "Visiting Card Holders Series",
-    "product": {
-      "id": 32,
-      "name": "600 Card Albumn",
-      "desc": "Premium Card Albumn",
-      "description": "",
-      "specs": {
-        "itemCode": [
-          "600 IC (ICON)"
-        ],
-        "size": [
-          "A4"
-        ],
-        "thickness": [
-          "Visiting Card Albumn"
-        ],
-        "packing": [
-          "18/72/Ctn"
-        ],
-        "colours": [
-          "Blue"
-        ]
-      },
-      "image": "CL600.png",
-      "imageClass": "product-image-large"
-    }
-  },
-  {
     "key": "clear-books.html::17",
     "page": "clear-books.html",
     "category": "Clear Books Series",
@@ -229,6 +167,48 @@
     }
   },
   {
+    "key": "clear-books.html::20",
+    "page": "clear-books.html",
+    "category": "Clear Books Series",
+    "product": {
+      "id": 20,
+      "name": "B4 Certificate File",
+      "desc": "Premium B4 Certificate file",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "ICON 771",
+          "ICON 772",
+          "ICON 773",
+          "ICON 774"
+        ],
+        "size": [
+          "B4",
+          "B4",
+          "B4",
+          "B4"
+        ],
+        "thickness": [
+          "10 Pocket",
+          "20 Pocket",
+          "30 Pocket",
+          "40 Pocket"
+        ],
+        "packing": [
+          "12/48/Ctn",
+          "12/48/Ctn",
+          "10/40/Ctn",
+          "10/40/Ctn"
+        ],
+        "colours": [
+          "Blue"
+        ]
+      },
+      "image": "Icon771.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
     "key": "clear-books.html::19",
     "page": "clear-books.html",
     "category": "Clear Books Series",
@@ -271,27 +251,738 @@
     }
   },
   {
-    "key": "document-bags.html::46",
-    "page": "document-bags.html",
-    "category": "Document Bags / Expanding Files Series",
+    "key": "card-holders.html::32",
+    "page": "card-holders.html",
+    "category": "Visiting Card Holders Series",
     "product": {
-      "id": 46,
-      "name": "Cheque Book Expanding Bags (CL4406, CL4409)",
-      "desc": "Premium Cheque Book Expanding Bags (CL4406, CL4409)",
+      "id": 32,
+      "name": "Buisness Cards Albumn",
+      "desc": "Premium Card Albumn",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "ICON 600IC"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "600 Card Albumn with Index"
+        ],
+        "packing": [
+          "18/72/Ctn"
+        ],
+        "colours": [
+          "Blue",
+          "Grey"
+        ]
+      },
+      "image": "CL600.png",
+      "imageClass": "product-image-large"
     }
   },
   {
-    "key": "conference-folders.html::62",
+    "key": "card-holders.html::31",
+    "page": "card-holders.html",
+    "category": "Visiting Card Holders Series",
+    "product": {
+      "id": 31,
+      "name": "Buisness Cards Holder",
+      "desc": "Premium Card Holder",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL120K",
+          "CL240K",
+          "CL480K"
+        ],
+        "size": [
+          "120 Cards",
+          "240 Cards",
+          "480 Cards"
+        ],
+        "thickness": [
+          "120 Cards Holder with case",
+          "240 Cards Holder with case",
+          "480 Cards Holder with case"
+        ],
+        "packing": [
+          "48/192/Ctn",
+          "24/96/Ctn",
+          "12/48/Ctn"
+        ],
+        "colours": [
+          "Grey",
+          "Blue",
+          "Red",
+          "Green"
+        ]
+      },
+      "image": "CL240K.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::55",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 55,
+      "name": "CHEQUE BOOKS EXPANDING",
+      "desc": "CHEQUE BOOKS EXPANDING",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL4406"
+        ],
+        "size": [
+          "CHQ"
+        ],
+        "thickness": [
+          "13 Pocket with Button"
+        ],
+        "packing": [
+          "30/180/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Yellow",
+          "Red",
+          "Purple",
+          "Green"
+        ]
+      },
+      "image": "CL4406.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::56",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 56,
+      "name": "CHEQUE BOOKS EXPANDING",
+      "desc": "CHEQUE BOOKS EXPANDING",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL4409"
+        ],
+        "size": [
+          "CHQ"
+        ],
+        "thickness": [
+          "13 Pocket with Elastic Closure"
+        ],
+        "packing": [
+          "40/240/Ctn"
+        ],
+        "colour": [
+          "Orange",
+          "Navy Blue",
+          "Red",
+          "Green"
+        ]
+      },
+      "image": "CL4409.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::63",
     "page": "conference-folders.html",
     "category": "PP & Leatherite Conference Files / Hotel Files",
     "product": {
-      "id": 62,
-      "name": "Conference Files (CL9001A)",
-      "desc": "Premium Conference Files (CL9001A)",
+      "id": 63,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL9001A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Multifunction Conference Files with Button Loop"
+        ],
+        "packing": [
+          "30/120/Ctn"
+        ],
+        "colour": "Blue"
+      },
+      "image": "CL9001A.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::64",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 64,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL102A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Multifunction 5 pkt Expanding File with A4 Pad"
+        ],
+        "packing": [
+          "30/60/Ctn"
+        ],
+        "colour": "Blue"
+      },
+      "image": "CL102A.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::65",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 65,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP24"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Leatherite File with Button Loop"
+        ],
+        "packing": [
+          "12/72/Ctn"
+        ],
+        "colour": "Black"
+      },
+      "image": "CP24.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::66",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 66,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP25"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Premium Leatherite File with Button Loop"
+        ],
+        "packing": [
+          "10/60/Ctn"
+        ],
+        "colour": "Black"
+      },
+      "image": "CP25.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::67",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 67,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP31"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Leatherite File with Zip Closure"
+        ],
+        "packing": [
+          "10/60/Ctn"
+        ],
+        "colour": "Black"
+      },
+      "image": "CP31.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::68",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 68,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP37"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "Leatherite File with Punchless Clip & Zip Closure"
+        ],
+        "packing": [
+          "10/50/Ctn"
+        ],
+        "colour": [
+          "Black",
+          "Tan"
+        ]
+      },
+      "image": "CP37.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::69",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 69,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP45"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Leatherite File with 2 Ring & Button Loop"
+        ],
+        "packing": [
+          "10/50/Ctn"
+        ],
+        "colour": [
+          "Tan"
+        ]
+      },
+      "image": "CP45.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::70",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 70,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP50"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Leatherite File with Button Loop"
+        ],
+        "packing": [
+          "10/60/Ctn"
+        ],
+        "colour": [
+          "Black",
+          "Tan"
+        ]
+      },
+      "image": "CP50.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::71",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 71,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP66"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Leatherite File D/Colour with Button Loop"
+        ],
+        "packing": [
+          "10/60/Ctn"
+        ],
+        "colour": [
+          "Black",
+          "Tan"
+        ]
+      },
+      "image": "CP66.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::72",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 72,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP10"
+        ],
+        "size": [
+          "A5"
+        ],
+        "thickness": [
+          "Leatherite File with Corner Clips"
+        ],
+        "packing": [
+          "30/150/Ctn"
+        ],
+        "colour": [
+          "Black"
+        ]
+      },
+      "image": "CP10.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::73",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 73,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP96"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "Leatherite File with 2 Ring , Handle & Zip Closure"
+        ],
+        "packing": [
+          "6/42/Ctn"
+        ],
+        "colour": [
+          "Black"
+        ]
+      },
+      "image": "CP96.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "conference-folders.html::74",
+    "page": "conference-folders.html",
+    "category": "PP & Leatherite Conference Files / Hotel Files",
+    "product": {
+      "id": 74,
+      "name": "Conference Files",
+      "desc": "Conference files for A4/FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP100"
+        ],
+        "size": [
+          "A5"
+        ],
+        "thickness": [
+          "Leatherite Hotel Bill File"
+        ],
+        "packing": [
+          "30/150/Ctn"
+        ],
+        "colour": [
+          "Black",
+          "Tan",
+          "Burgundy"
+        ]
+      },
+      "image": "CP100.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "paper-board-files.html::54",
+    "page": "paper-board-files.html",
+    "category": "Paper Board Files Series",
+    "product": {
+      "id": 54,
+      "name": "D/S PP COATED RING BINDER WITH FRONT VIEW POCKET",
+      "desc": "Premium double side PP coated ring binder with front view pocket",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL501"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "2D Ring Binder"
+        ],
+        "packing": [
+          "24/72/Ctn"
+        ],
+        "colours": [
+          "Navy Blue"
+        ]
+      },
+      "image": "CL501.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "leatherite-executive-bags.html::60",
+    "page": "leatherite-executive-bags.html",
+    "category": "Leatherite Executive Bags Series",
+    "product": {
+      "id": 60,
+      "name": "DELUXE EXECUTIVE DISPLAY BAGS",
+      "desc": "DELUXE EXECUTIVE DISPLAY BAGS",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP401-10",
+          "CP401-20",
+          "CP401-30",
+          "CP401-40"
+        ],
+        "size": [
+          "FC",
+          "FC",
+          "FC",
+          "FC"
+        ],
+        "thickness": [
+          "10 Pockets",
+          "20 Pockets",
+          "30 Pockets",
+          "40 Pockets"
+        ],
+        "packing": [
+          "10/60/Ctn",
+          "10/60/Ctn",
+          "10/60/Ctn",
+          "10/60/Ctn"
+        ],
+        "colour": [
+          "Red",
+          "Yellow",
+          "Brown"
+        ]
+      },
+      "image": "CP401-10.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "leatherite-executive-bags.html::61",
+    "page": "leatherite-executive-bags.html",
+    "category": "Leatherite Executive Bags Series",
+    "product": {
+      "id": 61,
+      "name": "DELUXE EXECUTIVE DISPLAY BAGS",
+      "desc": "DELUXE EXECUTIVE DISPLAY BAGS",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP400-10",
+          "CP400-20",
+          "CP400-30",
+          "CP400-40"
+        ],
+        "size": [
+          "B4",
+          "B4",
+          "B4",
+          "B4"
+        ],
+        "thickness": [
+          "10 Pockets",
+          "20 Pockets",
+          "30 Pockets",
+          "40 Pockets"
+        ],
+        "packing": [
+          "10/60/Ctn",
+          "10/60/Ctn",
+          "10/60/Ctn",
+          "10/60/Ctn"
+        ],
+        "colour": [
+          "Red",
+          "Yellow",
+          "Brown"
+        ]
+      },
+      "image": "CP401-10.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::66",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 66,
+      "name": "DESK ORGANIZER",
+      "desc": "DESK ORGANIZER",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "10 Folder A3",
+          "20 Folder A3",
+          "30 Folder A3",
+          "10 Folder A4",
+          "20 Folder A4",
+          "30 Folder A4"
+        ],
+        "size": [
+          "A3",
+          "A3",
+          "A3",
+          "A4",
+          "A4",
+          "A4"
+        ],
+        "thickness": [
+          "",
+          "",
+          "",
+          "Table Mount Display Stand",
+          "",
+          ""
+        ],
+        "packing": [
+          "1/5/Ctn",
+          "1/Ctn",
+          "1/Ctn",
+          "1/5/Ctn",
+          "1/5/Ctn",
+          "1/Ctn"
+        ],
+        "colour": [
+          "Yellow",
+          "Green",
+          "Black",
+          "Red",
+          "Blue",
+          "Grey"
+        ]
+      },
+      "image": "Desk.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::57",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 57,
+      "name": "DOCUMENT CASE",
+      "desc": "DOCUMENT CASE",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL812F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "2\" Width Solid Case with Handle/Buckle"
+        ],
+        "packing": [
+          "8/32/Ctn"
+        ],
+        "colour": [
+          "Blue"
+        ]
+      },
+      "image": "CL812F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::58",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 58,
+      "name": "DOCUMENT CASE",
+      "desc": "DOCUMENT CASE",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "STYLO DC A4",
+          "STYLO DC FC"
+        ],
+        "size": [
+          "A4 (1\" Width)",
+          "FC (1.5\" Width)"
+        ],
+        "thickness": [
+          "PP Transparent Doc. case with Press Lock"
+        ],
+        "packing": [
+          "6/60/Ctn",
+          "6/48/Ctn"
+        ],
+        "colour": [
+          "Clear",
+          "Green",
+          "Blue",
+          "Yellow",
+          "Pink",
+          "Orange"
+        ]
+      },
+      "image": "Stylo.png",
+      "imageClass": "product-image-large"
     }
   },
   {
@@ -328,8 +1019,8 @@
           "30 Pocket",
           "40 Pocket",
           "60 Pocket",
-          "80 Pocket",
-          "100 Pocket"
+          "80 Pocket with case",
+          "100 Pocket with case"
         ],
         "packing": [
           "24/96/Ctn",
@@ -439,18 +1130,6 @@
     }
   },
   {
-    "key": "document-bags.html::47",
-    "page": "document-bags.html",
-    "category": "Document Bags / Expanding Files Series",
-    "product": {
-      "id": 47,
-      "name": "Document Cases (CL812F, Stylo DC A4/FC)",
-      "desc": "Premium Document Cases (CL812F, Stylo DC A4/FC)",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
     "key": "button-files.html::75",
     "page": "button-files.html",
     "category": "Button Bags Series",
@@ -467,7 +1146,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Top Loading "
         ],
         "packing": [
           "300/600/Ctn"
@@ -501,7 +1180,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Side Loading "
         ],
         "packing": [
           "300/600/Ctn"
@@ -535,7 +1214,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "D/Pkt with Exp'dable Gusset "
         ],
         "packing": [
           "240/480/Ctn"
@@ -569,7 +1248,7 @@
           "FC"
         ],
         "thickness": [
-          "Level Arch Mechanism Double side Full PVC Box File , 2.5mm Board , Solid Colours"
+          "Solid Colours"
         ],
         "packing": [
           "1/50/Ctn"
@@ -603,7 +1282,7 @@
           "FC"
         ],
         "thickness": [
-          "Level Arch Mechanism Double side Full PVC Box File , 2.5mm Board, Pastel Colours"
+          "Pastel Colours"
         ],
         "packing": [
           "1/50/Ctn"
@@ -653,7 +1332,401 @@
           "Orange"
         ]
       },
-      "image": "dual clip.png",
+      "image": "Dual clip.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "leatherite-executive-bags.html::62",
+    "page": "leatherite-executive-bags.html",
+    "category": "Leatherite Executive Bags Series",
+    "product": {
+      "id": 62,
+      "name": "EXECUTIVE BAGS WITH MULTIFUNCTIONAL ZIP PAD FOLIO WITH 4 RING",
+      "desc": "EXECUTIVE BAGS WITH MULTIFUNCTIONAL ZIP PAD FOLIO WITH 4 RING",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CP131"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "Premium Leatherite Executive Bag with 4 Ring & Display Leaves"
+        ],
+        "packing": [
+          "6/42/Ctn"
+        ],
+        "colour": [
+          "Red",
+          "Black",
+          "Brown",
+          "Tan"
+        ]
+      },
+      "image": "CP131.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::44",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 44,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL813F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Grey"
+        ]
+      },
+      "image": "CL813F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::45",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 45,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL1212F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Green",
+          "Red",
+          "Black"
+        ]
+      },
+      "image": "CL1212F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::46",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 46,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL8821F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Green",
+          "Red",
+          "Purple",
+          "Orange"
+        ]
+      },
+      "image": "CL8821F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::47",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 47,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL8065F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Yellow",
+          "Red",
+          "Aqua",
+          "Orange"
+        ]
+      },
+      "image": "CL8065F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::48",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 48,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL6016F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Yellow",
+          "White",
+          "Pink",
+          "Green"
+        ]
+      },
+      "image": "CL6016F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::49",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 49,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL6018F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Red",
+          "Green"
+        ]
+      },
+      "image": "CL6018F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::50",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 50,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL6026F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B "
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Yellow",
+          "Green",
+          "Orange"
+        ]
+      },
+      "image": "CL6026F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::51",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 51,
+      "name": "EXPANDING FILES",
+      "desc": "EXPANDING FILES",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL6028F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "13 Pockets, H/B & Back Side Pocket"
+        ],
+        "packing": [
+          "12/48/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Red",
+          "Black"
+        ]
+      },
+      "image": "CL6028F.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::52",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 52,
+      "name": "EXPANDING WALLETS",
+      "desc": "EXPANDING WALLETS",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL8057A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "5 Pockets with 2 Buttons"
+        ],
+        "packing": [
+          "25/100/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Red",
+          "Yellow",
+          "Green"
+        ]
+      },
+      "image": "CL8057A.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::53",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 53,
+      "name": "EXPANDING WALLETS",
+      "desc": "EXPANDING WALLETS",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL8071A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "5 Pockets with Button Loop"
+        ],
+        "packing": [
+          "25/100/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Red",
+          "Yellow",
+          "Green"
+        ]
+      },
+      "image": "CL8071A.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "document-bags.html::54",
+    "page": "document-bags.html",
+    "category": "Document Bags / Expanding Files Series",
+    "product": {
+      "id": 54,
+      "name": "EXPANDING WALLETS",
+      "desc": "EXPANDING WALLETS",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL816A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "6 Pocket with Buckle"
+        ],
+        "packing": [
+          "25/100/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Grey",
+          "Black"
+        ]
+      },
+      "image": "CL816A.png",
       "imageClass": "product-image-large"
     }
   },
@@ -674,7 +1747,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Top Loading Button Envelop with Gusset"
         ],
         "packing": [
           "360/720/Ctn"
@@ -704,7 +1777,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Top Loading String Envelop with Gusset"
         ],
         "packing": [
           "360/720/Ctn"
@@ -715,54 +1788,6 @@
       },
       "image": "CL119F.png",
       "imageClass": "product-image-large"
-    }
-  },
-  {
-    "key": "leatherite-executive-bags.html::60",
-    "page": "leatherite-executive-bags.html",
-    "category": "Leatherite Executive Bags Series",
-    "product": {
-      "id": 60,
-      "name": "Executive Bags with Display Leaves",
-      "desc": "Premium Executive Bags with Display Leaves",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
-    "key": "leatherite-executive-bags.html::61",
-    "page": "leatherite-executive-bags.html",
-    "category": "Leatherite Executive Bags Series",
-    "product": {
-      "id": 61,
-      "name": "Executive Bags with Multifunctional Zip Pad Folio with 2 Ring",
-      "desc": "Premium Executive Bags with Multifunctional Zip Pad Folio with 2 Ring",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
-    "key": "document-bags.html::44",
-    "page": "document-bags.html",
-    "category": "Document Bags / Expanding Files Series",
-    "product": {
-      "id": 44,
-      "name": "Expanding Files (CL813F, CL1212F, CL8821, CL8065F, CL6016F, CL6018, CL6026F, CL6028F)",
-      "desc": "Premium Expanding Files (CL813F, CL1212F, CL8821, CL8065F, CL6016F, CL6018, CL6026F, CL6028F)",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
-    "key": "document-bags.html::45",
-    "page": "document-bags.html",
-    "category": "Document Bags / Expanding Files Series",
-    "product": {
-      "id": 45,
-      "name": "Expanding Wallets (CL8057A, CL8071A, CL816A)",
-      "desc": "Premium Expanding Wallets (CL8057A, CL8071A, CL816A)",
-      "description": "",
-      "image": "CL1027F.jpg"
     }
   },
   {
@@ -836,15 +1861,77 @@
     }
   },
   {
-    "key": "display-files.html::55",
+    "key": "display-files.html::59",
     "page": "display-files.html",
     "category": "Display Solution Products Series",
     "product": {
-      "id": 55,
-      "name": "Info Folder",
-      "desc": "Premium Info Folder",
+      "id": 59,
+      "name": "INFORMATION FOLDER",
+      "desc": "INFORMATION FOLDER",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "INFO FOLDER A3",
+          "INFO FOLDER A4"
+        ],
+        "size": [
+          "A3",
+          "A4"
+        ],
+        "thickness": [
+          "-",
+          "-"
+        ],
+        "packing": [
+          "5/50/300/Ctn",
+          "10/40/400/Ctn"
+        ],
+        "colour": [
+          "Blue",
+          "Black",
+          "White",
+          "Green",
+          "Orange",
+          "Yellow"
+        ]
+      },
+      "image": "Info.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::65",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 65,
+      "name": "INFORMATION STAND",
+      "desc": "INFORMATION STAND",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "10 Folder A3",
+          "10/20 Folder A4"
+        ],
+        "size": [
+          "A3",
+          "A4"
+        ],
+        "thickness": [
+          "-",
+          "-"
+        ],
+        "packing": [
+          "1/5/Ctn",
+          "1/5/Ctn"
+        ],
+        "colour": [
+          "Grey",
+          "White"
+        ]
+      },
+      "image": "Info Stand.png",
+      "imageClass": "product-image-large"
     }
   },
   {
@@ -884,27 +1971,110 @@
     }
   },
   {
-    "key": "display-files.html::54",
+    "key": "display-files.html::57",
     "page": "display-files.html",
     "category": "Display Solution Products Series",
     "product": {
-      "id": 54,
-      "name": "Magnetic Card Case",
-      "desc": "Premium Magnetic Card Case",
+      "id": 57,
+      "name": "MAGNETIC CARD CASE",
+      "desc": "MAGNETIC CARD CASE",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL504"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Document Holder with Magnetic Sheet at the back"
+        ],
+        "packing": [
+          "20/200/Ctn"
+        ],
+        "colour": [
+          "Blue"
+        ]
+      },
+      "image": "CL504.png",
+      "imageClass": "product-image-large"
     }
   },
   {
-    "key": "display-files.html::56",
+    "key": "display-files.html::58",
     "page": "display-files.html",
     "category": "Display Solution Products Series",
     "product": {
-      "id": 56,
-      "name": "Magnetic Panel Folder",
-      "desc": "Premium Magnetic Panel Folder",
+      "id": 58,
+      "name": "MAGNETIC CARD CASE",
+      "desc": "MAGNETIC CARD CASE",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL508"
+        ],
+        "size": [
+          "A3"
+        ],
+        "thickness": [
+          "Document Holder with Magnetic Sheet at the back"
+        ],
+        "packing": [
+          "20/120/Ctn"
+        ],
+        "colour": [
+          "Blue"
+        ]
+      },
+      "image": "CL508.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::62",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 62,
+      "name": "MULTI-ROTARY WALL UNIT",
+      "desc": "MULTI-ROTARY WALL UNIT",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "5 Folder",
+          "10 Folder",
+          "5 Folder",
+          "10 Folder"
+        ],
+        "size": [
+          "A3",
+          "A3",
+          "A4",
+          "A4"
+        ],
+        "thickness": [
+          "-",
+          "-",
+          "-",
+          "-"
+        ],
+        "packing": [
+          "1/5/Ctn",
+          "1/10/Ctn",
+          "1/5/Ctn",
+          "1/10/Ctn"
+        ],
+        "colour": [
+          "Grey",
+          "Black",
+          "Red",
+          "Green",
+          "Yellow",
+          "Blue"
+        ]
+      },
+      "image": "Multi.png",
+      "imageClass": "product-image-large"
     }
   },
   {
@@ -934,7 +2104,7 @@
         "thickness": [
           "",
           "",
-          "Chain Zip Runner , Mesh Texture. (For All)",
+          "Mesh Texture (For All)",
           "",
           ""
         ],
@@ -947,73 +2117,13 @@
         ],
         "colours": [
           "Green",
+          "White",
           "Blue",
           "Red",
-          "Yellow",
-          "Clear"
+          "Yellow"
         ]
       },
       "image": "Mesh.png",
-      "imageClass": "product-image-large"
-    }
-  },
-  {
-    "key": "conference-folders.html::64",
-    "page": "conference-folders.html",
-    "category": "PP & Leatherite Conference Files / Hotel Files",
-    "product": {
-      "id": 64,
-      "name": "Models (CP24, CP25, CP31, CP37, CP45, CP50(L), CP56, CP66, CP96, CP10, CP100, CP131(L))",
-      "desc": "Premium Models (CP24, CP25, CP31, CP37, CP45, CP50(L), CP56, CP66, CP96, CP10, CP100, CP131(L))",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
-    "key": "conference-folders.html::63",
-    "page": "conference-folders.html",
-    "category": "PP & Leatherite Conference Files / Hotel Files",
-    "product": {
-      "id": 63,
-      "name": "Multifunctional Conference Files (CL102A)",
-      "desc": "Premium Multifunctional Conference Files (CL102A)",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
-    "key": "card-holders.html::31",
-    "page": "card-holders.html",
-    "category": "Visiting Card Holders Series",
-    "product": {
-      "id": 31,
-      "name": "Name Card Albumn",
-      "desc": "Premium Card Albumn",
-      "description": "",
-      "specs": {
-        "itemCode": [
-          "CL120K",
-          "CL240K",
-          "CL480K"
-        ],
-        "size": [
-          "120 Cards",
-          "240 Cards",
-          "480 Cards"
-        ],
-        "thickness": [
-          "Name Card Holder- with case",
-          "Name Card Holder- with case",
-          "Name Card Holder- with case"
-        ],
-        "packing": [
-          "48/192/Ctn",
-          "24/96/Ctn",
-          "12/48/Ctn"
-        ],
-        "colours": []
-      },
-      "image": "CL240K.png",
       "imageClass": "product-image-large"
     }
   },
@@ -1036,14 +2146,18 @@
           "FC"
         ],
         "thickness": [
-          "2.2mm,",
-          "2D Ring Binder with Black Stopper."
+          "2.2mm",
+          "O/S PP Long Lever Clip File"
         ],
         "packing": [
-          "12/72/Ctn"
+          "24/72/Ctn"
         ],
         "colours": [
-          ""
+          "Pink",
+          "Green",
+          "Blue",
+          "Orange",
+          "Dark Blue"
         ]
       },
       "image": "CL308F.png",
@@ -1069,17 +2183,61 @@
           "FC"
         ],
         "thickness": [
-          "2.2mm,",
-          "2D Ring Binder with Black Stopper."
+          "2.2mm",
+          "O/S PP Coated 2D Ring Binder with Stopper,Solid & Pastel Colours"
         ],
         "packing": [
-          "12/72/Ctn"
+          "24/72/Ctn",
+          "24/72/Ctn"
         ],
         "colours": [
-          ""
+          "Pastel Blue",
+          "Pastel Pink",
+          "Pastel Aqua",
+          "Pastel Purple",
+          "Pastel Green",
+          "Blue",
+          "Grey",
+          "Green",
+          "Purple",
+          "Red"
         ]
       },
-      "image": "CL309F.png",
+      "image": "CL309A.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::64",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 64,
+      "name": "PEEL & STICK SHEET",
+      "desc": "PEEL & STICK SHEET",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "1 Folder A3",
+          "1 Folder A4"
+        ],
+        "size": [
+          "A3",
+          "A4"
+        ],
+        "thickness": [
+          "-",
+          "-"
+        ],
+        "packing": [
+          "10/50/Ctn",
+          "10/100/Ctn"
+        ],
+        "colour": [
+          "Blue"
+        ]
+      },
+      "image": "Peel.png",
       "imageClass": "product-image-large"
     }
   },
@@ -1100,7 +2258,7 @@
           "A4"
         ],
         "thickness": [
-          "Transparent Color PP Colour Index Divider , Set of 10 sheet with Name Tag"
+          "Transparent Color Index With Tab ,<br> Set of 10 sheet with Name Tag"
         ],
         "packing": [
           "80/160/Ctn"
@@ -1143,7 +2301,7 @@
           "",
           "",
           "",
-          "Multi-Hole PP Material Index Sheet",
+          "11Hole PP Material Index Sheet",
           "",
           ""
         ],
@@ -1180,7 +2338,7 @@
           "A4"
         ],
         "thickness": [
-          "Multi-Hole PP Material Index Sheet"
+          "11Hole PP Material Index Sheet"
         ],
         "packing": [
           "40/160/Ctn"
@@ -1232,11 +2390,7 @@
           "240/480/Ctn"
         ],
         "colours": [
-          "Blue",
-          "Clear",
-          "Pink",
-          "Yellow",
-          "Green"
+          "Clear"
         ]
       },
       "image": "CLP53.png",
@@ -1249,10 +2403,118 @@
     "category": "Display Solution Products Series",
     "product": {
       "id": 53,
-      "name": "PVC Clear Card Case (CL201, CL202, CL203, CL204)",
-      "desc": "Premium PVC Clear Card Case (CL201, CL202, CL203, CL204)",
+      "name": "PVC CLEAR CARD CASE",
+      "desc": "PVC CLEAR CARD CASE",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL201(T)"
+        ],
+        "size": [
+          "A3"
+        ],
+        "thickness": [
+          "Top Loading with Reinforced Edges"
+        ],
+        "packing": [
+          "30/120/Ctn"
+        ],
+        "colour": [
+          "Clear"
+        ]
+      },
+      "image": "CL201.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::54",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 54,
+      "name": "PVC CLEAR CARD CASE",
+      "desc": "PVC CLEAR CARD CASE",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL202(T)"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Top Loading with Reinforced Edges"
+        ],
+        "packing": [
+          "50/200/Ctn"
+        ],
+        "colour": [
+          "Clear"
+        ]
+      },
+      "image": "CL202.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::55",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 55,
+      "name": "PVC CLEAR CARD CASE",
+      "desc": "PVC CLEAR CARD CASE",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL203(B)"
+        ],
+        "size": [
+          "A3"
+        ],
+        "thickness": [
+          "Side Loading with Reinforced Edges"
+        ],
+        "packing": [
+          "30/120/Ctn"
+        ],
+        "colour": [
+          "Clear"
+        ]
+      },
+      "image": "Cl203.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::56",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 56,
+      "name": "PVC CLEAR CARD CASE",
+      "desc": "PVC CLEAR CARD CASE",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL204(B)"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Side Loading with Reinforced Edges"
+        ],
+        "packing": [
+          "50/200/Ctn"
+        ],
+        "colour": [
+          "Clear"
+        ]
+      },
+      "image": "CL204.png",
+      "imageClass": "product-image-large"
     }
   },
   {
@@ -1302,18 +2564,6 @@
     }
   },
   {
-    "key": "display-files.html::59",
-    "page": "display-files.html",
-    "category": "Display Solution Products Series",
-    "product": {
-      "id": 59,
-      "name": "Peel and Stick Sheet",
-      "desc": "Premium Peel and Stick Sheet",
-      "description": "",
-      "image": "CL1027F.jpg"
-    }
-  },
-  {
     "key": "button-files.html::78",
     "page": "button-files.html",
     "category": "Button Bags Series",
@@ -1330,7 +2580,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "0.50mm/Glossy Bag "
         ],
         "packing": [
           "180/360/Ctn"
@@ -1364,7 +2614,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "0.35m/Double side Pkt"
         ],
         "packing": [
           "60/240/Ctn"
@@ -1397,7 +2647,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Verticle Stripes with 2 Buttons"
         ],
         "packing": [
           "125/500/Ctn"
@@ -1415,15 +2665,31 @@
     }
   },
   {
-    "key": "conference-folders.html::65",
+    "key": "conference-folders.html::62",
     "page": "conference-folders.html",
     "category": "PP & Leatherite Conference Files / Hotel Files",
     "product": {
-      "id": 65,
-      "name": "Presentation Files (PP) (CL261A)",
-      "desc": "Premium Presentation Files (PP) (CL261A)",
+      "id": 62,
+      "name": "Presentation files",
+      "desc": "Presentation files for A4/FC documents.",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL261A"
+        ],
+        "size": [
+          "A4"
+        ],
+        "thickness": [
+          "Twin Pocket File"
+        ],
+        "packing": [
+          "5/250/500/Ctn"
+        ],
+        "colour": "Blue"
+      },
+      "image": "CL261A.png",
+      "imageClass": "product-image-large"
     }
   },
   {
@@ -1578,7 +2844,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "6 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -1809,7 +3075,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -1842,7 +3108,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "6 Combo Designs"
         ],
         "packing": [
           "480/960/Ctn"
@@ -1976,7 +3242,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2009,7 +3275,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2042,7 +3308,7 @@
           "FC"
         ],
         "thickness": [
-          "Top Loading"
+          "Top Loading with 4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2075,7 +3341,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Top Loading "
         ],
         "packing": [
           "360/720/Ctn"
@@ -2109,7 +3375,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2142,7 +3408,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2175,7 +3441,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "6 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2210,7 +3476,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "6 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2240,7 +3506,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "4 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2273,7 +3539,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "3 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2336,7 +3602,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "12 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2364,7 +3630,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "12 Combo Designs"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2392,7 +3658,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "My Clear Bag/0.14mm"
         ],
         "packing": [
           "360/720/Ctn"
@@ -2686,23 +3952,23 @@
         "thickness": [
           "",
           "",
-          "Net Partition, Chain Zip Runner , Satin Finished Material. (For All)",
+          "Net Partition (For All)",
           "",
           "",
           ""
         ],
         "packing": [
-          "//Ctn",
-          "//Ctn",
-          "//Ctn",
-          "//Ctn",
-          "//Ctn"
+          "10/720/2880/Ctn",
+          "10/600/2400/Ctn",
+          "10/500/2000/Ctn",
+          "10/300/1200/Ctn",
+          "10/240/960/Ctn",
+          "10/200/800/Ctn"
         ],
         "colours": [
           "Green",
-          "Orange",
+          "White",
           "Blue",
-          "Pink",
           "Red",
           "Yellow"
         ]
@@ -2878,7 +4144,7 @@
           "Orange"
         ]
       },
-      "image": "Spring Clip.png",
+      "image": "Spring clip.png",
       "imageClass": "product-image-large"
     }
   },
@@ -2899,7 +4165,7 @@
           "CHQ"
         ],
         "thickness": [
-          "-"
+          "Expandable Cloth"
         ],
         "packing": [
           "250/1000/Ctn"
@@ -2933,7 +4199,7 @@
           "A3"
         ],
         "thickness": [
-          "-"
+          "Expandable Cloth"
         ],
         "packing": [
           "60/240/Ctn"
@@ -3000,7 +4266,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Top Loading Exp'dable Cloth"
         ],
         "packing": [
           "90/360/Ctn"
@@ -3033,7 +4299,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Exp'dable Cloth"
         ],
         "packing": [
           "50/200/Ctn"
@@ -3067,7 +4333,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Exp'dable Cloth"
         ],
         "packing": [
           "50/200/Ctn"
@@ -3101,7 +4367,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Exp'dable Cloth with Partition"
         ],
         "packing": [
           "30/120/Ctn"
@@ -3135,7 +4401,7 @@
           "FC"
         ],
         "thickness": [
-          "-"
+          "Exp'dable Cloth"
         ],
         "packing": [
           "100/400/Ctn"
@@ -3157,8 +4423,8 @@
     "category": "Report Cover Files",
     "product": {
       "id": 1,
-      "name": "Strip File",
-      "desc": "Clear strip files for A4/FC documents.",
+      "name": "Strip File A4 ",
+      "desc": "Clear strip files for A4 documents.",
       "description": "",
       "specs": {
         "itemCode": [
@@ -3168,10 +4434,50 @@
           "CL286"
         ],
         "size": [
-          "A4/FC",
-          "A4/FC",
-          "A4/FC",
-          "A4/FC"
+          "A4",
+          "A4",
+          "A4",
+          "A4"
+        ],
+        "thickness": [
+          "  0.10mm",
+          "  0.12mm",
+          "  0.22mm",
+          "  0.32mm"
+        ],
+        "packing": [
+          "10/1500/Ctn",
+          "10/1300/Ctn",
+          "10/1000/Ctn",
+          "10/180/720/Ctn"
+        ],
+        "colour": "Clear"
+      },
+      "image": "CL10.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "report-cover-files.html::101",
+    "page": "report-cover-files.html",
+    "category": "Report Cover Files",
+    "product": {
+      "id": 101,
+      "name": "Strip File FC",
+      "desc": "Clear strip files for FC documents.",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL10 (Ikon)",
+          "CL12",
+          "CL22",
+          "CL286"
+        ],
+        "size": [
+          "FC",
+          "FC",
+          "FC",
+          "FC"
         ],
         "thickness": [
           "  0.10mm",
@@ -3220,27 +4526,158 @@
     }
   },
   {
-    "key": "display-files.html::58",
-    "page": "display-files.html",
-    "category": "Display Solution Products Series",
+    "key": "card-holders.html::30",
+    "page": "card-holders.html",
+    "category": "Visiting Card Holders Series",
     "product": {
-      "id": 58,
-      "name": "Wall Hangers",
-      "desc": "Premium Wall Hangers",
+      "id": 30,
+      "name": "Visiting Card Holder",
+      "desc": "Premium Card Holder",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "CL40K"
+        ],
+        "size": [
+          "Pocket Size"
+        ],
+        "thickness": [
+          "40 Cards Holder"
+        ],
+        "packing": [
+          "100/500/Ctn"
+        ],
+        "colours": [
+          "Blue",
+          "Yellow",
+          "Red"
+        ]
+      },
+      "image": "CL40K.jpeg",
+      "imageClass": "product-image-large"
     }
   },
   {
-    "key": "display-files.html::57",
+    "key": "display-files.html::63",
     "page": "display-files.html",
     "category": "Display Solution Products Series",
     "product": {
-      "id": 57,
-      "name": "Wall Unit Bracket with Folders",
-      "desc": "Premium Wall Unit Bracket with Folders",
+      "id": 63,
+      "name": "WALL HANGER",
+      "desc": "WALL HANGER",
       "description": "",
-      "image": "CL1027F.jpg"
+      "specs": {
+        "itemCode": [
+          "1 Folder A3",
+          "1 Folder A4"
+        ],
+        "size": [
+          "A3",
+          "A4"
+        ],
+        "thickness": [
+          "Wall Hanger withDetachable HangingClip and Wall Hook",
+          ""
+        ],
+        "packing": [
+          "10/100/Ctn",
+          "10/200/Ctn"
+        ],
+        "colour": [
+          "Grey",
+          "Black",
+          "Red",
+          "Green",
+          "Yellow",
+          "Blue"
+        ]
+      },
+      "image": "Wall hanger.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::60",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 60,
+      "name": "WALL UNIT STAND",
+      "desc": "WALL UNIT STAND",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "5 Folder",
+          "10 Folder",
+          "5 Folder",
+          "10 Folder"
+        ],
+        "size": [
+          "A3",
+          "A3",
+          "A4",
+          "A4"
+        ],
+        "thickness": [
+          "",
+          "Wall Mount Holder Avl in 5 & 10 Folders with Bracket",
+          "",
+          ""
+        ],
+        "packing": [
+          "2/20/Ctn",
+          "1/10/Ctn",
+          "2/40/Ctn",
+          "1/20/Ctn"
+        ],
+        "colour": [
+          "Grey",
+          "Black",
+          "Red",
+          "Green",
+          "Yellow"
+        ]
+      },
+      "image": "Wall.png",
+      "imageClass": "product-image-large"
+    }
+  },
+  {
+    "key": "display-files.html::61",
+    "page": "display-files.html",
+    "category": "Display Solution Products Series",
+    "product": {
+      "id": 61,
+      "name": "WALL UNIT STAND",
+      "desc": "WALL UNIT STAND",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "Supreme Wall Unit A3",
+          "Supreme Wall Unit A4"
+        ],
+        "size": [
+          "A3  (5 Folder)",
+          "A4  (5 Folder)"
+        ],
+        "thickness": [
+          "Wall Mount Holder Avl in 5 Folder & 10 Folder Bracket",
+          ""
+        ],
+        "packing": [
+          "1/10/Ctn",
+          "1/20/Ctn"
+        ],
+        "colour": [
+          "Grey",
+          "Blue",
+          "Red",
+          "Green",
+          "Yellow"
+        ]
+      },
+      "image": "Supreme.png",
+      "imageClass": "product-image-large"
     }
   }
 ];

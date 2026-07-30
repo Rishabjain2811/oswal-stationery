@@ -7,7 +7,7 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL556F"],
       "size": ["FC"],
-      "thickness": ["Level Arch Mechanism Double side Full PVC Box File , 2.5mm Board , Solid Colours"],
+      "thickness": ["Solid Colours"],
       "packing": ["1/50/Ctn"],
       "colours": ["Blue","Grey","Green","Purple","Red"]
     },
@@ -23,11 +23,27 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL556F"],
       "size": ["FC"],
-      "thickness": ["Level Arch Mechanism Double side Full PVC Box File , 2.5mm Board, Pastel Colours"],
+      "thickness": ["Pastel Colours"],
       "packing": ["1/50/Ctn"],
       "colours": ["Blue","Pink","Aqua","Purple","Green"]
     },
     "image": "CL556FP.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 51,
+    "name": "Double Side PP Coated Level Arch Clip File",
+    "desc": "Premium Level Arch Clip File",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL1556F"],
+      "size": ["FC"],
+      "thickness": ["L.A.File with in-built Punching Mechanism"],
+      "packing": ["1/50/Ctn"],
+      "colours": ["Blue"]
+    },
+    "image": "CL1556.png",
     "imageClass": "product-image-large",
     "featured": true
   },
@@ -39,11 +55,11 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL309A","CL309F"],
       "size": ["A4","FC"],
-      "thickness": ["2.2mm,","2D Ring Binder with Black Stopper."],
-      "packing": ["12/72/Ctn"],
-      "colours": [""]
+      "thickness": ["2.2mm","O/S PP Coated 2D Ring Binder with Stopper,Solid & Pastel Colours"],
+      "packing": ["24/72/Ctn","24/72/Ctn"],
+      "colours": ["Pastel Blue","Pastel Pink","Pastel Aqua","Pastel Purple","Pastel Green","Blue","Grey","Green","Purple","Red"]
     },
-    "image": "CL309F.png",
+    "image": "CL309A.png",
     "imageClass": "product-image-large",
     "featured": true
   },
@@ -55,11 +71,27 @@ const categoryProducts = [
     "specs": {
       "itemCode": ["CL308A","CL308F"],
       "size": ["A4","FC"],
-      "thickness": ["2.2mm,","2D Ring Binder with Black Stopper."],
-      "packing": ["12/72/Ctn"],
-      "colours": [""]
+      "thickness": ["2.2mm","O/S PP Long Lever Clip File"],
+      "packing": ["24/72/Ctn"],
+      "colours": ["Pink","Green","Blue","Orange","Dark Blue"]
     },
     "image": "CL308F.png",
+    "imageClass": "product-image-large",
+    "featured": true
+  },
+  {
+    "id": 54,
+    "name": "D/S PP COATED RING BINDER WITH FRONT VIEW POCKET",
+    "desc": "Premium double side PP coated ring binder with front view pocket",
+    "description": "",
+    "specs": {
+      "itemCode": ["CL501"],
+      "size": ["A4"],
+      "thickness": ["2D Ring Binder"],
+      "packing": ["24/72/Ctn"],
+      "colours": ["Navy Blue"]
+    },
+    "image": "CL501.png",
     "imageClass": "product-image-large",
     "featured": true
   },
@@ -75,13 +107,6 @@ function renderProducts() {
   });
 }
 
-const cartLink = document.querySelector('.cart-link');
-if(cartLink) {
-    cartLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.location.href = 'cart.html';
-    });
-}
 function setActiveNavLink() {
   const links = document.querySelectorAll('.nav-links a');
   const fromTop = window.scrollY + 80;

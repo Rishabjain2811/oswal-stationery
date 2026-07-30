@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Sitemap: https://oswalgiftnstationery.co.in/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /server/
+Disallow: /js/
+Disallow: /.git/
+Disallow: /*.py$
+
+# Allow important assets
+Allow: /images/
+Allow: /css/
+Allow: /favicon.png
+Allow: /favicon.ico
