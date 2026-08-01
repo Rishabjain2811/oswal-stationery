@@ -370,7 +370,7 @@
     }
 
     if (!entry) {
-      renderNotFound(root);
+      renderNotFound(root); 
       return;
     }
     renderProduct(entry, code);
