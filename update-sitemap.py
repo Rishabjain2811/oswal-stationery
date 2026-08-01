@@ -78,3 +78,4 @@ with open(sitemap_path, 'w', encoding='utf-8') as f:
 
 print(f"Sitemap updated with {len(url_mapping)} product URLs")
 print(f"Total URLs in sitemap: {len(url_mapping) + len(category_pages) + 2}")
+ 
