@@ -3376,13 +3376,14 @@ body.auth-modal-open {
   .preloader,
   .preloader.animate,
   .preloader.fade-out,
-  .folder-front,  
-  .paper,
+  .folder-front,
+  .paper,   
   .folder-shine,
   #site-content {
     animation: none !important;
     transition: none !important;
-  }
+  }  
+  
   
   #site-content {
     opacity: 1;
