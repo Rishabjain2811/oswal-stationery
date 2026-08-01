@@ -61,3 +61,4 @@ with open(vercel_path, 'w', encoding='utf-8') as f:
 
 print(f"Generated {len(redirects)} redirects for vercel.json")
 print(f"Total unique products: {len(url_mapping)}")
+ 
