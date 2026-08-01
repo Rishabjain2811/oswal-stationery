@@ -1,4 +1,4 @@
-const categoryProducts = [
+const categoryProducts = [ 
   {
     "id": 50,
     "name": "Double Side PP Coated Level Arch Clip File",
@@ -137,4 +137,3 @@ window.addEventListener('scroll', revealOnScroll);
 window.addEventListener('load', revealOnScroll);
 
 renderProducts();
- 
