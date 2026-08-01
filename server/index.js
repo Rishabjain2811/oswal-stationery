@@ -81,3 +81,4 @@ db.initializeDatabase().then(function() {
   console.error('✗ Failed to start server:', error.message);
   process.exit(1);
 });
+ 
