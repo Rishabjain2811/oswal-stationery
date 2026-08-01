@@ -164,7 +164,7 @@ export default async function handler(req, res) {
       const row = await findUserByEmail(email);
       if (!row || !bcrypt.compareSync(password, row.password_hash)) {
         return res.status(401).json({ error: 'Invalid email or password.' });
-      }
+      } 
 
       const user = sanitizeUser(row);
       setAuthCookie(res, user);
