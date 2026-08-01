@@ -124,3 +124,4 @@ for code, products in sorted(item_code_to_products.items()):
 print("\n" + "=" * 80)
 print(f"URL mapping saved to url-mapping.json")
 print("=" * 80)
+ 
