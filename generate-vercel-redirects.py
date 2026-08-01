@@ -81,15 +81,8 @@ redirects.append({
     "permanent": True
 })
 
-# Generate vercel.json with Functions configuration
+# Generate vercel.json (Vercel auto-detects /api functions)
 vercel_config = {
-    "buildCommand": None,
-    "outputDirectory": "./",
-    "functions": {
-        "api/**/*.js": {
-            "runtime": "nodejs18.x"
-        }
-    },
     "rewrites": [
         {
             "source": "/api/:path*",
