@@ -90,3 +90,4 @@
     if (document.visibilityState === 'visible') updateBadge();
   });
 })(typeof window !== 'undefined' ? window : this);
+ 
