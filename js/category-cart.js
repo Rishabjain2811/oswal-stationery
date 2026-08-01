@@ -90,8 +90,12 @@
     if (!product.image) return '';
     return '<img src="' + product.image + '" alt="' + product.name + '" class="product-image ' + (product.imageClass || '') + '" />';
   }
+  
 
   function productDetailUrl(page, productId, code) {
+    if (global.OswalProductRegistry && global.OswalProductRegistry.buildStaticUrl) {
+      return global.OswalProductRegistry.buildStaticUrl(page, productId);
+    }
     if (global.OswalProductRegistry && global.OswalProductRegistry.buildUrl) {
       return global.OswalProductRegistry.buildUrl(page, productId, code);
     }
