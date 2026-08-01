@@ -184,23 +184,12 @@
 </head>
 
 <body>
-  <!-- Preloader -->
-  <div id="preloader" class="preloader">
-    <div class="preloader-folder">
-      <div class="folder-back">
-        <div class="folder-tab">COLORS</div>
-      </div>
-      <div class="folder-papers">
-        <div class="paper paper-red"></div>
-        <div class="paper paper-teal"></div>
-        <div class="paper paper-blue"></div>
-      </div>
-      <div class="folder-front">
-        <img src="colors logo.png" alt="COLORS Logo" class="folder-logo">
-      </div>
-      <div class="folder-shine"></div>
-    </div>
+  <!-- Branded Intro Preloader -->
+  <div id="intro-bg">
+    <div class="intro-glow"></div>
+    <img src="colors%20logo.png" alt="COLORS Logo" class="intro-logo">
   </div>
+  <div class="wipe"></div>
 
   <div id="site-content">
     <nav class="navbar minimalist-nav">
@@ -541,46 +530,57 @@
     window.OSWAL_API_BASE = window.location.origin + '/api/auth';
   </script>
   <script>
-    // Preloader Animation Control
+    // Branded Intro Preloader Control
     (function() {
-      var preloader = document.getElementById('preloader');
+      var introBg = document.getElementById('intro-bg');
       var siteContent = document.getElementById('site-content');
       
-      if (!preloader || !siteContent) return;
+      if (!introBg || !siteContent) return;
       
       // Check for reduced motion preference
       var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
       
-      // Check if user came from within the same site (internal navigation or refresh)
-      var isFromSameSite = document.referrer && document.referrer.indexOf(window.location.hostname) !== -1;
+      // Check if intro already played in this session
+      var introPlayed = sessionStorage.getItem('introPlayed') === 'true';
       
-      // If from same site or reduced motion, skip preloader
-      if (isFromSameSite || prefersReducedMotion) {
-        preloader.style.display = 'none';
+      // If intro already played or reduced motion, skip preloader
+      if (introPlayed || prefersReducedMotion) {
+        introBg.style.display = 'none';
+        var wipe = document.querySelector('.wipe');
+        if (wipe) wipe.style.display = 'none';
         siteContent.style.opacity = '1';
         siteContent.style.transform = 'translateY(0)';
         return;
       }
       
-      // Prevent body scroll during preloader
+      // Prevent body scroll intro
       document.body.style.overflow = 'hidden';
       
-      // Start animation sequence
-      setTimeout(function() {
-        preloader.classList.add('animate');
-      }, 100);
+      // Mark intro as played
+      sessionStorage.setItem('introPlayed', 'true');
       
-      // After animation completes, show site content
+      // Animation sequence timing:
+      // 0s: Logo starts fading in (0.55s duration)
+      // 0.2s: Glow starts pulsing (1.5s duration)
+      // 0.8s: Wipe starts sweeping (1.8s duration)
+      // 1.45s: Logo starts fading out (0.4s duration, ends at 1.85s)
+      // 1.9s: Hide intro-bg (while wipe still covering until ~1.93s)
+      // 1.95s: Site content starts revealing (0.8s duration)
+      
+      // Hide intro-bg at 1.9s (after logo fade, while wipe covers)
       setTimeout(function() {
-        preloader.classList.add('fade-out');
+        introBg.classList.add('hidden');
+      }, 1900);
+      
+      // Reveal site content at 1.95s (when wipe starts exit)
+      setTimeout(function() {
         siteContent.classList.add('reveal');
         
-        // Restore scroll after preloader fades
+        // Restore scroll after content reveal
         setTimeout(function() {
-          preloader.style.display = 'none';
           document.body.style.overflow = '';
-        }, 700);
-      }, 3100);
+        }, 800);
+      }, 1950);
     })();
   </script>
   <script src="js/auth.js"></script>
@@ -614,7 +614,6 @@
         });
       }
 
-      
       document.addEventListener('click', function (event) {
         if (window.innerWidth > 768) return;
         if (!navbar.contains(event.target)) {
