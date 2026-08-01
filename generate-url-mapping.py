@@ -99,9 +99,9 @@ for entry in entries:
             'category': category,
             'id': product_id,
             'url': url
-        })
+        }) 
 
-# Save mapping to JSON
+# Save mapping to JSON.
 with open(r'c:\Users\Risha\ogsnew\url-mapping.json', 'w', encoding='utf-8') as f:
     json.dump(url_mapping, f, indent=2)
 
