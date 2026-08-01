@@ -139,7 +139,7 @@
 
   global.OswalProductVariants = {
     getColourOptions: getColourOptions,
-    colourAtIndex: colourAtIndex,
+    colourAtIndex: colourAtIndex, 
     shouldShowColourPicker: shouldShowColourPicker,
     getDefaultColour: getDefaultColour,
     buildCartVariant: buildCartVariant,
