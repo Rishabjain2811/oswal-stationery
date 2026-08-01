@@ -615,7 +615,7 @@
       }
 
       document.addEventListener('click', function (event) {
-        if (window.innerWidth > 768) return; 
+        if (window.innerWidth > 768) return;
         if (!navbar.contains(event.target)) {
           if (navbar.classList.contains('nav-open')) {
             navbar.classList.remove('nav-open');
@@ -623,9 +623,10 @@
           }
           if (dropdown) dropdown.classList.remove('dropdown-open');
         }
-      });
+      }); 
     });
   </script>
 </body>
 
 </html>
+    
