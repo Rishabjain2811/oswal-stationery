@@ -85,7 +85,7 @@
     return setCart(cart);
   }
 
-  function getTotalCount() {
+  function getTotalCount() { 
     return getCart().reduce(function (sum, item) {
       return sum + (item.quantity ?? item.qty ?? 1);
     }, 0);
