@@ -30,7 +30,8 @@
       },
       "image": "CL8022.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8022.html"
   },
   {
     "key": "stationery-products.html::72",
@@ -60,7 +61,8 @@
       },
       "image": "CL8033.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8033.html"
   },
   {
     "key": "stationery-products.html::70",
@@ -90,7 +92,8 @@
       },
       "image": "CLE804.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CLE804.html"
   },
   {
     "key": "clear-books.html::17",
@@ -134,7 +137,8 @@
       },
       "image": "A3 Designer book.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL10.html"
   },
   {
     "key": "clear-books.html::16",
@@ -164,7 +168,8 @@
       },
       "image": "B4.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL772.html"
   },
   {
     "key": "clear-books.html::20",
@@ -206,7 +211,8 @@
       },
       "image": "Icon771.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-ICON-771.html"
   },
   {
     "key": "clear-books.html::19",
@@ -248,7 +254,8 @@
       },
       "image": "B4 PP.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CF10.html"
   },
   {
     "key": "card-holders.html::32",
@@ -279,7 +286,8 @@
       },
       "image": "CL600.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-ICON-600IC.html"
   },
   {
     "key": "card-holders.html::31",
@@ -320,7 +328,8 @@
       },
       "image": "CL240K.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL120K.html"
   },
   {
     "key": "document-bags.html::55",
@@ -354,7 +363,8 @@
       },
       "image": "CL4406.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL4406.html"
   },
   {
     "key": "document-bags.html::56",
@@ -387,7 +397,8 @@
       },
       "image": "CL4409.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL4409.html"
   },
   {
     "key": "conference-folders.html::63",
@@ -415,7 +426,8 @@
       },
       "image": "CL9001A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL9001A.html"
   },
   {
     "key": "conference-folders.html::64",
@@ -443,7 +455,8 @@
       },
       "image": "CL102A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL102A.html"
   },
   {
     "key": "conference-folders.html::65",
@@ -471,7 +484,8 @@
       },
       "image": "CP24.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP24.html"
   },
   {
     "key": "conference-folders.html::66",
@@ -499,7 +513,8 @@
       },
       "image": "CP25.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP25.html"
   },
   {
     "key": "conference-folders.html::67",
@@ -527,7 +542,8 @@
       },
       "image": "CP31.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP31.html"
   },
   {
     "key": "conference-folders.html::68",
@@ -558,7 +574,8 @@
       },
       "image": "CP37.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP37.html"
   },
   {
     "key": "conference-folders.html::69",
@@ -588,7 +605,8 @@
       },
       "image": "CP45.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP45.html"
   },
   {
     "key": "conference-folders.html::70",
@@ -619,7 +637,8 @@
       },
       "image": "CP50.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP50.html"
   },
   {
     "key": "conference-folders.html::71",
@@ -650,7 +669,8 @@
       },
       "image": "CP66.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP66.html"
   },
   {
     "key": "conference-folders.html::72",
@@ -680,7 +700,8 @@
       },
       "image": "CP10.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP10.html"
   },
   {
     "key": "conference-folders.html::73",
@@ -710,7 +731,8 @@
       },
       "image": "CP96.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP96.html"
   },
   {
     "key": "conference-folders.html::74",
@@ -742,7 +764,8 @@
       },
       "image": "CP100.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP100.html"
   },
   {
     "key": "paper-board-files.html::54",
@@ -772,7 +795,8 @@
       },
       "image": "CL501.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL501.html"
   },
   {
     "key": "leatherite-executive-bags.html::60",
@@ -816,7 +840,8 @@
       },
       "image": "CP401-10.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP401-10.html"
   },
   {
     "key": "leatherite-executive-bags.html::61",
@@ -860,7 +885,8 @@
       },
       "image": "CP401-10.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP400-10.html"
   },
   {
     "key": "display-files.html::66",
@@ -915,7 +941,8 @@
       },
       "image": "Desk.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-10-Folder-A3.html"
   },
   {
     "key": "document-bags.html::57",
@@ -945,7 +972,8 @@
       },
       "image": "CL812F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL812F.html"
   },
   {
     "key": "document-bags.html::58",
@@ -983,7 +1011,8 @@
       },
       "image": "Stylo.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-STYLO-DC-A4.html"
   },
   {
     "key": "clear-books.html::14",
@@ -1040,7 +1069,8 @@
       },
       "image": "Display book.jpeg",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL10A.html"
   },
   {
     "key": "clear-books.html::15",
@@ -1097,7 +1127,8 @@
       },
       "image": "Display book.jpeg",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL10F.html"
   },
   {
     "key": "stationery-products.html::73",
@@ -1127,7 +1158,8 @@
       },
       "image": "CL318A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL318A.html"
   },
   {
     "key": "button-files.html::75",
@@ -1161,7 +1193,8 @@
       },
       "image": "CL211F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL211F.html"
   },
   {
     "key": "button-files.html::76",
@@ -1195,7 +1228,8 @@
       },
       "image": "CL212F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL212F.html"
   },
   {
     "key": "button-files.html::77",
@@ -1229,7 +1263,8 @@
       },
       "image": "CL236F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL236F.html"
   },
   {
     "key": "paper-board-files.html::50",
@@ -1263,7 +1298,8 @@
       },
       "image": "CL556F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL556F.html"
   },
   {
     "key": "paper-board-files.html::51",
@@ -1297,7 +1333,39 @@
       },
       "image": "CL556FP.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-paper-board-files-CL556F.html"
+  },
+  {
+    "key": "paper-board-files.html::511",
+    "page": "paper-board-files.html",
+    "category": "Paper Board Files Series",
+    "product": {
+      "id": 511,
+      "name": "Double Side PP Coated Level Arch Clip File",
+      "desc": "Premium Level Arch Clip File",
+      "description": "",
+      "specs": {
+        "itemCode": [
+          "CL1556F"
+        ],
+        "size": [
+          "FC"
+        ],
+        "thickness": [
+          "L.A.File with in-built Punching Mechanism"
+        ],
+        "packing": [
+          "1/50/Ctn"
+        ],
+        "colours": [
+          "Blue"
+        ]
+      },
+      "image": "CL1556.png",
+      "imageClass": "product-image-large"
+    },
+    "staticUrl": "product-paper-board-files-CL1556F.html"
   },
   {
     "key": "clip-files.html::12",
@@ -1334,7 +1402,8 @@
       },
       "image": "Dual clip.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL451A.html"
   },
   {
     "key": "leatherite-executive-bags.html::62",
@@ -1367,7 +1436,8 @@
       },
       "image": "CP131.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CP131.html"
   },
   {
     "key": "document-bags.html::44",
@@ -1398,7 +1468,8 @@
       },
       "image": "CL813F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL813F.html"
   },
   {
     "key": "document-bags.html::45",
@@ -1431,7 +1502,8 @@
       },
       "image": "CL1212F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1212F.html"
   },
   {
     "key": "document-bags.html::46",
@@ -1465,7 +1537,8 @@
       },
       "image": "CL8821F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8821F.html"
   },
   {
     "key": "document-bags.html::47",
@@ -1499,7 +1572,8 @@
       },
       "image": "CL8065F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8065F.html"
   },
   {
     "key": "document-bags.html::48",
@@ -1533,7 +1607,8 @@
       },
       "image": "CL6016F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL6016F.html"
   },
   {
     "key": "document-bags.html::49",
@@ -1565,7 +1640,8 @@
       },
       "image": "CL6018F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL6018F.html"
   },
   {
     "key": "document-bags.html::50",
@@ -1598,7 +1674,8 @@
       },
       "image": "CL6026F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL6026F.html"
   },
   {
     "key": "document-bags.html::51",
@@ -1630,7 +1707,8 @@
       },
       "image": "CL6028F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL6028F.html"
   },
   {
     "key": "document-bags.html::52",
@@ -1663,7 +1741,8 @@
       },
       "image": "CL8057A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8057A.html"
   },
   {
     "key": "document-bags.html::53",
@@ -1696,7 +1775,8 @@
       },
       "image": "CL8071A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL8071A.html"
   },
   {
     "key": "document-bags.html::54",
@@ -1728,7 +1808,8 @@
       },
       "image": "CL816A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL816A.html"
   },
   {
     "key": "button-files.html::43",
@@ -1758,7 +1839,8 @@
       },
       "image": "CL114F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL114F.html"
   },
   {
     "key": "button-files.html::44",
@@ -1788,7 +1870,8 @@
       },
       "image": "CL119F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL119F.html"
   },
   {
     "key": "report-cover-files.html::4",
@@ -1816,7 +1899,8 @@
         ],
         "colour": "Blue"
       }
-    }
+    },
+    "staticUrl": "product-CL320A.html"
   },
   {
     "key": "clear-books.html::18",
@@ -1858,7 +1942,8 @@
       },
       "image": "full scape PP.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-clear-books-CF10.html"
   },
   {
     "key": "display-files.html::59",
@@ -1897,7 +1982,8 @@
       },
       "image": "Info.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-INFO-FOLDER-A3.html"
   },
   {
     "key": "display-files.html::65",
@@ -1932,7 +2018,8 @@
       },
       "image": "Info Stand.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-display-files-10-Folder-A3.html"
   },
   {
     "key": "report-cover-files.html::2",
@@ -1968,7 +2055,8 @@
       },
       "image": "CL310.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL310.html"
   },
   {
     "key": "display-files.html::57",
@@ -1998,7 +2086,8 @@
       },
       "image": "CL504.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL504.html"
   },
   {
     "key": "display-files.html::58",
@@ -2028,7 +2117,8 @@
       },
       "image": "CL508.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL508.html"
   },
   {
     "key": "display-files.html::62",
@@ -2075,7 +2165,8 @@
       },
       "image": "Multi.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-5-Folder.html"
   },
   {
     "key": "zipper-bag-series.html::43",
@@ -2125,7 +2216,8 @@
       },
       "image": "Mesh.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-.html"
   },
   {
     "key": "paper-board-files.html::53",
@@ -2162,7 +2254,8 @@
       },
       "image": "CL308F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL308A.html"
   },
   {
     "key": "paper-board-files.html::52",
@@ -2205,7 +2298,8 @@
       },
       "image": "CL309A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL309A.html"
   },
   {
     "key": "display-files.html::64",
@@ -2239,7 +2333,8 @@
       },
       "image": "Peel.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-1-Folder-A3.html"
   },
   {
     "key": "separators.html::66",
@@ -2269,7 +2364,8 @@
       },
       "image": "CL010.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL010.html"
   },
   {
     "key": "separators.html::67",
@@ -2319,7 +2415,8 @@
       },
       "image": "N5.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-N5.html"
   },
   {
     "key": "separators.html::68",
@@ -2349,7 +2446,8 @@
       },
       "image": "NZ.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-NZ.html"
   },
   {
     "key": "zipper-bag-series.html::40",
@@ -2395,7 +2493,8 @@
       },
       "image": "CLP53.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CLP53.html"
   },
   {
     "key": "display-files.html::53",
@@ -2425,7 +2524,8 @@
       },
       "image": "CL201.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL201T.html"
   },
   {
     "key": "display-files.html::54",
@@ -2455,7 +2555,8 @@
       },
       "image": "CL202.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL202T.html"
   },
   {
     "key": "display-files.html::55",
@@ -2485,7 +2586,8 @@
       },
       "image": "Cl203.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL203B.html"
   },
   {
     "key": "display-files.html::56",
@@ -2515,7 +2617,8 @@
       },
       "image": "CL204.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL204B.html"
   },
   {
     "key": "zipper-bag-series.html::41",
@@ -2561,7 +2664,8 @@
       },
       "image": "CLF53.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CLF53.html"
   },
   {
     "key": "button-files.html::78",
@@ -2595,7 +2699,8 @@
       },
       "image": "CL402F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL402F.html"
   },
   {
     "key": "button-files.html::79",
@@ -2628,7 +2733,8 @@
       },
       "image": "CL408F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL408F.html"
   },
   {
     "key": "button-files.html::80",
@@ -2662,7 +2768,8 @@
       },
       "image": "CL410F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL410F.html"
   },
   {
     "key": "conference-folders.html::62",
@@ -2690,7 +2797,8 @@
       },
       "image": "CL261A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL261A.html"
   },
   {
     "key": "button-files.html::45",
@@ -2724,7 +2832,8 @@
       },
       "image": "CL801.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL801.html"
   },
   {
     "key": "button-files.html::46",
@@ -2758,7 +2867,8 @@
       },
       "image": "CL802.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL802.html"
   },
   {
     "key": "button-files.html::47",
@@ -2792,7 +2902,8 @@
       },
       "image": "CL804F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL804F.html"
   },
   {
     "key": "button-files.html::48",
@@ -2825,7 +2936,8 @@
       },
       "image": "CL805F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL805F.html"
   },
   {
     "key": "button-files.html::49",
@@ -2860,7 +2972,8 @@
       },
       "image": "CL1000F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1000F.html"
   },
   {
     "key": "button-files.html::50",
@@ -2893,7 +3006,8 @@
       },
       "image": "CL1027F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1027F.html"
   },
   {
     "key": "button-files.html::51",
@@ -2923,7 +3037,8 @@
       },
       "image": "CL1032F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1032F.html"
   },
   {
     "key": "button-files.html::52",
@@ -2956,7 +3071,8 @@
       },
       "image": "CL1034F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1034F.html"
   },
   {
     "key": "button-files.html::53",
@@ -2989,7 +3105,8 @@
       },
       "image": "CL1041F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1041F.html"
   },
   {
     "key": "button-files.html::54",
@@ -3022,7 +3139,8 @@
       },
       "image": "CL1042F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1042F.html"
   },
   {
     "key": "button-files.html::55",
@@ -3056,7 +3174,8 @@
       },
       "image": "CL1043F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1043F.html"
   },
   {
     "key": "button-files.html::56",
@@ -3089,7 +3208,8 @@
       },
       "image": "CL1044F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL1044F.html"
   },
   {
     "key": "button-files.html::57",
@@ -3123,7 +3243,8 @@
       },
       "image": "CL2000F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2000F.html"
   },
   {
     "key": "button-files.html::58",
@@ -3157,7 +3278,8 @@
       },
       "image": "CL2001.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2001F.html"
   },
   {
     "key": "button-files.html::59",
@@ -3190,7 +3312,8 @@
       },
       "image": "CL2002F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2002F.html"
   },
   {
     "key": "button-files.html::60",
@@ -3223,7 +3346,8 @@
       },
       "image": "CL2003F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2003F.html"
   },
   {
     "key": "button-files.html::61",
@@ -3256,7 +3380,8 @@
       },
       "image": "CL2004F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2004F.html"
   },
   {
     "key": "button-files.html::62",
@@ -3289,7 +3414,8 @@
       },
       "image": "CL2005F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2005F.html"
   },
   {
     "key": "button-files.html::63",
@@ -3322,7 +3448,8 @@
       },
       "image": "CL2029F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2029F.html"
   },
   {
     "key": "button-files.html::64",
@@ -3356,7 +3483,8 @@
       },
       "image": "CL2030F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2030F.html"
   },
   {
     "key": "button-files.html::65",
@@ -3389,7 +3517,8 @@
       },
       "image": "CL2401F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2401F.html"
   },
   {
     "key": "button-files.html::66",
@@ -3422,7 +3551,8 @@
       },
       "image": "CL2402F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL2402F.html"
   },
   {
     "key": "button-files.html::67",
@@ -3457,7 +3587,8 @@
       },
       "image": "CL3000F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL3000F.html"
   },
   {
     "key": "button-files.html::68",
@@ -3487,7 +3618,8 @@
       },
       "image": "CL3020F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL3020F.html"
   },
   {
     "key": "button-files.html::69",
@@ -3520,7 +3652,8 @@
       },
       "image": "CL3021F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL3021F.html"
   },
   {
     "key": "button-files.html::70",
@@ -3550,7 +3683,8 @@
       },
       "image": "CL3022F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL3022F.html"
   },
   {
     "key": "button-files.html::71",
@@ -3583,7 +3717,8 @@
       },
       "image": "CL3026F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL3026F.html"
   },
   {
     "key": "button-files.html::72",
@@ -3611,7 +3746,8 @@
       },
       "image": "CL4000F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL4000F.html"
   },
   {
     "key": "button-files.html::73",
@@ -3639,7 +3775,8 @@
       },
       "image": "CL5000F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL5000F.html"
   },
   {
     "key": "button-files.html::74",
@@ -3673,7 +3810,8 @@
       },
       "image": "CL209F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL209F.html"
   },
   {
     "key": "clip-files.html::10",
@@ -3710,7 +3848,8 @@
       },
       "image": "Punchless Clip.jpeg",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL421A.html"
   },
   {
     "key": "report-cover-files.html::3",
@@ -3742,7 +3881,8 @@
         ],
         "colour": "Clear"
       }
-    }
+    },
+    "staticUrl": "product-CL-RF102.html"
   },
   {
     "key": "report-cover-files.html::7",
@@ -3782,7 +3922,8 @@
         ],
         "colour": "Blue"
       }
-    }
+    },
+    "staticUrl": "product-CL220.html"
   },
   {
     "key": "clip-files.html::13",
@@ -3817,7 +3958,8 @@
       },
       "image": "ring binder.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL820A.html"
   },
   {
     "key": "clip-files.html::14",
@@ -3851,7 +3993,8 @@
       },
       "image": "ring binder2.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL720A.html"
   },
   {
     "key": "clip-files.html::15",
@@ -3888,7 +4031,8 @@
       },
       "image": "ring binder3.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL521A.html"
   },
   {
     "key": "clip-files.html::16",
@@ -3921,7 +4065,8 @@
       },
       "image": "ring binder4.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL516A.html"
   },
   {
     "key": "zipper-bag-series.html::42",
@@ -3975,7 +4120,8 @@
       },
       "image": "Satin.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-zipper-bag-series-.html"
   },
   {
     "key": "sheet-protectors.html::8",
@@ -4039,7 +4185,8 @@
         ],
         "colour": "Clear"
       }
-    }
+    },
+    "staticUrl": "product-SP50.html"
   },
   {
     "key": "stationery-products.html::69",
@@ -4071,7 +4218,8 @@
       },
       "image": "CL9882.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL9882.html"
   },
   {
     "key": "report-cover-files.html::6",
@@ -4109,7 +4257,8 @@
           "Orange"
         ]
       }
-    }
+    },
+    "staticUrl": "product-CL341A.html"
   },
   {
     "key": "clip-files.html::11",
@@ -4146,7 +4295,8 @@
       },
       "image": "Spring clip.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL431A.html"
   },
   {
     "key": "button-files.html::35",
@@ -4180,7 +4330,8 @@
       },
       "image": "CL303.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL303.html"
   },
   {
     "key": "button-files.html::36",
@@ -4213,7 +4364,8 @@
       },
       "image": "CL503A.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL503A.html"
   },
   {
     "key": "button-files.html::37",
@@ -4247,7 +4399,8 @@
       },
       "image": "CL603F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL603F.html"
   },
   {
     "key": "button-files.html::38",
@@ -4280,7 +4433,8 @@
       },
       "image": "CL703FT.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL703FT.html"
   },
   {
     "key": "button-files.html::39",
@@ -4314,7 +4468,8 @@
       },
       "image": "CL803F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL803F.html"
   },
   {
     "key": "button-files.html::40",
@@ -4348,7 +4503,8 @@
       },
       "image": "CL903F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL903F.html"
   },
   {
     "key": "button-files.html::41",
@@ -4382,7 +4538,8 @@
       },
       "image": "CL605F.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL605F.html"
   },
   {
     "key": "button-files.html::42",
@@ -4415,7 +4572,8 @@
       },
       "image": "603ECO.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-IKON-603ECO.html"
   },
   {
     "key": "report-cover-files.html::1",
@@ -4455,7 +4613,8 @@
       },
       "image": "CL10.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL10-Ikon.html"
   },
   {
     "key": "report-cover-files.html::101",
@@ -4495,7 +4654,8 @@
       },
       "image": "CL10.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-report-cover-files-CL10-Ikon.html"
   },
   {
     "key": "report-cover-files.html::5",
@@ -4523,7 +4683,8 @@
         ],
         "colour": "Clear"
       }
-    }
+    },
+    "staticUrl": "product-CL331A.html"
   },
   {
     "key": "card-holders.html::30",
@@ -4555,7 +4716,8 @@
       },
       "image": "CL40K.jpeg",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-CL40K.html"
   },
   {
     "key": "display-files.html::63",
@@ -4594,7 +4756,8 @@
       },
       "image": "Wall hanger.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-display-files-1-Folder-A3.html"
   },
   {
     "key": "display-files.html::60",
@@ -4640,7 +4803,8 @@
       },
       "image": "Wall.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-display-files-5-Folder.html"
   },
   {
     "key": "display-files.html::61",
@@ -4678,7 +4842,8 @@
       },
       "image": "Supreme.png",
       "imageClass": "product-image-large"
-    }
+    },
+    "staticUrl": "product-Supreme-Wall-Unit-A3.html"
   }
 ];
   var byKey = {};
@@ -4700,11 +4865,31 @@
     return url;
   }
 
+  function buildStaticUrl(page, productId) {
+    var key = makeKey(page, productId);
+    var entry = byKey[key];
+    if (entry && entry.staticUrl) {
+      return entry.staticUrl;
+    }
+    return buildUrl(page, productId);
+  }
+
+  function findByStaticUrl(staticUrl) {
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].staticUrl === staticUrl) {
+        return entries[i];
+      }
+    }
+    return null;
+  }
+
   global.OswalProductRegistry = {
     entries: entries,
     byKey: byKey,
     find: find,
+    findByStaticUrl: findByStaticUrl,
     buildUrl: buildUrl,
+    buildStaticUrl: buildStaticUrl,
     makeKey: makeKey
   };
 })(typeof window !== 'undefined' ? window : this);

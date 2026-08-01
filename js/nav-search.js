@@ -12,6 +12,10 @@
   }
 
   function buildResultUrl(entry) {
+    if (global.OswalProductRegistry && global.OswalProductRegistry.buildStaticUrl) {
+      var staticUrl = global.OswalProductRegistry.buildStaticUrl(entry.page, entry.productId);
+      if (staticUrl) return staticUrl;
+    }
     if (global.OswalProductRegistry && global.OswalProductRegistry.buildUrl) {
       return global.OswalProductRegistry.buildUrl(entry.page, entry.productId, entry.matchedCode);
     }

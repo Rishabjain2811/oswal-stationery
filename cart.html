@@ -103,11 +103,48 @@
   <script src="js/cart-store.js"></script>
   <script src="js/cart-badge.js"></script>
   <script src="js/search-index.js"></script>
-  <script src="js/nav-search.js"></script>
-  <script src="js/product-registry.js"></script>
-  <script src="js/auth.js"></script>
+  <script src="js/category-cart.js"></script>
+  <script src="js/product-variants.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var navbar = document.querySelector('.navbar');
+      var toggle = document.querySelector('.nav-toggle');
+      var dropdown = document.querySelector('.navbar .dropdown');
+      var dropdownToggle = document.querySelector('.navbar .dropdown-toggle');
+
+      if (toggle && navbar) {
+        toggle.addEventListener('click', function () {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!expanded));
+          navbar.classList.toggle('nav-open');
+          if (expanded && dropdown) {
+            dropdown.classList.remove('dropdown-open');
+          }
+        });
+      }
+
+      if (dropdownToggle && dropdown) {
+        dropdownToggle.addEventListener('click', function (event) {
+          if (window.innerWidth <= 768) {
+            event.preventDefault();
+            dropdown.classList.toggle('dropdown-open');
+          }
+        });
+      }
+
+      document.addEventListener('click', function (event) {
+        if (window.innerWidth > 768) return;
+        if (!navbar.contains(event.target)) {
+          if (navbar.classList.contains('nav-open')) {
+            navbar.classList.remove('nav-open');
+            if (toggle) toggle.setAttribute('aria-expanded', 'false');
+          }
+          if (dropdown) dropdown.classList.remove('dropdown-open');
+        }
+      });
+    });
+  </script>
   <script src="cart.js"></script>
 </body>
-</html> 
-
-
+</html>

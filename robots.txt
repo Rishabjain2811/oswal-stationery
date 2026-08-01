@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 Sitemap: https://oswalgiftnstationery.co.in/sitemap.xml
 
 # Disallow sensitive files
@@ -7,9 +8,27 @@ Disallow: /server/
 Disallow: /js/
 Disallow: /.git/
 Disallow: /*.py$
+Disallow: /cart.html
 
 # Allow important assets
 Allow: /images/
 Allow: /css/
 Allow: /favicon.png
 Allow: /favicon.ico
+
+# Prioritize important pages
+Allow: /index.html
+Allow: /report-cover-files.html
+Allow: /sheet-protectors.html
+Allow: /clip-files.html
+Allow: /clear-books.html
+Allow: /card-holders.html
+Allow: /button-files.html
+Allow: /zipper-bag-series.html
+Allow: /document-bags.html
+Allow: /separators.html
+Allow: /paper-board-files.html
+Allow: /display-files.html
+Allow: /leatherite-executive-bags.html
+Allow: /conference-folders.html
+Allow: /stationery-products.html

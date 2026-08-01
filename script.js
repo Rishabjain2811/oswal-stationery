@@ -824,6 +824,9 @@ function renderFeaturedProducts() {
   const container = document.getElementById('featured-products');
   function detailUrl(product) {
     var page = product.page || FEATURED_PAGE;
+    if (window.OswalProductRegistry && window.OswalProductRegistry.buildStaticUrl) {
+      return window.OswalProductRegistry.buildStaticUrl(page, product.id);
+    }
     if (window.OswalProductRegistry && window.OswalProductRegistry.buildUrl) {
       return window.OswalProductRegistry.buildUrl(page, product.id);
     }
@@ -952,7 +955,15 @@ function renderProductCategories() {
       <h3 class="category-title">${cat.name}</h3>
       <div class="products">
         ${cat.products.map(product => {
-          const url = 'product.html?page=' + encodeURIComponent(cat.page || cat.name) + '&id=' + product.id;
+          var page = cat.page || cat.name;
+          var url;
+          if (window.OswalProductRegistry && window.OswalProductRegistry.buildStaticUrl) {
+            url = window.OswalProductRegistry.buildStaticUrl(page, product.id);
+          } else if (window.OswalProductRegistry && window.OswalProductRegistry.buildUrl) {
+            url = window.OswalProductRegistry.buildUrl(page, product.id);
+          } else {
+            url = 'product.html?page=' + encodeURIComponent(page) + '&id=' + product.id;
+          }
           return `
           <div class="product-card">
             <a href="${url}" class="product-image-link">${renderProductImages(product)}</a>
@@ -1161,5 +1172,37 @@ window.addEventListener('pageshow', function () {
 
 window.addEventListener('load', function () {
   updateMobileCartBadge();
+});
+
+// Read More Toggle Functionality
+function initReadMoreToggles() {
+  const toggles = document.querySelectorAll('.read-more-toggle');
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      const readMoreSection = this.closest('.read-more-section');
+      const content = readMoreSection.querySelector('.read-more-content');
+      
+      if (content) {
+        content.classList.toggle('expanded');
+        
+        if (content.classList.contains('expanded')) {
+          this.textContent = 'Read Less';
+        } else {
+          this.textContent = 'Read More';
+        }
+      }
+    });
+  });
+}
+
+// Initialize read more toggles on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  initReadMoreToggles();
+});
+
+// Also initialize after window load to ensure all content is loaded
+window.addEventListener('load', function() {
+  initReadMoreToggles();
 });
 

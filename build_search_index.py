@@ -39,6 +39,10 @@ SEARCH_JS = r"""
     return String(query || '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
   }
 
+  function normalizeKey(code) {
+    return String(code || '').replace(/[^A-Z0-9]/g, '').toUpperCase();
+  }
+
   function normalizeName(query) {
     return String(query || '')
       .toLowerCase()
@@ -51,73 +55,39 @@ SEARCH_JS = r"""
     return String(name || '').replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
-  function search(query, limit) {
-    var max = limit || 8;
-    var codeQuery = normalizeQuery(query);
-    var nameQuery = normalizeName(query);
-    if (!codeQuery && !nameQuery) return [];
+  function search(query) {
+    var normalizedQuery = normalizeQuery(query);
+    if (!normalizedQuery) return [];
 
-    var ranked = [];
-    var seen = {};
+    var results = [];
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+      var searchName = product.searchName;
+      var codes = product.codes || [];
 
-    function push(product, score, matchedCode) {
-      var id = product.page + '::' + product.productId;
-      var existing = seen[id];
-      if (existing && existing.score <= score) return;
-      seen[id] = { score: score, matchedCode: matchedCode || '' };
-      ranked = ranked.filter(function (item) { return item.id !== id; });
-      ranked.push({
-        id: id,
-        score: score,
-        productId: product.productId,
-        productName: product.productName,
-        category: product.category,
-        page: product.page,
-        codes: product.codes,
-        matchedCode: matchedCode || (product.codes[0] || '')
-      });
+      var nameMatch = searchName.indexOf(normalizedQuery) !== -1;
+      var codeMatch = false;
+      for (var j = 0; j < codes.length; j++) {
+        if (normalizeKey(codes[j]).indexOf(normalizedQuery) !== -1) {
+          codeMatch = true;
+          break;
+        }
+      }
+
+      if (nameMatch || codeMatch) {
+        var matchedCode = codeMatch ? codes[0] : null;
+        results.push({
+          productId: product.productId,
+          productName: product.productName,
+          category: product.category,
+          page: product.page,
+          matchedCode: matchedCode,
+          staticUrl: product.staticUrl
+        });
+      }
     }
 
-    products.forEach(function (product) {
-      (product.codes || []).forEach(function (code) {
-        var key = normalizeQuery(code);
-        if (!codeQuery) return;
-        if (key === codeQuery) {
-          push(product, 1, code);
-        } else if (key.indexOf(codeQuery) === 0) {
-          push(product, 2, code);
-        } else if (key.indexOf(codeQuery) !== -1) {
-          push(product, 3, code);
-        }
-      });
-
-      if (!nameQuery) return;
-
-      var words = nameQuery.split(' ').filter(Boolean);
-      if (!words.length) return;
-
-      var nameNorm = product.searchName;
-      var categoryNorm = normalizeName(product.category);
-      var nameMatch = words.every(function (word) {
-        return nameNorm.indexOf(word) !== -1;
-      });
-      var categoryMatch = words.every(function (word) {
-        return categoryNorm.indexOf(word) !== -1;
-      });
-
-      if (nameMatch) {
-        push(product, 4, product.codes[0] || '');
-      } else if (categoryMatch) {
-        push(product, 5, product.codes[0] || '');
-      }
-    });
-
-    ranked.sort(function (a, b) {
-      if (a.score !== b.score) return a.score - b.score;
-      return a.productName.localeCompare(b.productName);
-    });
-
-    return ranked.slice(0, max);
+    return results;
   }
 """
 
@@ -199,6 +169,10 @@ def block_to_dict(block):
 def build_registry_entries():
     entries = []
     seen = set()
+    
+    # Load URL mapping
+    with open("url-mapping.json", "r", encoding="utf-8") as f:
+        url_mapping = json.load(f)
 
     for js_file, (page, category) in CATEGORY_FILES.items():
         if not os.path.exists(js_file):
@@ -214,12 +188,18 @@ def build_registry_entries():
             except json.JSONDecodeError:
                 continue
             data.pop("featured", None)
+            
+            # Get static URL from mapping
+            key = f"{page}::{product['id']}"
+            static_url = url_mapping.get(key, {}).get('url', '')
+            
             entries.append(
                 {
                     "key": page + "::" + str(product["id"]),
                     "page": page,
                     "category": category,
                     "product": data,
+                    "staticUrl": static_url
                 }
             )
 
@@ -241,6 +221,24 @@ REGISTRY_JS = r"""
     if (code) url += '&code=' + encodeURIComponent(code);
     return url;
   }
+
+  function buildStaticUrl(page, productId) {
+    var key = makeKey(page, productId);
+    var entry = byKey[key];
+    if (entry && entry.staticUrl) {
+      return entry.staticUrl;
+    }
+    return buildUrl(page, productId);
+  }
+
+  function findByStaticUrl(staticUrl) {
+    for (var i = 0; i < entries.length; i++) {
+      if (entries[i].staticUrl === staticUrl) {
+        return entries[i];
+      }
+    }
+    return null;
+  }
 """
 
 
@@ -261,7 +259,9 @@ def write_product_registry(entries):
         "    entries: entries,\n"
         "    byKey: byKey,\n"
         "    find: find,\n"
+        "    findByStaticUrl: findByStaticUrl,\n"
         "    buildUrl: buildUrl,\n"
+        "    buildStaticUrl: buildStaticUrl,\n"
         "    makeKey: makeKey\n"
         "  };\n"
         "})(typeof window !== 'undefined' ? window : this);\n"
@@ -272,6 +272,10 @@ def write_product_registry(entries):
 
 
 def main():
+    # Load URL mapping
+    with open("url-mapping.json", "r", encoding="utf-8") as f:
+        url_mapping = json.load(f)
+    
     products = []
     seen_products = set()
 
@@ -306,6 +310,11 @@ def main():
                 unique_codes.append(code)
 
             display_name = clean_display_name(product["name"]) or product["name"]
+            
+            # Get static URL from mapping
+            key = f"{page}::{product['id']}"
+            static_url = url_mapping.get(key, {}).get('url', '')
+            
             products.append(
                 {
                     "productId": product["id"],
@@ -314,6 +323,7 @@ def main():
                     "category": category,
                     "page": page,
                     "codes": unique_codes,
+                    "staticUrl": static_url,
                 }
             )
 

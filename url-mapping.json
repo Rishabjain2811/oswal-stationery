@@ -1,0 +1,812 @@
+{
+  "stationery-products.html::71": {
+    "url": "product-CL8022.html",
+    "item_code": "CL8022",
+    "category_slug": "stationery-products",
+    "product_id": 71
+  },
+  "stationery-products.html::72": {
+    "url": "product-CL8033.html",
+    "item_code": "CL8033",
+    "category_slug": "stationery-products",
+    "product_id": 72
+  },
+  "stationery-products.html::70": {
+    "url": "product-CLE804.html",
+    "item_code": "CLE804",
+    "category_slug": "stationery-products",
+    "product_id": 70
+  },
+  "clear-books.html::17": {
+    "url": "product-CL10.html",
+    "item_code": "CL10",
+    "category_slug": "clear-books",
+    "product_id": 17
+  },
+  "clear-books.html::16": {
+    "url": "product-CL772.html",
+    "item_code": "CL772",
+    "category_slug": "clear-books",
+    "product_id": 16
+  },
+  "clear-books.html::20": {
+    "url": "product-ICON-771.html",
+    "item_code": "ICON 771",
+    "category_slug": "clear-books",
+    "product_id": 20
+  },
+  "clear-books.html::19": {
+    "url": "product-CF10.html",
+    "item_code": "CF10",
+    "category_slug": "clear-books",
+    "product_id": 19
+  },
+  "card-holders.html::32": {
+    "url": "product-ICON-600IC.html",
+    "item_code": "ICON 600IC",
+    "category_slug": "card-holders",
+    "product_id": 32
+  },
+  "card-holders.html::31": {
+    "url": "product-CL120K.html",
+    "item_code": "CL120K",
+    "category_slug": "card-holders",
+    "product_id": 31
+  },
+  "document-bags.html::55": {
+    "url": "product-CL4406.html",
+    "item_code": "CL4406",
+    "category_slug": "document-bags",
+    "product_id": 55
+  },
+  "document-bags.html::56": {
+    "url": "product-CL4409.html",
+    "item_code": "CL4409",
+    "category_slug": "document-bags",
+    "product_id": 56
+  },
+  "conference-folders.html::63": {
+    "url": "product-CL9001A.html",
+    "item_code": "CL9001A",
+    "category_slug": "conference-folders",
+    "product_id": 63
+  },
+  "conference-folders.html::64": {
+    "url": "product-CL102A.html",
+    "item_code": "CL102A",
+    "category_slug": "conference-folders",
+    "product_id": 64
+  },
+  "conference-folders.html::65": {
+    "url": "product-CP24.html",
+    "item_code": "CP24",
+    "category_slug": "conference-folders",
+    "product_id": 65
+  },
+  "conference-folders.html::66": {
+    "url": "product-CP25.html",
+    "item_code": "CP25",
+    "category_slug": "conference-folders",
+    "product_id": 66
+  },
+  "conference-folders.html::67": {
+    "url": "product-CP31.html",
+    "item_code": "CP31",
+    "category_slug": "conference-folders",
+    "product_id": 67
+  },
+  "conference-folders.html::68": {
+    "url": "product-CP37.html",
+    "item_code": "CP37",
+    "category_slug": "conference-folders",
+    "product_id": 68
+  },
+  "conference-folders.html::69": {
+    "url": "product-CP45.html",
+    "item_code": "CP45",
+    "category_slug": "conference-folders",
+    "product_id": 69
+  },
+  "conference-folders.html::70": {
+    "url": "product-CP50.html",
+    "item_code": "CP50",
+    "category_slug": "conference-folders",
+    "product_id": 70
+  },
+  "conference-folders.html::71": {
+    "url": "product-CP66.html",
+    "item_code": "CP66",
+    "category_slug": "conference-folders",
+    "product_id": 71
+  },
+  "conference-folders.html::72": {
+    "url": "product-CP10.html",
+    "item_code": "CP10",
+    "category_slug": "conference-folders",
+    "product_id": 72
+  },
+  "conference-folders.html::73": {
+    "url": "product-CP96.html",
+    "item_code": "CP96",
+    "category_slug": "conference-folders",
+    "product_id": 73
+  },
+  "conference-folders.html::74": {
+    "url": "product-CP100.html",
+    "item_code": "CP100",
+    "category_slug": "conference-folders",
+    "product_id": 74
+  },
+  "paper-board-files.html::54": {
+    "url": "product-CL501.html",
+    "item_code": "CL501",
+    "category_slug": "paper-board-files",
+    "product_id": 54
+  },
+  "leatherite-executive-bags.html::60": {
+    "url": "product-CP401-10.html",
+    "item_code": "CP401-10",
+    "category_slug": "leatherite-executive-bags",
+    "product_id": 60
+  },
+  "leatherite-executive-bags.html::61": {
+    "url": "product-CP400-10.html",
+    "item_code": "CP400-10",
+    "category_slug": "leatherite-executive-bags",
+    "product_id": 61
+  },
+  "display-files.html::66": {
+    "url": "product-10-Folder-A3.html",
+    "item_code": "10 Folder A3",
+    "category_slug": "display-files",
+    "product_id": 66
+  },
+  "document-bags.html::57": {
+    "url": "product-CL812F.html",
+    "item_code": "CL812F",
+    "category_slug": "document-bags",
+    "product_id": 57
+  },
+  "document-bags.html::58": {
+    "url": "product-STYLO-DC-A4.html",
+    "item_code": "STYLO DC A4",
+    "category_slug": "document-bags",
+    "product_id": 58
+  },
+  "clear-books.html::14": {
+    "url": "product-CL10A.html",
+    "item_code": "CL10A",
+    "category_slug": "clear-books",
+    "product_id": 14
+  },
+  "clear-books.html::15": {
+    "url": "product-CL10F.html",
+    "item_code": "CL10F",
+    "category_slug": "clear-books",
+    "product_id": 15
+  },
+  "stationery-products.html::73": {
+    "url": "product-CL318A.html",
+    "item_code": "CL318A",
+    "category_slug": "stationery-products",
+    "product_id": 73
+  },
+  "button-files.html::75": {
+    "url": "product-CL211F.html",
+    "item_code": "CL211F",
+    "category_slug": "button-files",
+    "product_id": 75
+  },
+  "button-files.html::76": {
+    "url": "product-CL212F.html",
+    "item_code": "CL212F",
+    "category_slug": "button-files",
+    "product_id": 76
+  },
+  "button-files.html::77": {
+    "url": "product-CL236F.html",
+    "item_code": "CL236F",
+    "category_slug": "button-files",
+    "product_id": 77
+  },
+  "paper-board-files.html::50": {
+    "url": "product-CL556F.html",
+    "item_code": "CL556F",
+    "category_slug": "paper-board-files",
+    "product_id": 50
+  },
+  "paper-board-files.html::51": {
+    "url": "product-paper-board-files-CL556F.html",
+    "item_code": "CL556F",
+    "category_slug": "paper-board-files",
+    "product_id": 51
+  },
+  "paper-board-files.html::511": {
+    "url": "product-paper-board-files-CL1556F.html",
+    "item_code": "CL1556F",
+    "category_slug": "paper-board-files",
+    "product_id": 511
+  },
+  "clip-files.html::12": {
+    "url": "product-CL451A.html",
+    "item_code": "CL451A",
+    "category_slug": "clip-files",
+    "product_id": 12
+  },
+  "leatherite-executive-bags.html::62": {
+    "url": "product-CP131.html",
+    "item_code": "CP131",
+    "category_slug": "leatherite-executive-bags",
+    "product_id": 62
+  },
+  "document-bags.html::44": {
+    "url": "product-CL813F.html",
+    "item_code": "CL813F",
+    "category_slug": "document-bags",
+    "product_id": 44
+  },
+  "document-bags.html::45": {
+    "url": "product-CL1212F.html",
+    "item_code": "CL1212F",
+    "category_slug": "document-bags",
+    "product_id": 45
+  },
+  "document-bags.html::46": {
+    "url": "product-CL8821F.html",
+    "item_code": "CL8821F",
+    "category_slug": "document-bags",
+    "product_id": 46
+  },
+  "document-bags.html::47": {
+    "url": "product-CL8065F.html",
+    "item_code": "CL8065F",
+    "category_slug": "document-bags",
+    "product_id": 47
+  },
+  "document-bags.html::48": {
+    "url": "product-CL6016F.html",
+    "item_code": "CL6016F",
+    "category_slug": "document-bags",
+    "product_id": 48
+  },
+  "document-bags.html::49": {
+    "url": "product-CL6018F.html",
+    "item_code": "CL6018F",
+    "category_slug": "document-bags",
+    "product_id": 49
+  },
+  "document-bags.html::50": {
+    "url": "product-CL6026F.html",
+    "item_code": "CL6026F",
+    "category_slug": "document-bags",
+    "product_id": 50
+  },
+  "document-bags.html::51": {
+    "url": "product-CL6028F.html",
+    "item_code": "CL6028F",
+    "category_slug": "document-bags",
+    "product_id": 51
+  },
+  "document-bags.html::52": {
+    "url": "product-CL8057A.html",
+    "item_code": "CL8057A",
+    "category_slug": "document-bags",
+    "product_id": 52
+  },
+  "document-bags.html::53": {
+    "url": "product-CL8071A.html",
+    "item_code": "CL8071A",
+    "category_slug": "document-bags",
+    "product_id": 53
+  },
+  "document-bags.html::54": {
+    "url": "product-CL816A.html",
+    "item_code": "CL816A",
+    "category_slug": "document-bags",
+    "product_id": 54
+  },
+  "button-files.html::43": {
+    "url": "product-CL114F.html",
+    "item_code": "CL114F",
+    "category_slug": "button-files",
+    "product_id": 43
+  },
+  "button-files.html::44": {
+    "url": "product-CL119F.html",
+    "item_code": "CL119F",
+    "category_slug": "button-files",
+    "product_id": 44
+  },
+  "report-cover-files.html::4": {
+    "url": "product-CL320A.html",
+    "item_code": "CL320A",
+    "category_slug": "report-cover-files",
+    "product_id": 4
+  },
+  "clear-books.html::18": {
+    "url": "product-clear-books-CF10.html",
+    "item_code": "CF10",
+    "category_slug": "clear-books",
+    "product_id": 18
+  },
+  "display-files.html::59": {
+    "url": "product-INFO-FOLDER-A3.html",
+    "item_code": "INFO FOLDER A3",
+    "category_slug": "display-files",
+    "product_id": 59
+  },
+  "display-files.html::65": {
+    "url": "product-display-files-10-Folder-A3.html",
+    "item_code": "10 Folder A3",
+    "category_slug": "display-files",
+    "product_id": 65
+  },
+  "report-cover-files.html::2": {
+    "url": "product-CL310.html",
+    "item_code": "CL310",
+    "category_slug": "report-cover-files",
+    "product_id": 2
+  },
+  "display-files.html::57": {
+    "url": "product-CL504.html",
+    "item_code": "CL504",
+    "category_slug": "display-files",
+    "product_id": 57
+  },
+  "display-files.html::58": {
+    "url": "product-CL508.html",
+    "item_code": "CL508",
+    "category_slug": "display-files",
+    "product_id": 58
+  },
+  "display-files.html::62": {
+    "url": "product-5-Folder.html",
+    "item_code": "5 Folder",
+    "category_slug": "display-files",
+    "product_id": 62
+  },
+  "zipper-bag-series.html::43": {
+    "url": "product-.html",
+    "item_code": "",
+    "category_slug": "zipper-bag-series",
+    "product_id": 43
+  },
+  "paper-board-files.html::53": {
+    "url": "product-CL308A.html",
+    "item_code": "CL308A",
+    "category_slug": "paper-board-files",
+    "product_id": 53
+  },
+  "paper-board-files.html::52": {
+    "url": "product-CL309A.html",
+    "item_code": "CL309A",
+    "category_slug": "paper-board-files",
+    "product_id": 52
+  },
+  "display-files.html::64": {
+    "url": "product-1-Folder-A3.html",
+    "item_code": "1 Folder A3",
+    "category_slug": "display-files",
+    "product_id": 64
+  },
+  "separators.html::66": {
+    "url": "product-CL010.html",
+    "item_code": "CL010",
+    "category_slug": "separators",
+    "product_id": 66
+  },
+  "separators.html::67": {
+    "url": "product-N5.html",
+    "item_code": "N5",
+    "category_slug": "separators",
+    "product_id": 67
+  },
+  "separators.html::68": {
+    "url": "product-NZ.html",
+    "item_code": "NZ",
+    "category_slug": "separators",
+    "product_id": 68
+  },
+  "zipper-bag-series.html::40": {
+    "url": "product-CLP53.html",
+    "item_code": "CLP53",
+    "category_slug": "zipper-bag-series",
+    "product_id": 40
+  },
+  "display-files.html::53": {
+    "url": "product-CL201T.html",
+    "item_code": "CL201(T)",
+    "category_slug": "display-files",
+    "product_id": 53
+  },
+  "display-files.html::54": {
+    "url": "product-CL202T.html",
+    "item_code": "CL202(T)",
+    "category_slug": "display-files",
+    "product_id": 54
+  },
+  "display-files.html::55": {
+    "url": "product-CL203B.html",
+    "item_code": "CL203(B)",
+    "category_slug": "display-files",
+    "product_id": 55
+  },
+  "display-files.html::56": {
+    "url": "product-CL204B.html",
+    "item_code": "CL204(B)",
+    "category_slug": "display-files",
+    "product_id": 56
+  },
+  "zipper-bag-series.html::41": {
+    "url": "product-CLF53.html",
+    "item_code": "CLF53",
+    "category_slug": "zipper-bag-series",
+    "product_id": 41
+  },
+  "button-files.html::78": {
+    "url": "product-CL402F.html",
+    "item_code": "CL402F",
+    "category_slug": "button-files",
+    "product_id": 78
+  },
+  "button-files.html::79": {
+    "url": "product-CL408F.html",
+    "item_code": "CL408F",
+    "category_slug": "button-files",
+    "product_id": 79
+  },
+  "button-files.html::80": {
+    "url": "product-CL410F.html",
+    "item_code": "CL410F",
+    "category_slug": "button-files",
+    "product_id": 80
+  },
+  "conference-folders.html::62": {
+    "url": "product-CL261A.html",
+    "item_code": "CL261A",
+    "category_slug": "conference-folders",
+    "product_id": 62
+  },
+  "button-files.html::45": {
+    "url": "product-CL801.html",
+    "item_code": "CL801",
+    "category_slug": "button-files",
+    "product_id": 45
+  },
+  "button-files.html::46": {
+    "url": "product-CL802.html",
+    "item_code": "CL802",
+    "category_slug": "button-files",
+    "product_id": 46
+  },
+  "button-files.html::47": {
+    "url": "product-CL804F.html",
+    "item_code": "CL804F",
+    "category_slug": "button-files",
+    "product_id": 47
+  },
+  "button-files.html::48": {
+    "url": "product-CL805F.html",
+    "item_code": "CL805F",
+    "category_slug": "button-files",
+    "product_id": 48
+  },
+  "button-files.html::49": {
+    "url": "product-CL1000F.html",
+    "item_code": "CL1000F",
+    "category_slug": "button-files",
+    "product_id": 49
+  },
+  "button-files.html::50": {
+    "url": "product-CL1027F.html",
+    "item_code": "CL1027F",
+    "category_slug": "button-files",
+    "product_id": 50
+  },
+  "button-files.html::51": {
+    "url": "product-CL1032F.html",
+    "item_code": "CL1032F",
+    "category_slug": "button-files",
+    "product_id": 51
+  },
+  "button-files.html::52": {
+    "url": "product-CL1034F.html",
+    "item_code": "CL1034F",
+    "category_slug": "button-files",
+    "product_id": 52
+  },
+  "button-files.html::53": {
+    "url": "product-CL1041F.html",
+    "item_code": "CL1041F",
+    "category_slug": "button-files",
+    "product_id": 53
+  },
+  "button-files.html::54": {
+    "url": "product-CL1042F.html",
+    "item_code": "CL1042F",
+    "category_slug": "button-files",
+    "product_id": 54
+  },
+  "button-files.html::55": {
+    "url": "product-CL1043F.html",
+    "item_code": "CL1043F",
+    "category_slug": "button-files",
+    "product_id": 55
+  },
+  "button-files.html::56": {
+    "url": "product-CL1044F.html",
+    "item_code": "CL1044F",
+    "category_slug": "button-files",
+    "product_id": 56
+  },
+  "button-files.html::57": {
+    "url": "product-CL2000F.html",
+    "item_code": "CL2000F",
+    "category_slug": "button-files",
+    "product_id": 57
+  },
+  "button-files.html::58": {
+    "url": "product-CL2001F.html",
+    "item_code": "CL2001F",
+    "category_slug": "button-files",
+    "product_id": 58
+  },
+  "button-files.html::59": {
+    "url": "product-CL2002F.html",
+    "item_code": "CL2002F",
+    "category_slug": "button-files",
+    "product_id": 59
+  },
+  "button-files.html::60": {
+    "url": "product-CL2003F.html",
+    "item_code": "CL2003F",
+    "category_slug": "button-files",
+    "product_id": 60
+  },
+  "button-files.html::61": {
+    "url": "product-CL2004F.html",
+    "item_code": "CL2004F",
+    "category_slug": "button-files",
+    "product_id": 61
+  },
+  "button-files.html::62": {
+    "url": "product-CL2005F.html",
+    "item_code": "CL2005F",
+    "category_slug": "button-files",
+    "product_id": 62
+  },
+  "button-files.html::63": {
+    "url": "product-CL2029F.html",
+    "item_code": "CL2029F",
+    "category_slug": "button-files",
+    "product_id": 63
+  },
+  "button-files.html::64": {
+    "url": "product-CL2030F.html",
+    "item_code": "CL2030F",
+    "category_slug": "button-files",
+    "product_id": 64
+  },
+  "button-files.html::65": {
+    "url": "product-CL2401F.html",
+    "item_code": "CL2401F",
+    "category_slug": "button-files",
+    "product_id": 65
+  },
+  "button-files.html::66": {
+    "url": "product-CL2402F.html",
+    "item_code": "CL2402F",
+    "category_slug": "button-files",
+    "product_id": 66
+  },
+  "button-files.html::67": {
+    "url": "product-CL3000F.html",
+    "item_code": "CL3000F",
+    "category_slug": "button-files",
+    "product_id": 67
+  },
+  "button-files.html::68": {
+    "url": "product-CL3020F.html",
+    "item_code": "CL3020F",
+    "category_slug": "button-files",
+    "product_id": 68
+  },
+  "button-files.html::69": {
+    "url": "product-CL3021F.html",
+    "item_code": "CL3021F",
+    "category_slug": "button-files",
+    "product_id": 69
+  },
+  "button-files.html::70": {
+    "url": "product-CL3022F.html",
+    "item_code": "CL3022F",
+    "category_slug": "button-files",
+    "product_id": 70
+  },
+  "button-files.html::71": {
+    "url": "product-CL3026F.html",
+    "item_code": "CL3026F",
+    "category_slug": "button-files",
+    "product_id": 71
+  },
+  "button-files.html::72": {
+    "url": "product-CL4000F.html",
+    "item_code": "CL4000F",
+    "category_slug": "button-files",
+    "product_id": 72
+  },
+  "button-files.html::73": {
+    "url": "product-CL5000F.html",
+    "item_code": "CL5000F",
+    "category_slug": "button-files",
+    "product_id": 73
+  },
+  "button-files.html::74": {
+    "url": "product-CL209F.html",
+    "item_code": "CL209F",
+    "category_slug": "button-files",
+    "product_id": 74
+  },
+  "clip-files.html::10": {
+    "url": "product-CL421A.html",
+    "item_code": "CL421A",
+    "category_slug": "clip-files",
+    "product_id": 10
+  },
+  "report-cover-files.html::3": {
+    "url": "product-CL-RF102.html",
+    "item_code": "CL-RF102",
+    "category_slug": "report-cover-files",
+    "product_id": 3
+  },
+  "report-cover-files.html::7": {
+    "url": "product-CL220.html",
+    "item_code": "CL220",
+    "category_slug": "report-cover-files",
+    "product_id": 7
+  },
+  "clip-files.html::13": {
+    "url": "product-CL820A.html",
+    "item_code": "CL820A",
+    "category_slug": "clip-files",
+    "product_id": 13
+  },
+  "clip-files.html::14": {
+    "url": "product-CL720A.html",
+    "item_code": "CL720A",
+    "category_slug": "clip-files",
+    "product_id": 14
+  },
+  "clip-files.html::15": {
+    "url": "product-CL521A.html",
+    "item_code": "CL521A",
+    "category_slug": "clip-files",
+    "product_id": 15
+  },
+  "clip-files.html::16": {
+    "url": "product-CL516A.html",
+    "item_code": "CL516A",
+    "category_slug": "clip-files",
+    "product_id": 16
+  },
+  "zipper-bag-series.html::42": {
+    "url": "product-zipper-bag-series-.html",
+    "item_code": "",
+    "category_slug": "zipper-bag-series",
+    "product_id": 42
+  },
+  "sheet-protectors.html::8": {
+    "url": "product-SP50.html",
+    "item_code": "SP50",
+    "category_slug": "sheet-protectors",
+    "product_id": 8
+  },
+  "stationery-products.html::69": {
+    "url": "product-CL9882.html",
+    "item_code": "CL9882",
+    "category_slug": "stationery-products",
+    "product_id": 69
+  },
+  "report-cover-files.html::6": {
+    "url": "product-CL341A.html",
+    "item_code": "CL341A",
+    "category_slug": "report-cover-files",
+    "product_id": 6
+  },
+  "clip-files.html::11": {
+    "url": "product-CL431A.html",
+    "item_code": "CL431A",
+    "category_slug": "clip-files",
+    "product_id": 11
+  },
+  "button-files.html::35": {
+    "url": "product-CL303.html",
+    "item_code": "CL303",
+    "category_slug": "button-files",
+    "product_id": 35
+  },
+  "button-files.html::36": {
+    "url": "product-CL503A.html",
+    "item_code": "CL503A",
+    "category_slug": "button-files",
+    "product_id": 36
+  },
+  "button-files.html::37": {
+    "url": "product-CL603F.html",
+    "item_code": "CL603F",
+    "category_slug": "button-files",
+    "product_id": 37
+  },
+  "button-files.html::38": {
+    "url": "product-CL703FT.html",
+    "item_code": "CL703FT",
+    "category_slug": "button-files",
+    "product_id": 38
+  },
+  "button-files.html::39": {
+    "url": "product-CL803F.html",
+    "item_code": "CL803F",
+    "category_slug": "button-files",
+    "product_id": 39
+  },
+  "button-files.html::40": {
+    "url": "product-CL903F.html",
+    "item_code": "CL903F",
+    "category_slug": "button-files",
+    "product_id": 40
+  },
+  "button-files.html::41": {
+    "url": "product-CL605F.html",
+    "item_code": "CL605F",
+    "category_slug": "button-files",
+    "product_id": 41
+  },
+  "button-files.html::42": {
+    "url": "product-IKON-603ECO.html",
+    "item_code": "IKON 603ECO",
+    "category_slug": "button-files",
+    "product_id": 42
+  },
+  "report-cover-files.html::1": {
+    "url": "product-CL10-Ikon.html",
+    "item_code": "CL10 (Ikon)",
+    "category_slug": "report-cover-files",
+    "product_id": 1
+  },
+  "report-cover-files.html::101": {
+    "url": "product-report-cover-files-CL10-Ikon.html",
+    "item_code": "CL10 (Ikon)",
+    "category_slug": "report-cover-files",
+    "product_id": 101
+  },
+  "report-cover-files.html::5": {
+    "url": "product-CL331A.html",
+    "item_code": "CL331A",
+    "category_slug": "report-cover-files",
+    "product_id": 5
+  },
+  "card-holders.html::30": {
+    "url": "product-CL40K.html",
+    "item_code": "CL40K",
+    "category_slug": "card-holders",
+    "product_id": 30
+  },
+  "display-files.html::63": {
+    "url": "product-display-files-1-Folder-A3.html",
+    "item_code": "1 Folder A3",
+    "category_slug": "display-files",
+    "product_id": 63
+  },
+  "display-files.html::60": {
+    "url": "product-display-files-5-Folder.html",
+    "item_code": "5 Folder",
+    "category_slug": "display-files",
+    "product_id": 60
+  },
+  "display-files.html::61": {
+    "url": "product-Supreme-Wall-Unit-A3.html",
+    "item_code": "Supreme Wall Unit A3",
+    "category_slug": "display-files",
+    "product_id": 61
+  }
+}

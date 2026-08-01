@@ -28,8 +28,13 @@
 
   function wireBrandHomeLink() {
     var logoWrap = document.querySelector('.nav-logo');
-    var brand = document.querySelector('.brand');
+    var brand = document.querySelector('.nav-logo .brand');
     if (!logoWrap && !brand) return;
+
+    // Check if logo is already wrapped in an anchor tag
+    if (logoWrap && logoWrap.querySelector('a')) {
+      return; // Skip adding click handler if logo is already linked
+    }
 
     function goHome() {
       global.location.href = 'index.html';

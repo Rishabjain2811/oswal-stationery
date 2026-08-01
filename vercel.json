@@ -1,0 +1,1295 @@
+{
+  "rewrites": [
+    {
+      "source": "/product.html",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/product.html?page=report-cover-files.html&id=1",
+      "destination": "/product-CL10-Ikon.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=report-cover-files.html&id=1&code=:code",
+      "destination": "/product-CL10-Ikon.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=report-cover-files.html&id=101",
+      "destination": "/product-report-cover-files-CL10-Ikon.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=report-cover-files.html&id=101&code=:code",
+      "destination": "/product-report-cover-files-CL10-Ikon.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=report-cover-files.html&id=2",
+      "destination": "/product-CL310.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=report-cover-files.html&id=2&code=:code",
+      "destination": "/product-CL310.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=10",
+      "destination": "/product-CL421A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=10&code=:code",
+      "destination": "/product-CL421A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=11",
+      "destination": "/product-CL431A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=11&code=:code",
+      "destination": "/product-CL431A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=12",
+      "destination": "/product-CL451A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=12&code=:code",
+      "destination": "/product-CL451A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=13",
+      "destination": "/product-CL820A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=13&code=:code",
+      "destination": "/product-CL820A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=14",
+      "destination": "/product-CL720A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=14&code=:code",
+      "destination": "/product-CL720A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=15",
+      "destination": "/product-CL521A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=15&code=:code",
+      "destination": "/product-CL521A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=16",
+      "destination": "/product-CL516A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clip-files.html&id=16&code=:code",
+      "destination": "/product-CL516A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=14",
+      "destination": "/product-CL10A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=14&code=:code",
+      "destination": "/product-CL10A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=15",
+      "destination": "/product-CL10F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=15&code=:code",
+      "destination": "/product-CL10F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=16",
+      "destination": "/product-CL772.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=16&code=:code",
+      "destination": "/product-CL772.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=17",
+      "destination": "/product-CL10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=17&code=:code",
+      "destination": "/product-CL10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=18",
+      "destination": "/product-CF10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=18&code=:code",
+      "destination": "/product-CF10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=19",
+      "destination": "/product-clear-books-CF10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=19&code=:code",
+      "destination": "/product-clear-books-CF10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=20",
+      "destination": "/product-ICON-771.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=clear-books.html&id=20&code=:code",
+      "destination": "/product-ICON-771.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=30",
+      "destination": "/product-CL40K.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=30&code=:code",
+      "destination": "/product-CL40K.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=31",
+      "destination": "/product-CL120K.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=31&code=:code",
+      "destination": "/product-CL120K.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=32",
+      "destination": "/product-ICON-600IC.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=card-holders.html&id=32&code=:code",
+      "destination": "/product-ICON-600IC.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=35",
+      "destination": "/product-CL303.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=35&code=:code",
+      "destination": "/product-CL303.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=36",
+      "destination": "/product-CL503A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=36&code=:code",
+      "destination": "/product-CL503A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=37",
+      "destination": "/product-CL603F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=37&code=:code",
+      "destination": "/product-CL603F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=38",
+      "destination": "/product-CL703FT.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=38&code=:code",
+      "destination": "/product-CL703FT.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=39",
+      "destination": "/product-CL803F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=39&code=:code",
+      "destination": "/product-CL803F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=40",
+      "destination": "/product-CL903F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=40&code=:code",
+      "destination": "/product-CL903F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=41",
+      "destination": "/product-CL605F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=41&code=:code",
+      "destination": "/product-CL605F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=42",
+      "destination": "/product-IKON-603ECO.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=42&code=:code",
+      "destination": "/product-IKON-603ECO.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=43",
+      "destination": "/product-CL114F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=43&code=:code",
+      "destination": "/product-CL114F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=44",
+      "destination": "/product-CL119F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=44&code=:code",
+      "destination": "/product-CL119F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=45",
+      "destination": "/product-CL801.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=45&code=:code",
+      "destination": "/product-CL801.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=46",
+      "destination": "/product-CL802.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=46&code=:code",
+      "destination": "/product-CL802.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=47",
+      "destination": "/product-CL804F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=47&code=:code",
+      "destination": "/product-CL804F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=48",
+      "destination": "/product-CL805F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=48&code=:code",
+      "destination": "/product-CL805F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=49",
+      "destination": "/product-CL1000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=49&code=:code",
+      "destination": "/product-CL1000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=50",
+      "destination": "/product-CL1027F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=50&code=:code",
+      "destination": "/product-CL1027F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=51",
+      "destination": "/product-CL1032F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=51&code=:code",
+      "destination": "/product-CL1032F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=52",
+      "destination": "/product-CL1034F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=52&code=:code",
+      "destination": "/product-CL1034F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=53",
+      "destination": "/product-CL1041F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=53&code=:code",
+      "destination": "/product-CL1041F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=54",
+      "destination": "/product-CL1042F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=54&code=:code",
+      "destination": "/product-CL1042F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=55",
+      "destination": "/product-CL1043F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=55&code=:code",
+      "destination": "/product-CL1043F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=56",
+      "destination": "/product-CL1044F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=56&code=:code",
+      "destination": "/product-CL1044F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=57",
+      "destination": "/product-CL2000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=57&code=:code",
+      "destination": "/product-CL2000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=58",
+      "destination": "/product-CL2001F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=58&code=:code",
+      "destination": "/product-CL2001F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=59",
+      "destination": "/product-CL2002F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=59&code=:code",
+      "destination": "/product-CL2002F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=60",
+      "destination": "/product-CL2003F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=60&code=:code",
+      "destination": "/product-CL2003F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=61",
+      "destination": "/product-CL2004F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=61&code=:code",
+      "destination": "/product-CL2004F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=62",
+      "destination": "/product-CL2005F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=62&code=:code",
+      "destination": "/product-CL2005F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=63",
+      "destination": "/product-CL2029F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=63&code=:code",
+      "destination": "/product-CL2029F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=64",
+      "destination": "/product-CL2030F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=64&code=:code",
+      "destination": "/product-CL2030F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=65",
+      "destination": "/product-CL2401F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=65&code=:code",
+      "destination": "/product-CL2401F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=66",
+      "destination": "/product-CL2402F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=66&code=:code",
+      "destination": "/product-CL2402F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=67",
+      "destination": "/product-CL3000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=67&code=:code",
+      "destination": "/product-CL3000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=68",
+      "destination": "/product-CL3020F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=68&code=:code",
+      "destination": "/product-CL3020F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=69",
+      "destination": "/product-CL3021F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=69&code=:code",
+      "destination": "/product-CL3021F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=70",
+      "destination": "/product-CL3022F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=70&code=:code",
+      "destination": "/product-CL3022F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=71",
+      "destination": "/product-CL3026F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=71&code=:code",
+      "destination": "/product-CL3026F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=72",
+      "destination": "/product-CL4000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=72&code=:code",
+      "destination": "/product-CL4000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=73",
+      "destination": "/product-CL5000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=73&code=:code",
+      "destination": "/product-CL5000F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=74",
+      "destination": "/product-CL209F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=74&code=:code",
+      "destination": "/product-CL209F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=75",
+      "destination": "/product-CL211F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=75&code=:code",
+      "destination": "/product-CL211F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=76",
+      "destination": "/product-CL212F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=76&code=:code",
+      "destination": "/product-CL212F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=77",
+      "destination": "/product-CL236F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=77&code=:code",
+      "destination": "/product-CL236F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=78",
+      "destination": "/product-CL402F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=78&code=:code",
+      "destination": "/product-CL402F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=79",
+      "destination": "/product-CL408F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=79&code=:code",
+      "destination": "/product-CL408F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=80",
+      "destination": "/product-CL410F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=button-files.html&id=80&code=:code",
+      "destination": "/product-CL410F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=40",
+      "destination": "/product-CLP53.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=40&code=:code",
+      "destination": "/product-CLP53.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=41",
+      "destination": "/product-CLF53.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=41&code=:code",
+      "destination": "/product-CLF53.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=42",
+      "destination": "/product-.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=42&code=:code",
+      "destination": "/product-.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=43",
+      "destination": "/product-zipper-bag-series-.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=zipper-bag-series.html&id=43&code=:code",
+      "destination": "/product-zipper-bag-series-.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=44",
+      "destination": "/product-CL813F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=44&code=:code",
+      "destination": "/product-CL813F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=45",
+      "destination": "/product-CL1212F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=45&code=:code",
+      "destination": "/product-CL1212F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=46",
+      "destination": "/product-CL8821F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=46&code=:code",
+      "destination": "/product-CL8821F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=47",
+      "destination": "/product-CL8065F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=47&code=:code",
+      "destination": "/product-CL8065F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=48",
+      "destination": "/product-CL6016F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=48&code=:code",
+      "destination": "/product-CL6016F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=49",
+      "destination": "/product-CL6018F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=49&code=:code",
+      "destination": "/product-CL6018F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=50",
+      "destination": "/product-CL6026F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=50&code=:code",
+      "destination": "/product-CL6026F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=51",
+      "destination": "/product-CL6028F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=51&code=:code",
+      "destination": "/product-CL6028F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=52",
+      "destination": "/product-CL8057A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=52&code=:code",
+      "destination": "/product-CL8057A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=53",
+      "destination": "/product-CL8071A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=53&code=:code",
+      "destination": "/product-CL8071A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=54",
+      "destination": "/product-CL816A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=54&code=:code",
+      "destination": "/product-CL816A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=55",
+      "destination": "/product-CL4406.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=55&code=:code",
+      "destination": "/product-CL4406.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=56",
+      "destination": "/product-CL4409.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=56&code=:code",
+      "destination": "/product-CL4409.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=57",
+      "destination": "/product-CL812F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=57&code=:code",
+      "destination": "/product-CL812F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=58",
+      "destination": "/product-STYLO-DC-A4.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=document-bags.html&id=58&code=:code",
+      "destination": "/product-STYLO-DC-A4.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=66",
+      "destination": "/product-CL010.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=66&code=:code",
+      "destination": "/product-CL010.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=67",
+      "destination": "/product-N5.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=67&code=:code",
+      "destination": "/product-N5.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=68",
+      "destination": "/product-NZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=separators.html&id=68&code=:code",
+      "destination": "/product-NZ.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=50",
+      "destination": "/product-CL556F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=50&code=:code",
+      "destination": "/product-CL556F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=51",
+      "destination": "/product-CL1556F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=51&code=:code",
+      "destination": "/product-CL1556F.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=52",
+      "destination": "/product-CL309A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=52&code=:code",
+      "destination": "/product-CL309A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=53",
+      "destination": "/product-CL308A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=53&code=:code",
+      "destination": "/product-CL308A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=54",
+      "destination": "/product-CL501.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=paper-board-files.html&id=54&code=:code",
+      "destination": "/product-CL501.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=53",
+      "destination": "/product-CL201T.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=53&code=:code",
+      "destination": "/product-CL201T.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=54",
+      "destination": "/product-CL202T.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=54&code=:code",
+      "destination": "/product-CL202T.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=55",
+      "destination": "/product-CL203B.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=55&code=:code",
+      "destination": "/product-CL203B.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=56",
+      "destination": "/product-CL204B.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=56&code=:code",
+      "destination": "/product-CL204B.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=57",
+      "destination": "/product-CL504.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=57&code=:code",
+      "destination": "/product-CL504.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=58",
+      "destination": "/product-CL508.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=58&code=:code",
+      "destination": "/product-CL508.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=59",
+      "destination": "/product-INFO-FOLDER-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=59&code=:code",
+      "destination": "/product-INFO-FOLDER-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=60",
+      "destination": "/product-5-Folder.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=60&code=:code",
+      "destination": "/product-5-Folder.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=61",
+      "destination": "/product-Supreme-Wall-Unit-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=61&code=:code",
+      "destination": "/product-Supreme-Wall-Unit-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=62",
+      "destination": "/product-display-files-5-Folder.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=62&code=:code",
+      "destination": "/product-display-files-5-Folder.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=63",
+      "destination": "/product-1-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=63&code=:code",
+      "destination": "/product-1-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=64",
+      "destination": "/product-display-files-1-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=64&code=:code",
+      "destination": "/product-display-files-1-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=65",
+      "destination": "/product-10-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=65&code=:code",
+      "destination": "/product-10-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=66",
+      "destination": "/product-display-files-10-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=display-files.html&id=66&code=:code",
+      "destination": "/product-display-files-10-Folder-A3.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=60",
+      "destination": "/product-CP401-10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=60&code=:code",
+      "destination": "/product-CP401-10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=61",
+      "destination": "/product-CP400-10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=61&code=:code",
+      "destination": "/product-CP400-10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=62",
+      "destination": "/product-CP131.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=leatherite-executive-bags.html&id=62&code=:code",
+      "destination": "/product-CP131.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=62",
+      "destination": "/product-CL261A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=62&code=:code",
+      "destination": "/product-CL261A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=63",
+      "destination": "/product-CL9001A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=63&code=:code",
+      "destination": "/product-CL9001A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=64",
+      "destination": "/product-CL102A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=64&code=:code",
+      "destination": "/product-CL102A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=65",
+      "destination": "/product-CP24.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=65&code=:code",
+      "destination": "/product-CP24.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=66",
+      "destination": "/product-CP25.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=66&code=:code",
+      "destination": "/product-CP25.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=67",
+      "destination": "/product-CP31.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=67&code=:code",
+      "destination": "/product-CP31.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=68",
+      "destination": "/product-CP37.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=68&code=:code",
+      "destination": "/product-CP37.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=69",
+      "destination": "/product-CP45.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=69&code=:code",
+      "destination": "/product-CP45.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=70",
+      "destination": "/product-CP50.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=70&code=:code",
+      "destination": "/product-CP50.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=71",
+      "destination": "/product-CP66.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=71&code=:code",
+      "destination": "/product-CP66.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=72",
+      "destination": "/product-CP10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=72&code=:code",
+      "destination": "/product-CP10.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=73",
+      "destination": "/product-CP96.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=73&code=:code",
+      "destination": "/product-CP96.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=74",
+      "destination": "/product-CP100.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=conference-folders.html&id=74&code=:code",
+      "destination": "/product-CP100.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=69",
+      "destination": "/product-CL9882.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=69&code=:code",
+      "destination": "/product-CL9882.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=70",
+      "destination": "/product-CLE804.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=70&code=:code",
+      "destination": "/product-CLE804.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=71",
+      "destination": "/product-CL8022.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=71&code=:code",
+      "destination": "/product-CL8022.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=72",
+      "destination": "/product-CL8033.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=72&code=:code",
+      "destination": "/product-CL8033.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=73",
+      "destination": "/product-CL318A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html?page=stationery-products.html&id=73&code=:code",
+      "destination": "/product-CL318A.html",
+      "permanent": true
+    },
+    {
+      "source": "/product.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
+}

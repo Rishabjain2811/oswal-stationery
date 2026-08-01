@@ -10,7 +10,8 @@
     "page": "stationery-products.html",
     "codes": [
       "CL8022"
-    ]
+    ],
+    "staticUrl": "product-CL8022.html"
   },
   {
     "productId": 72,
@@ -20,7 +21,8 @@
     "page": "stationery-products.html",
     "codes": [
       "CL8033"
-    ]
+    ],
+    "staticUrl": "product-CL8033.html"
   },
   {
     "productId": 70,
@@ -30,7 +32,8 @@
     "page": "stationery-products.html",
     "codes": [
       "CLE804"
-    ]
+    ],
+    "staticUrl": "product-CLE804.html"
   },
   {
     "productId": 17,
@@ -43,7 +46,8 @@
       "CL20",
       "CL30",
       "CL40"
-    ]
+    ],
+    "staticUrl": "product-CL10.html"
   },
   {
     "productId": 16,
@@ -53,7 +57,8 @@
     "page": "clear-books.html",
     "codes": [
       "CL772"
-    ]
+    ],
+    "staticUrl": "product-CL772.html"
   },
   {
     "productId": 20,
@@ -66,7 +71,8 @@
       "ICON 772",
       "ICON 773",
       "ICON 774"
-    ]
+    ],
+    "staticUrl": "product-ICON-771.html"
   },
   {
     "productId": 19,
@@ -79,7 +85,8 @@
       "CF20",
       "CF30",
       "CF40"
-    ]
+    ],
+    "staticUrl": "product-CF10.html"
   },
   {
     "productId": 32,
@@ -89,7 +96,8 @@
     "page": "card-holders.html",
     "codes": [
       "ICON 600IC"
-    ]
+    ],
+    "staticUrl": "product-ICON-600IC.html"
   },
   {
     "productId": 31,
@@ -101,7 +109,8 @@
       "CL120K",
       "CL240K",
       "CL480K"
-    ]
+    ],
+    "staticUrl": "product-CL120K.html"
   },
   {
     "productId": 55,
@@ -111,7 +120,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL4406"
-    ]
+    ],
+    "staticUrl": "product-CL4406.html"
   },
   {
     "productId": 56,
@@ -121,7 +131,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL4409"
-    ]
+    ],
+    "staticUrl": "product-CL4409.html"
   },
   {
     "productId": 63,
@@ -131,7 +142,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CL9001A"
-    ]
+    ],
+    "staticUrl": "product-CL9001A.html"
   },
   {
     "productId": 64,
@@ -141,7 +153,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CL102A"
-    ]
+    ],
+    "staticUrl": "product-CL102A.html"
   },
   {
     "productId": 65,
@@ -151,7 +164,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP24"
-    ]
+    ],
+    "staticUrl": "product-CP24.html"
   },
   {
     "productId": 66,
@@ -161,7 +175,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP25"
-    ]
+    ],
+    "staticUrl": "product-CP25.html"
   },
   {
     "productId": 67,
@@ -171,7 +186,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP31"
-    ]
+    ],
+    "staticUrl": "product-CP31.html"
   },
   {
     "productId": 68,
@@ -181,7 +197,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP37"
-    ]
+    ],
+    "staticUrl": "product-CP37.html"
   },
   {
     "productId": 69,
@@ -191,7 +208,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP45"
-    ]
+    ],
+    "staticUrl": "product-CP45.html"
   },
   {
     "productId": 70,
@@ -201,7 +219,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP50"
-    ]
+    ],
+    "staticUrl": "product-CP50.html"
   },
   {
     "productId": 71,
@@ -211,7 +230,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP66"
-    ]
+    ],
+    "staticUrl": "product-CP66.html"
   },
   {
     "productId": 72,
@@ -221,7 +241,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP10"
-    ]
+    ],
+    "staticUrl": "product-CP10.html"
   },
   {
     "productId": 73,
@@ -231,7 +252,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP96"
-    ]
+    ],
+    "staticUrl": "product-CP96.html"
   },
   {
     "productId": 74,
@@ -241,7 +263,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CP100"
-    ]
+    ],
+    "staticUrl": "product-CP100.html"
   },
   {
     "productId": 54,
@@ -251,7 +274,8 @@
     "page": "paper-board-files.html",
     "codes": [
       "CL501"
-    ]
+    ],
+    "staticUrl": "product-CL501.html"
   },
   {
     "productId": 60,
@@ -264,7 +288,8 @@
       "CP401-20",
       "CP401-30",
       "CP401-40"
-    ]
+    ],
+    "staticUrl": "product-CP401-10.html"
   },
   {
     "productId": 61,
@@ -277,7 +302,8 @@
       "CP400-20",
       "CP400-30",
       "CP400-40"
-    ]
+    ],
+    "staticUrl": "product-CP400-10.html"
   },
   {
     "productId": 66,
@@ -292,7 +318,8 @@
       "10 Folder A4",
       "20 Folder A4",
       "30 Folder A4"
-    ]
+    ],
+    "staticUrl": "product-10-Folder-A3.html"
   },
   {
     "productId": 14,
@@ -308,7 +335,8 @@
       "CL60A",
       "CL80A",
       "CL100A"
-    ]
+    ],
+    "staticUrl": "product-CL10A.html"
   },
   {
     "productId": 15,
@@ -324,7 +352,8 @@
       "CL60F",
       "CL80F",
       "CL100F"
-    ]
+    ],
+    "staticUrl": "product-CL10F.html"
   },
   {
     "productId": 57,
@@ -334,7 +363,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL812F"
-    ]
+    ],
+    "staticUrl": "product-CL812F.html"
   },
   {
     "productId": 58,
@@ -345,7 +375,8 @@
     "codes": [
       "STYLO DC A4",
       "STYLO DC FC"
-    ]
+    ],
+    "staticUrl": "product-STYLO-DC-A4.html"
   },
   {
     "productId": 73,
@@ -355,7 +386,8 @@
     "page": "stationery-products.html",
     "codes": [
       "CL318A"
-    ]
+    ],
+    "staticUrl": "product-CL318A.html"
   },
   {
     "productId": 75,
@@ -365,7 +397,8 @@
     "page": "button-files.html",
     "codes": [
       "CL211F"
-    ]
+    ],
+    "staticUrl": "product-CL211F.html"
   },
   {
     "productId": 76,
@@ -375,7 +408,8 @@
     "page": "button-files.html",
     "codes": [
       "CL212F"
-    ]
+    ],
+    "staticUrl": "product-CL212F.html"
   },
   {
     "productId": 77,
@@ -385,7 +419,8 @@
     "page": "button-files.html",
     "codes": [
       "CL236F"
-    ]
+    ],
+    "staticUrl": "product-CL236F.html"
   },
   {
     "productId": 50,
@@ -395,7 +430,8 @@
     "page": "paper-board-files.html",
     "codes": [
       "CL556F"
-    ]
+    ],
+    "staticUrl": "product-CL556F.html"
   },
   {
     "productId": 51,
@@ -405,7 +441,19 @@
     "page": "paper-board-files.html",
     "codes": [
       "CL556F"
-    ]
+    ],
+    "staticUrl": "product-paper-board-files-CL556F.html"
+  },
+  {
+    "productId": 511,
+    "productName": "Double Side PP Coated Level Arch Clip File",
+    "searchName": "double side pp coated level arch clip file",
+    "category": "Paper Board Files Series",
+    "page": "paper-board-files.html",
+    "codes": [
+      "CL1556F"
+    ],
+    "staticUrl": "product-paper-board-files-CL1556F.html"
   },
   {
     "productId": 12,
@@ -416,7 +464,8 @@
     "codes": [
       "CL451A",
       "CL452F"
-    ]
+    ],
+    "staticUrl": "product-CL451A.html"
   },
   {
     "productId": 43,
@@ -426,7 +475,8 @@
     "page": "button-files.html",
     "codes": [
       "CL114F"
-    ]
+    ],
+    "staticUrl": "product-CL114F.html"
   },
   {
     "productId": 44,
@@ -436,7 +486,8 @@
     "page": "button-files.html",
     "codes": [
       "CL119F"
-    ]
+    ],
+    "staticUrl": "product-CL119F.html"
   },
   {
     "productId": 62,
@@ -446,7 +497,8 @@
     "page": "leatherite-executive-bags.html",
     "codes": [
       "CP131"
-    ]
+    ],
+    "staticUrl": "product-CP131.html"
   },
   {
     "productId": 44,
@@ -456,7 +508,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL813F"
-    ]
+    ],
+    "staticUrl": "product-CL813F.html"
   },
   {
     "productId": 45,
@@ -466,7 +519,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL1212F"
-    ]
+    ],
+    "staticUrl": "product-CL1212F.html"
   },
   {
     "productId": 46,
@@ -476,7 +530,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL8821F"
-    ]
+    ],
+    "staticUrl": "product-CL8821F.html"
   },
   {
     "productId": 47,
@@ -486,7 +541,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL8065F"
-    ]
+    ],
+    "staticUrl": "product-CL8065F.html"
   },
   {
     "productId": 48,
@@ -496,7 +552,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL6016F"
-    ]
+    ],
+    "staticUrl": "product-CL6016F.html"
   },
   {
     "productId": 49,
@@ -506,7 +563,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL6018F"
-    ]
+    ],
+    "staticUrl": "product-CL6018F.html"
   },
   {
     "productId": 50,
@@ -516,7 +574,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL6026F"
-    ]
+    ],
+    "staticUrl": "product-CL6026F.html"
   },
   {
     "productId": 51,
@@ -526,7 +585,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL6028F"
-    ]
+    ],
+    "staticUrl": "product-CL6028F.html"
   },
   {
     "productId": 52,
@@ -536,7 +596,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL8057A"
-    ]
+    ],
+    "staticUrl": "product-CL8057A.html"
   },
   {
     "productId": 53,
@@ -546,7 +607,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL8071A"
-    ]
+    ],
+    "staticUrl": "product-CL8071A.html"
   },
   {
     "productId": 54,
@@ -556,7 +618,8 @@
     "page": "document-bags.html",
     "codes": [
       "CL816A"
-    ]
+    ],
+    "staticUrl": "product-CL816A.html"
   },
   {
     "productId": 4,
@@ -566,7 +629,8 @@
     "page": "report-cover-files.html",
     "codes": [
       "CL320A"
-    ]
+    ],
+    "staticUrl": "product-CL320A.html"
   },
   {
     "productId": 18,
@@ -579,7 +643,8 @@
       "CF20",
       "CF30",
       "CF40"
-    ]
+    ],
+    "staticUrl": "product-clear-books-CF10.html"
   },
   {
     "productId": 59,
@@ -590,7 +655,8 @@
     "codes": [
       "INFO FOLDER A3",
       "INFO FOLDER A4"
-    ]
+    ],
+    "staticUrl": "product-INFO-FOLDER-A3.html"
   },
   {
     "productId": 65,
@@ -601,7 +667,8 @@
     "codes": [
       "10 Folder A3",
       "10/20 Folder A4"
-    ]
+    ],
+    "staticUrl": "product-display-files-10-Folder-A3.html"
   },
   {
     "productId": 2,
@@ -613,7 +680,8 @@
       "CL310",
       "CL355",
       "CL310-20"
-    ]
+    ],
+    "staticUrl": "product-CL310.html"
   },
   {
     "productId": 57,
@@ -623,7 +691,8 @@
     "page": "display-files.html",
     "codes": [
       "CL504"
-    ]
+    ],
+    "staticUrl": "product-CL504.html"
   },
   {
     "productId": 58,
@@ -633,7 +702,8 @@
     "page": "display-files.html",
     "codes": [
       "CL508"
-    ]
+    ],
+    "staticUrl": "product-CL508.html"
   },
   {
     "productId": 43,
@@ -643,7 +713,8 @@
     "page": "zipper-bag-series.html",
     "codes": [
       "Mesh  Zipper  Bag"
-    ]
+    ],
+    "staticUrl": "product-.html"
   },
   {
     "productId": 62,
@@ -654,7 +725,8 @@
     "codes": [
       "5 Folder",
       "10 Folder"
-    ]
+    ],
+    "staticUrl": "product-5-Folder.html"
   },
   {
     "productId": 53,
@@ -665,7 +737,8 @@
     "codes": [
       "CL308A",
       "CL308F"
-    ]
+    ],
+    "staticUrl": "product-CL308A.html"
   },
   {
     "productId": 52,
@@ -676,7 +749,8 @@
     "codes": [
       "CL309A",
       "CL309F"
-    ]
+    ],
+    "staticUrl": "product-CL309A.html"
   },
   {
     "productId": 64,
@@ -687,7 +761,8 @@
     "codes": [
       "1 Folder A3",
       "1 Folder A4"
-    ]
+    ],
+    "staticUrl": "product-1-Folder-A3.html"
   },
   {
     "productId": 66,
@@ -697,7 +772,8 @@
     "page": "separators.html",
     "codes": [
       "CL010"
-    ]
+    ],
+    "staticUrl": "product-CL010.html"
   },
   {
     "productId": 67,
@@ -712,7 +788,8 @@
       "N15",
       "N20",
       "N31"
-    ]
+    ],
+    "staticUrl": "product-N5.html"
   },
   {
     "productId": 68,
@@ -722,7 +799,8 @@
     "page": "separators.html",
     "codes": [
       "NZ"
-    ]
+    ],
+    "staticUrl": "product-NZ.html"
   },
   {
     "productId": 40,
@@ -736,7 +814,8 @@
       "CLP55",
       "CLP56",
       "CLP57"
-    ]
+    ],
+    "staticUrl": "product-CLP53.html"
   },
   {
     "productId": 78,
@@ -746,7 +825,8 @@
     "page": "button-files.html",
     "codes": [
       "CL402F"
-    ]
+    ],
+    "staticUrl": "product-CL402F.html"
   },
   {
     "productId": 79,
@@ -756,7 +836,8 @@
     "page": "button-files.html",
     "codes": [
       "CL408F"
-    ]
+    ],
+    "staticUrl": "product-CL408F.html"
   },
   {
     "productId": 80,
@@ -766,7 +847,8 @@
     "page": "button-files.html",
     "codes": [
       "CL410F"
-    ]
+    ],
+    "staticUrl": "product-CL410F.html"
   },
   {
     "productId": 62,
@@ -776,7 +858,8 @@
     "page": "conference-folders.html",
     "codes": [
       "CL261A"
-    ]
+    ],
+    "staticUrl": "product-CL261A.html"
   },
   {
     "productId": 45,
@@ -786,7 +869,8 @@
     "page": "button-files.html",
     "codes": [
       "CL801"
-    ]
+    ],
+    "staticUrl": "product-CL801.html"
   },
   {
     "productId": 46,
@@ -796,7 +880,8 @@
     "page": "button-files.html",
     "codes": [
       "CL802"
-    ]
+    ],
+    "staticUrl": "product-CL802.html"
   },
   {
     "productId": 47,
@@ -806,7 +891,8 @@
     "page": "button-files.html",
     "codes": [
       "CL804F"
-    ]
+    ],
+    "staticUrl": "product-CL804F.html"
   },
   {
     "productId": 48,
@@ -816,7 +902,8 @@
     "page": "button-files.html",
     "codes": [
       "CL805F"
-    ]
+    ],
+    "staticUrl": "product-CL805F.html"
   },
   {
     "productId": 49,
@@ -826,7 +913,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1000F"
-    ]
+    ],
+    "staticUrl": "product-CL1000F.html"
   },
   {
     "productId": 50,
@@ -836,7 +924,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1027F"
-    ]
+    ],
+    "staticUrl": "product-CL1027F.html"
   },
   {
     "productId": 51,
@@ -846,7 +935,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1032F"
-    ]
+    ],
+    "staticUrl": "product-CL1032F.html"
   },
   {
     "productId": 52,
@@ -856,7 +946,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1034F"
-    ]
+    ],
+    "staticUrl": "product-CL1034F.html"
   },
   {
     "productId": 53,
@@ -866,7 +957,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1041F"
-    ]
+    ],
+    "staticUrl": "product-CL1041F.html"
   },
   {
     "productId": 54,
@@ -876,7 +968,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1042F"
-    ]
+    ],
+    "staticUrl": "product-CL1042F.html"
   },
   {
     "productId": 55,
@@ -886,7 +979,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1043F"
-    ]
+    ],
+    "staticUrl": "product-CL1043F.html"
   },
   {
     "productId": 56,
@@ -896,7 +990,8 @@
     "page": "button-files.html",
     "codes": [
       "CL1044F"
-    ]
+    ],
+    "staticUrl": "product-CL1044F.html"
   },
   {
     "productId": 57,
@@ -906,7 +1001,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2000F"
-    ]
+    ],
+    "staticUrl": "product-CL2000F.html"
   },
   {
     "productId": 58,
@@ -916,7 +1012,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2001F"
-    ]
+    ],
+    "staticUrl": "product-CL2001F.html"
   },
   {
     "productId": 59,
@@ -926,7 +1023,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2002F"
-    ]
+    ],
+    "staticUrl": "product-CL2002F.html"
   },
   {
     "productId": 60,
@@ -936,7 +1034,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2003F"
-    ]
+    ],
+    "staticUrl": "product-CL2003F.html"
   },
   {
     "productId": 61,
@@ -946,7 +1045,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2004F"
-    ]
+    ],
+    "staticUrl": "product-CL2004F.html"
   },
   {
     "productId": 62,
@@ -956,7 +1056,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2005F"
-    ]
+    ],
+    "staticUrl": "product-CL2005F.html"
   },
   {
     "productId": 63,
@@ -966,7 +1067,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2029F"
-    ]
+    ],
+    "staticUrl": "product-CL2029F.html"
   },
   {
     "productId": 64,
@@ -976,7 +1078,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2030F"
-    ]
+    ],
+    "staticUrl": "product-CL2030F.html"
   },
   {
     "productId": 65,
@@ -986,7 +1089,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2401F"
-    ]
+    ],
+    "staticUrl": "product-CL2401F.html"
   },
   {
     "productId": 66,
@@ -996,7 +1100,8 @@
     "page": "button-files.html",
     "codes": [
       "CL2402F"
-    ]
+    ],
+    "staticUrl": "product-CL2402F.html"
   },
   {
     "productId": 67,
@@ -1006,7 +1111,8 @@
     "page": "button-files.html",
     "codes": [
       "CL3000F"
-    ]
+    ],
+    "staticUrl": "product-CL3000F.html"
   },
   {
     "productId": 68,
@@ -1016,7 +1122,8 @@
     "page": "button-files.html",
     "codes": [
       "CL3020F"
-    ]
+    ],
+    "staticUrl": "product-CL3020F.html"
   },
   {
     "productId": 69,
@@ -1026,7 +1133,8 @@
     "page": "button-files.html",
     "codes": [
       "CL3021F"
-    ]
+    ],
+    "staticUrl": "product-CL3021F.html"
   },
   {
     "productId": 70,
@@ -1036,7 +1144,8 @@
     "page": "button-files.html",
     "codes": [
       "CL3022F"
-    ]
+    ],
+    "staticUrl": "product-CL3022F.html"
   },
   {
     "productId": 71,
@@ -1046,7 +1155,8 @@
     "page": "button-files.html",
     "codes": [
       "CL3026F"
-    ]
+    ],
+    "staticUrl": "product-CL3026F.html"
   },
   {
     "productId": 72,
@@ -1056,7 +1166,8 @@
     "page": "button-files.html",
     "codes": [
       "CL4000F"
-    ]
+    ],
+    "staticUrl": "product-CL4000F.html"
   },
   {
     "productId": 73,
@@ -1066,7 +1177,8 @@
     "page": "button-files.html",
     "codes": [
       "CL5000F"
-    ]
+    ],
+    "staticUrl": "product-CL5000F.html"
   },
   {
     "productId": 74,
@@ -1076,7 +1188,8 @@
     "page": "button-files.html",
     "codes": [
       "CL209F"
-    ]
+    ],
+    "staticUrl": "product-CL209F.html"
   },
   {
     "productId": 10,
@@ -1087,7 +1200,8 @@
     "codes": [
       "CL421A",
       "CL422F"
-    ]
+    ],
+    "staticUrl": "product-CL421A.html"
   },
   {
     "productId": 53,
@@ -1097,7 +1211,8 @@
     "page": "display-files.html",
     "codes": [
       "CL201(T)"
-    ]
+    ],
+    "staticUrl": "product-CL201T.html"
   },
   {
     "productId": 54,
@@ -1107,7 +1222,8 @@
     "page": "display-files.html",
     "codes": [
       "CL202(T)"
-    ]
+    ],
+    "staticUrl": "product-CL202T.html"
   },
   {
     "productId": 55,
@@ -1117,7 +1233,8 @@
     "page": "display-files.html",
     "codes": [
       "CL203(B)"
-    ]
+    ],
+    "staticUrl": "product-CL203B.html"
   },
   {
     "productId": 56,
@@ -1127,7 +1244,8 @@
     "page": "display-files.html",
     "codes": [
       "CL204(B)"
-    ]
+    ],
+    "staticUrl": "product-CL204B.html"
   },
   {
     "productId": 41,
@@ -1141,7 +1259,8 @@
       "CLF55",
       "CLF56",
       "CLF57"
-    ]
+    ],
+    "staticUrl": "product-CLF53.html"
   },
   {
     "productId": 3,
@@ -1152,7 +1271,8 @@
     "codes": [
       "CL-RF102",
       "CL-RF112"
-    ]
+    ],
+    "staticUrl": "product-CL-RF102.html"
   },
   {
     "productId": 7,
@@ -1165,7 +1285,8 @@
       "CL221",
       "CL250",
       "CL251"
-    ]
+    ],
+    "staticUrl": "product-CL220.html"
   },
   {
     "productId": 13,
@@ -1176,7 +1297,8 @@
     "codes": [
       "CL820A",
       "CL820F"
-    ]
+    ],
+    "staticUrl": "product-CL820A.html"
   },
   {
     "productId": 14,
@@ -1187,7 +1309,8 @@
     "codes": [
       "CL720A",
       "CL720F"
-    ]
+    ],
+    "staticUrl": "product-CL720A.html"
   },
   {
     "productId": 15,
@@ -1198,7 +1321,8 @@
     "codes": [
       "CL521A",
       "CL522F"
-    ]
+    ],
+    "staticUrl": "product-CL521A.html"
   },
   {
     "productId": 16,
@@ -1208,7 +1332,8 @@
     "page": "clip-files.html",
     "codes": [
       "CL516A"
-    ]
+    ],
+    "staticUrl": "product-CL516A.html"
   },
   {
     "productId": 42,
@@ -1218,7 +1343,8 @@
     "page": "zipper-bag-series.html",
     "codes": [
       "Satin  Zipper  Bag"
-    ]
+    ],
+    "staticUrl": "product-zipper-bag-series-.html"
   },
   {
     "productId": 8,
@@ -1236,7 +1362,8 @@
       "SP-200",
       "SP-80",
       "SP-150"
-    ]
+    ],
+    "staticUrl": "product-SP50.html"
   },
   {
     "productId": 69,
@@ -1246,7 +1373,8 @@
     "page": "stationery-products.html",
     "codes": [
       "CL9882"
-    ]
+    ],
+    "staticUrl": "product-CL9882.html"
   },
   {
     "productId": 6,
@@ -1257,7 +1385,8 @@
     "codes": [
       "CL341A",
       "CL341F"
-    ]
+    ],
+    "staticUrl": "product-CL341A.html"
   },
   {
     "productId": 11,
@@ -1268,7 +1397,8 @@
     "codes": [
       "CL431A",
       "CL432F"
-    ]
+    ],
+    "staticUrl": "product-CL431A.html"
   },
   {
     "productId": 35,
@@ -1278,7 +1408,8 @@
     "page": "button-files.html",
     "codes": [
       "CL303"
-    ]
+    ],
+    "staticUrl": "product-CL303.html"
   },
   {
     "productId": 36,
@@ -1288,7 +1419,8 @@
     "page": "button-files.html",
     "codes": [
       "CL503A"
-    ]
+    ],
+    "staticUrl": "product-CL503A.html"
   },
   {
     "productId": 37,
@@ -1298,7 +1430,8 @@
     "page": "button-files.html",
     "codes": [
       "CL603F"
-    ]
+    ],
+    "staticUrl": "product-CL603F.html"
   },
   {
     "productId": 38,
@@ -1308,7 +1441,8 @@
     "page": "button-files.html",
     "codes": [
       "CL703FT"
-    ]
+    ],
+    "staticUrl": "product-CL703FT.html"
   },
   {
     "productId": 39,
@@ -1318,7 +1452,8 @@
     "page": "button-files.html",
     "codes": [
       "CL803F"
-    ]
+    ],
+    "staticUrl": "product-CL803F.html"
   },
   {
     "productId": 40,
@@ -1328,7 +1463,8 @@
     "page": "button-files.html",
     "codes": [
       "CL903F"
-    ]
+    ],
+    "staticUrl": "product-CL903F.html"
   },
   {
     "productId": 41,
@@ -1338,7 +1474,8 @@
     "page": "button-files.html",
     "codes": [
       "CL605F"
-    ]
+    ],
+    "staticUrl": "product-CL605F.html"
   },
   {
     "productId": 42,
@@ -1348,7 +1485,8 @@
     "page": "button-files.html",
     "codes": [
       "IKON 603ECO"
-    ]
+    ],
+    "staticUrl": "product-IKON-603ECO.html"
   },
   {
     "productId": 1,
@@ -1361,7 +1499,8 @@
       "CL12",
       "CL22",
       "CL286"
-    ]
+    ],
+    "staticUrl": "product-CL10-Ikon.html"
   },
   {
     "productId": 101,
@@ -1374,7 +1513,8 @@
       "CL12",
       "CL22",
       "CL286"
-    ]
+    ],
+    "staticUrl": "product-report-cover-files-CL10-Ikon.html"
   },
   {
     "productId": 5,
@@ -1384,7 +1524,8 @@
     "page": "report-cover-files.html",
     "codes": [
       "CL331A"
-    ]
+    ],
+    "staticUrl": "product-CL331A.html"
   },
   {
     "productId": 30,
@@ -1394,7 +1535,8 @@
     "page": "card-holders.html",
     "codes": [
       "CL40K"
-    ]
+    ],
+    "staticUrl": "product-CL40K.html"
   },
   {
     "productId": 63,
@@ -1405,7 +1547,8 @@
     "codes": [
       "1 Folder A3",
       "1 Folder A4"
-    ]
+    ],
+    "staticUrl": "product-display-files-1-Folder-A3.html"
   },
   {
     "productId": 60,
@@ -1416,7 +1559,8 @@
     "codes": [
       "5 Folder",
       "10 Folder"
-    ]
+    ],
+    "staticUrl": "product-display-files-5-Folder.html"
   },
   {
     "productId": 61,
@@ -1427,12 +1571,17 @@
     "codes": [
       "Supreme Wall Unit A3",
       "Supreme Wall Unit A4"
-    ]
+    ],
+    "staticUrl": "product-Supreme-Wall-Unit-A3.html"
   }
 ];
 
   function normalizeQuery(query) {
     return String(query || '').replace(/[^A-Za-z0-9]/g, '').toUpperCase();
+  }
+
+  function normalizeKey(code) {
+    return String(code || '').replace(/[^A-Z0-9]/g, '').toUpperCase();
   }
 
   function normalizeName(query) {
@@ -1447,73 +1596,39 @@
     return String(name || '').replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim();
   }
 
-  function search(query, limit) {
-    var max = limit || 8;
-    var codeQuery = normalizeQuery(query);
-    var nameQuery = normalizeName(query);
-    if (!codeQuery && !nameQuery) return [];
+  function search(query) {
+    var normalizedQuery = normalizeQuery(query);
+    if (!normalizedQuery) return [];
 
-    var ranked = [];
-    var seen = {};
+    var results = [];
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+      var searchName = product.searchName;
+      var codes = product.codes || [];
 
-    function push(product, score, matchedCode) {
-      var id = product.page + '::' + product.productId;
-      var existing = seen[id];
-      if (existing && existing.score <= score) return;
-      seen[id] = { score: score, matchedCode: matchedCode || '' };
-      ranked = ranked.filter(function (item) { return item.id !== id; });
-      ranked.push({
-        id: id,
-        score: score,
-        productId: product.productId,
-        productName: product.productName,
-        category: product.category,
-        page: product.page,
-        codes: product.codes,
-        matchedCode: matchedCode || (product.codes[0] || '')
-      });
+      var nameMatch = searchName.indexOf(normalizedQuery) !== -1;
+      var codeMatch = false;
+      for (var j = 0; j < codes.length; j++) {
+        if (normalizeKey(codes[j]).indexOf(normalizedQuery) !== -1) {
+          codeMatch = true;
+          break;
+        }
+      }
+
+      if (nameMatch || codeMatch) {
+        var matchedCode = codeMatch ? codes[0] : null;
+        results.push({
+          productId: product.productId,
+          productName: product.productName,
+          category: product.category,
+          page: product.page,
+          matchedCode: matchedCode,
+          staticUrl: product.staticUrl
+        });
+      }
     }
 
-    products.forEach(function (product) {
-      (product.codes || []).forEach(function (code) {
-        var key = normalizeQuery(code);
-        if (!codeQuery) return;
-        if (key === codeQuery) {
-          push(product, 1, code);
-        } else if (key.indexOf(codeQuery) === 0) {
-          push(product, 2, code);
-        } else if (key.indexOf(codeQuery) !== -1) {
-          push(product, 3, code);
-        }
-      });
-
-      if (!nameQuery) return;
-
-      var words = nameQuery.split(' ').filter(Boolean);
-      if (!words.length) return;
-
-      var nameNorm = product.searchName;
-      var categoryNorm = normalizeName(product.category);
-      var nameMatch = words.every(function (word) {
-        return nameNorm.indexOf(word) !== -1;
-      });
-      var categoryMatch = words.every(function (word) {
-        return categoryNorm.indexOf(word) !== -1;
-      });
-
-      if (nameMatch) {
-        push(product, 4, product.codes[0] || '');
-      } else if (categoryMatch) {
-        push(product, 5, product.codes[0] || '');
-      }
-    });
-
-    ranked.sort(function (a, b) {
-      if (a.score !== b.score) return a.score - b.score;
-      return a.productName.localeCompare(b.productName);
-    });
-
-    return ranked.slice(0, max);
+    return results;
   }
 
   global.OswalSearchIndex = {
