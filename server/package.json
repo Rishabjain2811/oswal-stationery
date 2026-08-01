@@ -1,12 +1,11 @@
 {
-  "name": "oswal-gift-server",
+  "name": "oswal-stationery",
   "version": "1.0.0",
   "private": true,
-  "description": "API server for OSWAL GIFT N STATIONERY (auth + static site)",
-  "main": "index.js",
+  "description": "OSWAL GIFT N STATIONERY - Static site with API",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node index.js"
+    "dev": "cd server && node index.js",
+    "start": "cd server && node index.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -18,3 +17,4 @@
     "mysql2": "^3.6.5"
   }
 }
+ 
