@@ -72,7 +72,7 @@
 
   global.addEventListener(store.EVENT_NAME, function () {
     updateBadge();
-    animateBadge();
+    animateBadge(); 
   });
 
   if (document.readyState === 'loading') {
