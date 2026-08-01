@@ -105,3 +105,4 @@ else:
     print("\nNo duplicate Item Codes found. All Item Codes are unique.")
 
 print("\n" + "=" * 80)
+ 
