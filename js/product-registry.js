@@ -4880,7 +4880,7 @@
         return entries[i];
       }
     }
-    return null;
+    return null;  
   }
 
   global.OswalProductRegistry = {
@@ -4893,4 +4893,3 @@
     makeKey: makeKey
   };
 })(typeof window !== 'undefined' ? window : this);
- 
