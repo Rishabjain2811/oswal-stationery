@@ -55,3 +55,4 @@ for category_file in CATEGORY_FILES:
         print(f"No 'manufacturer' found in title: {category_file}")
 
 print("\nCategory page titles updated successfully!")
+ 
