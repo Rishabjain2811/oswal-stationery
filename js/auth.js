@@ -1,224 +1,184 @@
-(function (global) {
-  var API_BASE = global.OSWAL_API_BASE || '/api/auth';
-  var currentUser = null;
+// Vercel Serverless Function for Auth API
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const mysql = require('mysql2/promise');
 
-  function escapeHtml(value) {
-    return String(value)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;');
-  }
+const JWT_SECRET = process.env.JWT_SECRET || 'oswal-dev-secret-change-in-production';
+const TOKEN_COOKIE = 'oswal_auth';
+const TOKEN_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000;
 
-  function api(path, options) {
-    return fetch(API_BASE + path, Object.assign({
-      credentials: 'include',
-      headers: { 'Content-Type': 'application/json' }
-    }, options || {})).then(function (response) {
-      return response.text().then(function (text) {
-        var data = null;
-        try {
-          data = text ? JSON.parse(text) : null;
-        } catch (parseError) {
-          var err = new Error('Invalid JSON response from server');
-          err.status = response.status;
-          err.responseText = text;
-          throw err;
-        }
+// Database connection pool for serverless
+let pool = null;
 
-        if (!response.ok) {
-          var err = new Error((data && data.error) ? data.error : 'Request failed');
-          err.status = response.status;
-          err.responseBody = data || text;
-          throw err;
-        }
-        return data;
-      });
+function getPool() {
+  if (!pool) {
+    pool = mysql.createPool({
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT || 3306,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_NAME,
+      waitForConnections: true,
+      connectionLimit: 1,
+      queueLimit: 0,
+      enableKeepAlive: true,
+      keepAliveInitialDelayMs: 0
     });
   }
+  return pool;
+}
 
-  function renderAuthNav() {
-    // Auth buttons removed from navbar. No nav item is inserted.
+function sanitizeUser(row) {
+  return { id: row.id, name: row.name, email: row.email };
+}
+
+function setAuthCookie(res, user) {
+  const token = jwt.sign({ sub: user.id, email: user.email }, JWT_SECRET, { expiresIn: '7d' });
+  res.setHeader('Set-Cookie', `${TOKEN_COOKIE}=${token}; HttpOnly; SameSite=Lax; Max-Age=${TOKEN_MAX_AGE_MS / 1000}; Path=/; ${process.env.NODE_ENV === 'production' ? 'Secure' : ''}`);
+}
+
+async function readAuthUser(req) {
+  const cookies = req.headers.cookie || '';
+  const tokenMatch = cookies.match(new RegExp(`${TOKEN_COOKIE}=([^;]+)`));
+  if (!tokenMatch) return null;
+  
+  try {
+    const token = tokenMatch[1];
+    const payload = jwt.verify(token, JWT_SECRET);
+    const connection = await getPool().getConnection();
+    const [rows] = await connection.execute(
+      'SELECT * FROM users WHERE id = ?',
+      [payload.sub]
+    );
+    connection.release();
+    return rows.length > 0 ? sanitizeUser(rows[0]) : null;
+  } catch (_err) {
+    return null;
+  }
+}
+
+async function findUserByEmail(email) {
+  try {
+    const connection = await getPool().getConnection();
+    const [rows] = await connection.execute(
+      'SELECT * FROM users WHERE LOWER(email) = ?',
+      [String(email).toLowerCase()]
+    );
+    connection.release();
+    return rows.length > 0 ? rows[0] : null;
+  } catch (error) {
+    console.error('DB error in findUserByEmail:', error.message);
+    return null;
+  }
+}
+
+async function findUserById(id) {
+  try {
+    const connection = await getPool().getConnection();
+    const [rows] = await connection.execute(
+      'SELECT * FROM users WHERE id = ?',
+      [id]
+    );
+    connection.release();
+    return rows.length > 0 ? rows[0] : null;
+  } catch (error) {
+    console.error('DB error in findUserById:', error.message);
+    return null;
+  }
+}
+
+async function createUser(name, email, passwordHash) {
+  try {
+    const connection = await getPool().getConnection();
+    const [result] = await connection.execute(
+      'INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)',
+      [name, String(email).toLowerCase(), passwordHash]
+    );
+    connection.release();
+    
+    const newUser = await findUserById(result.insertId);
+    return newUser;
+  } catch (error) {
+    console.error('DB error in createUser:', error.message);
+    throw error;
+  }
+}
+
+export default async function handler(req, res) {
+  // Enable CORS
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
   }
 
-  function updateAuthNav() {
-    var item = document.getElementById('nav-auth-item');
-    if (!item) return;
+  const url = new URL(req.url, `http://${req.headers.host}`);
+  const path = url.pathname;
 
-    if (currentUser) {
-      item.innerHTML =
-        '<span class="nav-auth-greeting">Hi, ' + escapeHtml(currentUser.name.split(' ')[0]) + '</span>' +
-        '<button type="button" class="nav-auth-btn nav-auth-btn-ghost" id="nav-sign-out">Sign out</button>';
-      var signOut = document.getElementById('nav-sign-out');
-      if (signOut) {
-        signOut.addEventListener('click', function () {
-          api('/logout', { method: 'POST' }).finally(function () {
-            currentUser = null;
-            updateAuthNav();
-          });
-        });
+  try {
+    if (path === '/api/auth/ping') {
+      return res.status(200).json({ ok: true, message: 'pong' });
+    }
+
+    if (path === '/api/auth/me' && req.method === 'GET') {
+      const user = await readAuthUser(req);
+      return res.status(200).json({ user: user || null });
+    }
+
+    if (path === '/api/auth/register' && req.method === 'POST') {
+      const body = JSON.parse(req.body);
+      const name = String(body.name || '').trim();
+      const email = String(body.email || '').trim().toLowerCase();
+      const password = String(body.password || '');
+
+      if (!name || !email || !password) {
+        return res.status(400).json({ error: 'Name, email, and password are required.' });
       }
-      return;
+      if (password.length < 6) {
+        return res.status(400).json({ error: 'Password must be at least 6 characters.' });
+      }
+
+      const existingUser = await findUserByEmail(email);
+      if (existingUser) {
+        return res.status(409).json({ error: 'An account with this email already exists.' });
+      }
+
+      const passwordHash = bcrypt.hashSync(password, 10);
+      const row = await createUser(name, email, passwordHash);
+      const user = sanitizeUser(row);
+      setAuthCookie(res, user);
+      return res.status(201).json({ user: user });
     }
 
-    item.innerHTML =
-      '<button type="button" class="nav-auth-btn nav-auth-btn-ghost" id="nav-sign-in">Sign in</button>' +
-      '<button type="button" class="nav-auth-btn" id="nav-register">Register</button>';
-    document.getElementById('nav-sign-in').addEventListener('click', function () {
-      openAuthModal('login');
-    });
-    document.getElementById('nav-register').addEventListener('click', function () {
-      openAuthModal('register');
-    });
-  }
+    if (path === '/api/auth/login' && req.method === 'POST') {
+      const body = JSON.parse(req.body);
+      const email = String(body.email || '').trim().toLowerCase();
+      const password = String(body.password || '');
 
-  function ensureModal() {
-    if (document.getElementById('auth-modal')) return;
-    var modal = document.createElement('div');
-    modal.id = 'auth-modal';
-    modal.className = 'auth-modal';
-    modal.hidden = true;
-    modal.innerHTML =
-      '<div class="auth-modal-backdrop" data-close="true"></div>' +
-      '<div class="auth-modal-panel" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">' +
-      '<button type="button" class="auth-modal-close" data-close="true" aria-label="Close">&times;</button>' +
-      '<div class="auth-modal-tabs">' +
-      '<button type="button" class="auth-tab active" data-tab="login">Sign in</button>' +
-      '<button type="button" class="auth-tab" data-tab="register">Register</button>' +
-      '</div>' +
-      '<h2 id="auth-modal-title" class="auth-modal-title">Sign in to your account</h2>' +
-      '<p class="auth-modal-subtitle">Optional — browse and order without an account anytime.</p>' +
-      '<form id="auth-form" class="auth-form" novalidate>' +
-      '<div class="form-group auth-name-group" hidden>' +
-      '<label for="auth-name">Full name</label>' +
-      '<input type="text" id="auth-name" name="name" autocomplete="name" />' +
-      '</div>' +
-      '<div class="form-group">' +
-      '<label for="auth-email">Email</label>' +
-      '<input type="email" id="auth-email" name="email" required autocomplete="email" />' +
-      '</div>' +
-      '<div class="form-group">' +
-      '<label for="auth-password">Password</label>' +
-      '<input type="password" id="auth-password" name="password" required minlength="6" autocomplete="current-password" />' +
-      '</div>' +
-      '<p class="auth-error" id="auth-error" hidden></p>' +
-      '<button type="submit" class="cta-btn auth-submit" id="auth-submit">Sign in</button>' +
-      '</form>' +
-      '</div>';
-    document.body.appendChild(modal);
+      if (!email || !password) {
+        return res.status(400).json({ error: 'Email and password are required.' });
+      }
 
-    modal.querySelectorAll('[data-close="true"]').forEach(function (el) {
-      el.addEventListener('click', closeAuthModal);
-    });
-    modal.querySelectorAll('.auth-tab').forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        openAuthModal(tab.dataset.tab);
-      });
-    });
-    document.getElementById('auth-form').addEventListener('submit', handleAuthSubmit);
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') closeAuthModal();
-    });
-  }
+      const row = await findUserByEmail(email);
+      if (!row || !bcrypt.compareSync(password, row.password_hash)) {
+        return res.status(401).json({ error: 'Invalid email or password.' });
+      }
 
-  var activeTab = 'login';
-
-  function openAuthModal(tab) {
-    ensureModal();
-    activeTab = tab === 'register' ? 'register' : 'login';
-    var modal = document.getElementById('auth-modal');
-    var title = document.getElementById('auth-modal-title');
-    var submit = document.getElementById('auth-submit');
-    var nameGroup = document.querySelector('.auth-name-group');
-    var error = document.getElementById('auth-error');
-    var passwordInput = document.getElementById('auth-password');
-
-    modal.hidden = false;
-    document.body.classList.add('auth-modal-open');
-    error.hidden = true;
-    error.textContent = '';
-
-    modal.querySelectorAll('.auth-tab').forEach(function (el) {
-      el.classList.toggle('active', el.dataset.tab === activeTab);
-    });
-
-    if (activeTab === 'register') {
-      title.textContent = 'Create an account';
-      submit.textContent = 'Register';
-      nameGroup.hidden = false;
-      passwordInput.autocomplete = 'new-password';
-    } else {
-      title.textContent = 'Sign in to your account';
-      submit.textContent = 'Sign in';
-      nameGroup.hidden = true;
-      passwordInput.autocomplete = 'current-password';
+      const user = sanitizeUser(row);
+      setAuthCookie(res, user);
+      return res.status(200).json({ user: user });
     }
+
+    if (path === '/api/auth/logout' && req.method === 'POST') {
+      res.setHeader('Set-Cookie', `${TOKEN_COOKIE}=; HttpOnly; SameSite=Lax; Max-Age=0; Path=/`);
+      return res.status(200).json({ ok: true });
+    }
+
+    return res.status(404).json({ error: 'Not found' });
+  } catch (error) {
+    console.error('Auth API error:', error);
+    return res.status(500).json({ error: error.message || 'Internal server error' });
   }
-
-  function closeAuthModal() {
-    var modal = document.getElementById('auth-modal');
-    if (!modal) return;
-    modal.hidden = true;
-    document.body.classList.remove('auth-modal-open');
-  }
-
-  function handleAuthSubmit(event) {
-    event.preventDefault();
-    var error = document.getElementById('auth-error');
-    var submit = document.getElementById('auth-submit');
-    var email = document.getElementById('auth-email').value.trim();
-    var password = document.getElementById('auth-password').value;
-    var name = document.getElementById('auth-name').value.trim();
-    var payload = { email: email, password: password };
-    var path = activeTab === 'register' ? '/register' : '/login';
-
-    if (activeTab === 'register') payload.name = name;
-
-    submit.disabled = true;
-    error.hidden = true;
-
-    api(path, { method: 'POST', body: JSON.stringify(payload) })
-      .then(function (data) {
-        currentUser = data.user;
-        updateAuthNav();
-        closeAuthModal();
-      })
-      .catch(function (err) {
-        error.textContent = err.message || 'Something went wrong.';
-        error.hidden = false;
-      })
-      .finally(function () {
-        submit.disabled = false;
-      });
-  }
-
-  function loadSession() {
-    return api('/me').then(function (data) {
-      currentUser = data.user || null;
-      updateAuthNav();
-    }).catch(function () {
-      currentUser = null;
-      updateAuthNav();
-    });
-  }
-
-  function init() {
-    renderAuthNav();
-    loadSession();
-  }
-
-  global.OswalAuth = {
-    getUser: function () { return currentUser; },
-    openLogin: function () { openAuthModal('login'); },
-    openRegister: function () { openAuthModal('register'); }
-  };
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      // Avoid rendering auth nav buttons on page load.
-      // init();
-    });
-  } else {
-    // init();
-  }
-})(typeof window !== 'undefined' ? window : this);
+}
