@@ -6,7 +6,7 @@ RewriteCond %{QUERY_STRING} ^page=([^&]+)&id=(\d+)$ [NC]
 RewriteRule ^product\.html$ /product-%2.html? [R=301,L]
 
 # Redirect product.html?page=category.html&id=X&code=Y to product-X.html
-RewriteCond %{QUERY_STRING} ^page=([^&]+)&id=(\d+)&code=([^&]+)$ [NC]
+RewriteCond %{QUERY_STRING} ^page=([^&]+)&id=(\d+)&code=([^&]+)$ [NC]  
 RewriteRule ^product\.html$ /product-%2.html? [R=301,L]
 
 # Canonicalize product.html (without parameters) to home page
