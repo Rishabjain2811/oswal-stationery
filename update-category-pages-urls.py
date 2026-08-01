@@ -64,3 +64,4 @@ for category_file in CATEGORY_FILES:
         print(f"No changes: {category_file}")
 
 print("\nCategory pages updated successfully!")
+ 
