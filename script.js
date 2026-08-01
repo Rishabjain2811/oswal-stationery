@@ -1194,7 +1194,8 @@ function initReadMoreToggles() {
       }
     });
   });
-}
+} 
+
 
 // Initialize read more toggles on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function() {
