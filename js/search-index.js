@@ -1624,7 +1624,7 @@
           page: product.page,
           matchedCode: matchedCode,
           staticUrl: product.staticUrl
-        });
+        });  
       }
     }
 
