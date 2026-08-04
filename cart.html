@@ -70,15 +70,45 @@
   <main>
     <section class="cart-section" id="cart">
       <div class="cart-container">
-        <h2 class="section-title">Your Shopping Cart</h2>
+        <div class="cart-header">
+          <h2 class="section-title">Your Shopping Cart</h2>
+          <button id="clear-cart" class="clear-cart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            Clear Cart
+          </button>
+        </div>
         <div id="cart-items" class="cart-items-container"><!-- Rendered by cart.js --></div>
-        <div class="cart-actions">
-          <button id="send-whatsapp" class="cta-btn whatsapp-btn">
-            <span>📱</span> Send to WhatsApp
+        <div id="cart-summary" class="cart-summary">
+          <div class="summary-row">
+            <span class="summary-label">Total Products</span>
+            <span class="summary-value" id="summary-products">0</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Total Quantity</span>
+            <span class="summary-value" id="summary-quantity">0 Ctn</span>
+          </div>
+          <p class="summary-note">Your enquiry will be sent directly to our WhatsApp.</p>
+          <button id="send-whatsapp" class="cta-btn whatsapp-btn primary-btn">
+            Send to WhatsApp
           </button>
         </div>
       </div>
     </section>
+
+    <!-- Clear Cart Confirmation Modal -->
+    <div id="clear-cart-modal" class="modal-overlay">
+      <div class="modal-content">
+        <h3>Clear Cart</h3>
+        <p>Are you sure you want to remove all items from your cart?</p>
+        <div class="modal-actions">
+          <button id="cancel-clear" class="cta-btn secondary-btn">Cancel</button>
+          <button id="confirm-clear" class="cta-btn danger-btn">Clear All</button>
+        </div>
+      </div>
+    </div>
   </main>
   
   <a href="https://wa.me/919841137922" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contact us on WhatsApp">
