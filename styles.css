@@ -403,34 +403,34 @@ section,
    ------------------------------------- */
 
 .hero-section {
-  padding: 6rem 2rem 5rem 2rem;
+  padding: 6rem 2rem 8rem 8rem;
   text-align: center;
   background: var(--bg-main);
   border-bottom: 1px solid var(--bg-border);
 }
 
 .hero-content {
-    position: relative;
-    max-width: 1000px;
-    margin: -10px -9px;
-    padding: 4rem 2rem;
-    border-radius: 35px;
-    overflow: hidden;
-    z-index: 1;
+  position: relative;
+  max-width: 1000px;
+  margin: -10px -9px;
+  padding: 4rem 2rem;
+  border-radius: 35px;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .hero-content::before {
-    content: "";
-    position: absolute;
-    top: -67px;
-    left: -300px;
-    right: 2px;
-    bottom: 60px;
-    background: url(bg3.png) center / cover no-repeat;
-    opacity: 0.8;
-    z-index: -1;
-    border-radius: 1px;
-    margin-bottom: -148px;
+  content: "";
+  position: absolute;
+  top: -67px;
+  left: -300px;
+  right: 2px;
+  bottom: 60px;
+  background: url(bg3.png) center / cover no-repeat;
+  opacity: 0.8;
+  z-index: -1;
+  border-radius: 1px;
+  margin-bottom: -148px;
 }
 
 
