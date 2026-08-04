@@ -1601,12 +1601,14 @@
     if (!normalizedQuery) return [];
 
     var results = [];
+    var normalizedQueryLower = normalizedQuery.toLowerCase();
+    
     for (var i = 0; i < products.length; i++) {
       var product = products[i];
       var searchName = product.searchName;
       var codes = product.codes || [];
 
-      var nameMatch = searchName.indexOf(normalizedQuery) !== -1;
+      var nameMatch = searchName.indexOf(normalizedQueryLower) !== -1;
       var codeMatch = false;
       for (var j = 0; j < codes.length; j++) {
         if (normalizeKey(codes[j]).indexOf(normalizedQuery) !== -1) {
