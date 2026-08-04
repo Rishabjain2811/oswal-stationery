@@ -426,7 +426,7 @@ section,
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('homebg.jpeg') center/cover no-repeat;
+  background: url('bg1.png') center/cover no-repeat;
   opacity: 0.5;
   z-index: -1;
   border-radius: var(--radius-xl);
