@@ -447,6 +447,7 @@ section,
   background: linear-gradient(180deg, var(--text-main) 0%, var(--text-muted) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 18px;
 }
 
 .hero-tagline {
