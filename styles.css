@@ -3205,7 +3205,7 @@ body.auth-modal-open {
 /* Content Section Styling */
 .content-section {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
   padding: 2.5rem 1.5rem;
   background: var(--bg-main);
   border-radius: var(--radius-lg);
@@ -3341,30 +3341,32 @@ body.auth-modal-open {
 /* Mobile Responsive Styles for Read More */
 @media (max-width: 768px) {
   .content-section {
-  padding: 7.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   .content-wrapper {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     line-height: 1.6;
+    max-width: 100%;
   }
 
   .content-wrapper h2 {
-    font-size: 1.4rem;
+    font-size: 1.15rem;
     margin-bottom: 1rem;
   }
 
   .content-wrapper h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 0.75rem;
   }
 
   .content-wrapper p {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
 
   .content-wrapper ul {
     margin-left: 1.25rem;
+    margin-bottom: 1rem;
   }
 
   .content-wrapper li {
@@ -3372,32 +3374,41 @@ body.auth-modal-open {
   }
 
   .read-more-toggle {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     padding: 0.75rem 1.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     max-width: 250px;
   }
 }
 
 @media (max-width: 480px) {
+  .content-section {
+    padding: 1.5rem 1rem;
+  }
+
   .content-wrapper {
-    font-size: 0.7rem;
-    line-height: 1.5;
+    font-size: 0.75rem;
+    line-height: 1.6;
   }
 
   .content-wrapper h2 {
     font-size: 1rem;
+    margin-bottom: 0.875rem;
   }
 
   .content-wrapper h3 {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .content-wrapper p {
+    margin-bottom: 0.875rem;
   }
 
   .read-more-toggle {
     padding: 0.6rem 1.25rem;
-    font-size: 0.85rem;
-    max-width: 200px;
+    font-size: 0.75rem;
   }
 }
 
