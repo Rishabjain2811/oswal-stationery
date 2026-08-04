@@ -3767,7 +3767,7 @@ body.auth-modal-open {
     padding-bottom: 16px;
   }
 }
-
+    
 @media (max-width: 480px) {
   .faq-question {
     padding: 14px 16px;
