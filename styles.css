@@ -423,15 +423,16 @@ section,
   content: "";
   position: absolute;
   top: 0;
-  left: -91px;
-  right: 0;
-  bottom: 0;
-  background: url(bg1.png) center / cover no-repeat;
-  opacity: 3.8;
+  left: 0;
+  right: -178px;
+  bottom: -49px;
+  background: url(homebg.jpeg) center / cover no-repeat;
+  opacity: 0.5;
   z-index: -1;
   border-radius: var(--radius-xl);
   margin-bottom: -148px;
 }
+
 
 #report-cover-files-hero .hero-content::before {
   background: url('bg1.png') center/cover no-repeat;
