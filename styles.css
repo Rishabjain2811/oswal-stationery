@@ -427,7 +427,7 @@ section,
   right: 0;
   bottom: 0;
   background: url('bg1.png') center/cover no-repeat;
-  opacity: 0.5;
+  opacity: 0.8;
   z-index: -1;
   border-radius: var(--radius-xl);
 }
