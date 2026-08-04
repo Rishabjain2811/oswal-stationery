@@ -85,6 +85,10 @@
     return setCart(cart);
   }
 
+  function clearCart() {
+    return setCart([]);
+  }  
+
   function getTotalCount() { 
     return getCart().reduce(function (sum, item) {
       return sum + (item.quantity ?? item.qty ?? 1);
@@ -96,6 +100,7 @@
     setCart: setCart,
     addItem: addItem,
     removeItem: removeItem,
+    clearCart: clearCart,
     getTotalCount: getTotalCount,
     EVENT_NAME: EVENT_NAME,
   };
