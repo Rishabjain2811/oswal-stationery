@@ -434,7 +434,7 @@ section,
 }
 
 #report-cover-files-hero .hero-content::before {
-  background: url('homebg.jpeg') center/cover no-repeat;
+  background: url('bg1.png') center/cover no-repeat;
 }
 
 .hero-title {
@@ -3323,6 +3323,7 @@ body.auth-modal-open {
   width: 100%;
   max-width: 300px;
   text-align: center;
+  margin-left: 81px;
 }
 
 .read-more-toggle:hover {
@@ -3340,7 +3341,7 @@ body.auth-modal-open {
 /* Mobile Responsive Styles for Read More */
 @media (max-width: 768px) {
   .content-section {
-    padding: 1.5rem 1rem;
+  padding: 7.5rem 1rem;
   }
 
   .content-wrapper {
@@ -3381,12 +3382,12 @@ body.auth-modal-open {
 
 @media (max-width: 480px) {
   .content-wrapper {
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     line-height: 1.5;
   }
 
   .content-wrapper h2 {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .content-wrapper h3 {
