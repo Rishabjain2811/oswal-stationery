@@ -3738,8 +3738,8 @@ body.auth-modal-open {
   .faq-question[aria-expanded="true"] + .faq-answer p {
     padding-top: 12px;
     padding-bottom: 16px;
-  } 
-}
+  }
+}  
 
 @media (max-width: 480px) {
   .faq-question {
