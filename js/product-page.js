@@ -267,10 +267,21 @@
       specTable +
       '<div class="product-detail-options">' + codePicker + colourPicker + '</div>' +
       '<div class="product-detail-actions">' +
-      '<div class="quantity-group">' +
-      '<button class="quantity-btn" data-action="decrease" data-id="' + id + '">-</button>' +
-      '<input type="text" class="quantity-input" min="0" value="1 Ctn" data-id="' + id + '" />' +
-      '<button class="quantity-btn" data-action="increase" data-id="' + id + '">+</button>' +
+      '<div class="unit-segmented-control">' +
+      '<button class="segmented-tab" data-unit="carton" class="active">Cartons</button>' +
+      '<button class="segmented-tab" data-unit="pieces">Pieces</button>' +
+      '</div>' +
+      '<div class="quantity-group" id="carton-quantity-group">' +
+      '<button class="quantity-btn" data-action="decrease" data-unit="carton">-</button>' +
+      '<input type="text" class="quantity-input" id="carton-input" value="1" placeholder="1" />' +
+      '<span class="quantity-unit">CTN</span>' +
+      '<button class="quantity-btn" data-action="increase" data-unit="carton">+</button>' +
+      '</div>' +
+      '<div class="quantity-group" id="pieces-quantity-group" style="display: none;">' +
+      '<button class="quantity-btn" data-action="decrease" data-unit="pieces">-</button>' +
+      '<input type="text" class="quantity-input" id="pieces-input" value="100" placeholder="100" />' +
+      '<span class="quantity-unit">PCS</span>' +
+      '<button class="quantity-btn" data-action="increase" data-unit="pieces">+</button>' +
       '</div>' +
       '<button class="cta-btn add-to-cart-detail" data-id="' + id + '">Add to Cart</button>' +
       '</div>' +
@@ -280,6 +291,93 @@
 
     var codeSelect = root.querySelector('.item-code-select:not(.colour-select)');
     var colourSelect = root.querySelector('.colour-select');
+    var mixColoursContainer = root.querySelector('.mix-colours-container');
+    var allowPieces = product.allowPieces !== false; // Default to true if not specified
+    var currentUnit = 'carton';
+    
+    // Handle Pieces tab visibility based on allowPieces
+    var piecesTab = root.querySelector('.segmented-tab[data-unit="pieces"]');
+    if (!allowPieces && piecesTab) {
+      piecesTab.style.display = 'none';
+    }
+    
+    // Handle segmented control tab switching
+    var segmentedTabs = root.querySelectorAll('.segmented-tab');
+    segmentedTabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        var unit = this.dataset.unit;
+        currentUnit = unit;
+        
+        // Update active tab styling
+        segmentedTabs.forEach(function (t) {
+          t.classList.remove('active');
+        });
+        this.classList.add('active');
+        
+        // Show/hide quantity groups
+        var cartonGroup = root.querySelector('#carton-quantity-group');
+        var piecesGroup = root.querySelector('#pieces-quantity-group');
+        
+        if (unit === 'carton') {
+          cartonGroup.style.display = 'flex';
+          piecesGroup.style.display = 'none';
+        } else {
+          cartonGroup.style.display = 'none';
+          piecesGroup.style.display = 'flex';
+        }
+      });
+    });
+    
+    // Set initial active state
+    var cartonTab = root.querySelector('.segmented-tab[data-unit="carton"]');
+    if (cartonTab) {
+      cartonTab.classList.add('active');
+    }
+    
+    // Handle quantity button clicks
+    var quantityBtns = root.querySelectorAll('.quantity-btn[data-action]');
+    quantityBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var action = this.dataset.action;
+        var unit = this.dataset.unit;
+        var inputId = unit === 'carton' ? 'carton-input' : 'pieces-input';
+        var input = root.querySelector('#' + inputId);
+        if (!input) return;
+        
+        var currentValue = parseInt(input.value) || 0;
+        var newValue = currentValue;
+        
+        if (unit === 'carton') {
+          // Cartons: min 1, +/- 1
+          if (action === 'increase') {
+            newValue = currentValue + 1;
+          } else if (action === 'decrease' && currentValue > 1) {
+            newValue = currentValue - 1;
+          }
+        } else {
+          // Pieces: min 100, +/- 100
+          if (action === 'increase') {
+            newValue = currentValue + 100;
+          } else if (action === 'decrease' && currentValue > 100) {
+            newValue = currentValue - 100;
+          }
+        }
+        
+        input.value = newValue;
+      });
+    });
+    
+    // Handle Mix Colours dropdown change
+    if (colourSelect && mixColoursContainer) {
+      colourSelect.addEventListener('change', function () {
+        if (this.value === 'mix') {
+          mixColoursContainer.style.display = 'block';
+        } else {
+          mixColoursContainer.style.display = 'none';
+        }
+      });
+    }
+    
     if (selectedCode && codeSelect) {
       Array.prototype.slice.call(codeSelect.options).forEach(function (option) {
         if (global.OswalSearchIndex && global.OswalSearchIndex.normalizeQuery(option.value) ===
@@ -295,17 +393,47 @@
       });
     }
 
-    var input = root.querySelector('.quantity-input');
-    if (global.OswalCategoryPage) global.OswalCategoryPage.wireQuantityInput(input);
+    // Don't use wireQuantityInput for product detail page - we handle quantity differently
+    // with the segmented control and custom unit handling
 
     root.querySelector('.add-to-cart-detail').addEventListener('click', function () {
       if (!global.OswalCategoryPage) return;
+      
+      var selectedColour = colourSelect ? colourSelect.value : null;
+      
+      // Handle Mix Colours selection
+      if (selectedColour === 'mix' && mixColoursContainer) {
+        var checkedBoxes = mixColoursContainer.querySelectorAll('.mix-colour-checkbox:checked');
+        if (checkedBoxes.length === 0) {
+          alert('Please select at least one colour for your mix.');
+          return;
+        }
+        var mixedColours = Array.prototype.slice.call(checkedBoxes).map(function (box) {
+          return box.value;
+        });
+        selectedColour = 'Mix: ' + mixedColours.join(', ');
+      }
+      
+      // Get quantity and unit
+      var cartonInput = root.querySelector('#carton-input');
+      var piecesInput = root.querySelector('#pieces-input');
+      var quantity, unit;
+      
+      if (currentUnit === 'carton') {
+        quantity = cartonInput ? parseInt(cartonInput.value) : 1;
+        unit = 'carton';
+      } else {
+        quantity = piecesInput ? parseInt(piecesInput.value) : 100;
+        unit = 'pieces';
+      }
+      
       var ok = global.OswalCategoryPage.addItem(
         product,
-        input.value,
+        quantity,
         category,
         codeSelect ? codeSelect.value : null,
-        colourSelect ? colourSelect.value : null
+        selectedColour,
+        unit
       );
       if (ok) {
         var btn = root.querySelector('.add-to-cart-detail');
