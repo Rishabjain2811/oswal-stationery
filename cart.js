@@ -3,14 +3,15 @@
   var store = window.OswalCartStore;
   if (!store) return;
 
-  // Helper functions for quantity with Ctn suffix
-  function formatQty(qty) {
-    return qty + ' Ctn';
+  // Helper functions for quantity with unit suffix
+  function formatQty(qty, unit) {
+    var suffix = unit === 'pieces' ? ' PCS' : ' CTN';
+    return qty + suffix;
   }
 
   function parseQty(value) {
     if (typeof value === 'string') {
-      value = value.replace('Ctn', '').replace(/\s/g, '');
+      value = value.replace('Ctn', '').replace('PCS', '').replace(/\s/g, '');
     }
     var qty = parseInt(value, 10);
     if (isNaN(qty) || qty < 0) return 0;
@@ -80,9 +81,20 @@
     if (clearCartBtn) clearCartBtn.style.display = 'flex';
 
     cartItems.innerHTML = cart.map(function (item) {
-      var qty = item.quantity != null ? item.quantity : (item.qty || 1);
+      var cartonQty = item.cartonQty || 0;
+      var piecesQty = item.piecesQty || 0;
       var imageHtml = item.image ? '<img src="' + item.image + '" alt="' + (item.name || 'Product') + '" class="cart-item-image" />' : 
         '<div class="cart-item-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg></div>';
+      
+      var quantityDisplay = [];
+      if (cartonQty > 0) {
+        quantityDisplay.push(cartonQty + ' CTN');
+      }
+      if (piecesQty > 0) {
+        quantityDisplay.push(piecesQty + ' PCS');
+      }
+      var quantityText = quantityDisplay.length > 0 ? quantityDisplay.join(', ') : '0';
+      
       return '<div class="cart-item" data-id="' + item.id + '">' +
         '<div class="cart-item-image-wrapper">' + imageHtml + '</div>' +
         '<div class="cart-item-details">' +
@@ -91,7 +103,7 @@
         '<div class="cart-item-quantity">' +
         '<div class="quantity-group">' +
         '<button class="quantity-btn cart-qty-btn" data-action="decrease" data-id="' + item.id + '">−</button>' +
-        '<input type="text" class="quantity-input cart-qty-input" min="1" value="' + formatQty(qty) + '" data-id="' + item.id + '" />' +
+        '<input type="text" class="quantity-input cart-qty-input" min="1" value="' + quantityText + '" data-id="' + item.id + '" readonly />' +
         '<button class="quantity-btn cart-qty-btn" data-action="increase" data-id="' + item.id + '">+</button>' +
         '</div>' +
         '</div>' +
@@ -109,43 +121,26 @@
     var summaryQuantity = document.getElementById('summary-quantity');
     if (summaryProducts) summaryProducts.textContent = cart.length;
     if (summaryQuantity) {
-      var totalQty = cart.reduce(function (sum, item) {
-        return sum + (item.quantity || item.qty || 1);
+      var totalCartons = cart.reduce(function (sum, item) {
+        return sum + (item.cartonQty || 0);
       }, 0);
-      summaryQuantity.textContent = formatQty(totalQty);
+      
+      var totalPieces = cart.reduce(function (sum, item) {
+        return sum + (item.piecesQty || 0);
+      }, 0);
+      
+      var summaryText = [];
+      if (totalCartons > 0) {
+        summaryText.push(formatQty(totalCartons, 'carton'));
+      }
+      if (totalPieces > 0) {
+        summaryText.push(formatQty(totalPieces, 'pieces'));
+      }
+      
+      summaryQuantity.textContent = summaryText.length > 0 ? summaryText.join(', ') : '0';
     }
 
-    // Wire up quantity controls
-    cartItems.querySelectorAll('.cart-qty-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var id = this.getAttribute('data-id');
-        var action = this.getAttribute('data-action');
-        var input = cartItems.querySelector('.cart-qty-input[data-id="' + id + '"]');
-        var val = parseQty(input.value);
-        if (action === 'increase') {
-          val++;
-        } else if (action === 'decrease' && val > 1) {
-          val--;
-        }
-        input.value = formatQty(val);
-        updateCartQuantity(id, val);
-      });
-    });
-
-    cartItems.querySelectorAll('.cart-qty-input').forEach(function (input) {
-      input.addEventListener('input', function () {
-        var val = parseQty(this.value);
-        this.value = formatQty(val);
-      });
-      input.addEventListener('blur', function () {
-        var id = this.getAttribute('data-id');
-        var val = parseQty(this.value);
-        if (val < 1) val = 1;
-        this.value = formatQty(val);
-        updateCartQuantity(id, val);
-      });
-    });
-
+    // Remove item buttons
     cartItems.querySelectorAll('.remove-item-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         removeFromCart(this.getAttribute('data-id'));
@@ -160,7 +155,15 @@
       return;
     }
     var message = "Hello! I'm interested in the following products from OSWAL GIFT N STATIONERY:\n\n" + cart.map(function (item) {
-      return '• ' + item.name + ' (Item Code: ' + item.id + ') - Quantity: ' + (item.quantity || item.qty || 1) + ' Ctn';
+      var qtyText = [];
+      if (item.cartonQty > 0) {
+        qtyText.push(item.cartonQty + ' CTN');
+      }
+      if (item.piecesQty > 0) {
+        qtyText.push(item.piecesQty + ' PCS');
+      }
+      var quantityStr = qtyText.length > 0 ? qtyText.join(', ') : '0';
+      return '• ' + item.name + ' (Item Code: ' + item.id + ') - Quantity: ' + quantityStr;
     }).join('\n') + "\n\nPlease provide pricing and availability.";
     window.open('https://wa.me/919841137922?text=' + encodeURIComponent(message), '_blank');
   }
@@ -225,7 +228,7 @@
         }
       });
     }
- 
+
     renderCart();
     var currentPage = window.location.pathname.split('/').pop();
     document.querySelectorAll('.nav-links a').forEach(function (link) {
