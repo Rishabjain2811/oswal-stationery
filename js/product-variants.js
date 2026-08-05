@@ -57,13 +57,55 @@
       '</div>';
   }
 
+  function getColourHex(colourName) {
+    var colourMap = {
+      'Red': '#FF0000',
+      'Blue': '#3c82cb',
+      'Green': '#008000',
+      'Yellow': '#FFFF00',
+      'Black': '#000000',
+      'White': '#FFFFFF',
+      'Pink': '#FFC0CB',
+      'Purple': '#800080',
+      'Orange': '#FFA500',
+      'Grey': '#808080',
+      'Gray': '#808080',
+      'Indigo': '#4B0082',
+      'Light Blue': '#ADD8E6',
+      'Light Orange': '#FFDAB9',
+      'Clear': '#ffffff',
+      'Dark Blue': '#00008B',
+      'Brown': '#A52A2A',
+      'Beige': '#F5F5DC',
+      'Cream': '#FFFDD0',
+      'Gold': '#FFD700',
+      'Silver': '#C0C0C0',
+      'Teal': '#008080',
+      'Maroon': '#800000',
+      'Navy': '#000080',
+      'Lavender': '#E6E6FA',
+      'Turquoise': '#40E0D0',
+      'Cyan': '#00FFFF',
+      'Magenta': '#FF00FF',
+      'Lime': '#00FF00',
+      'Olive': '#808000',
+      'Coral': '#FF7F50',
+      'Peach': '#FFDAB9',
+      'Violet': '#EE82EE',
+      'Tan': '#813225'
+
+    };
+    return colourMap[colourName] || '#CCCCCC';
+  }
+
   function renderColourSwatches(product) {
     var colours = getColourOptions(product);
     if (!colours.length) return '';
     return '<div class="product-spec-colour"><span>Colour :</span> ' +
       colours.map(function (colour) {
-        return '<span class="colour-label">' + colour + '</span>';
-      }).join(', ') +
+        var hex = getColourHex(colour);
+        return '<span class="colour-swatch" style="background-color: ' + hex + ';" title="' + colour + '"></span>';
+      }).join('') +
       '</div>';
   }
 
@@ -104,13 +146,32 @@
     var options = getColourOptions(product);
     dataAttrs = dataAttrs || '';
     var defaultColour = getDefaultColour(product, 0);
+    
+    // Add "Mix Colours" option if there are multiple colours
+    var mixOption = options.length > 1 
+      ? '<option value="mix">Mix Colours</option>' 
+      : '';
+    
     return '<label class="item-code-label" for="' + fieldId + '-colour">Select Colour</label>' +
       '<select id="' + fieldId + '-colour" class="item-code-select colour-select" ' + dataAttrs + '>' +
+      mixOption +
       options.map(function (colour) {
         var selected = colour === defaultColour ? ' selected' : '';
         return '<option value="' + colour + '"' + selected + '>' + colour + '</option>';
       }).join('') +
-      '</select>';
+      '</select>' +
+      '<div id="' + fieldId + '-mix-colours" class="mix-colours-container" style="display: none;">' +
+      '<p class="mix-colours-label">Select your colour combination:</p>' +
+      '<div class="mix-colours-swatches">' +
+      options.map(function (colour) {
+        var hex = getColourHex(colour);
+        return '<label class="mix-colour-swatch-wrapper">' +
+          '<input type="checkbox" class="mix-colour-checkbox" value="' + colour + '" data-hex="' + hex + '">' +
+          '<span class="colour-swatch mix-swatch" style="background-color: ' + hex + ';" title="' + colour + '"></span>' +
+          '</label>';
+      }).join('') +
+      '</div>' +
+      '</div>';
   }
 
   function syncColourToCode(product, codeSelect, colourSelect) {
