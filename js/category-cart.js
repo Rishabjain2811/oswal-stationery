@@ -6,13 +6,14 @@
     return qty;
   }
 
-  function formatQty(qty) {
-    return qty + ' Ctn';
+  function formatQty(qty, unit) {
+    var suffix = unit === 'pieces' ? ' PCS' : ' CTN';
+    return qty + suffix;
   }
 
   function parseQty(value) {
     if (typeof value === 'string') {
-      value = value.replace('Ctn', '').replace(/\s/g, '');
+      value = value.replace('Ctn', '').replace('PCS', '').replace(/\s/g, '');
     }
     return normalizeQty(value);
   }
@@ -50,8 +51,13 @@
     });
   }
 
-  function addItem(product, qty, category, selectedCode, selectedColour) {
-    var amount = parseQty(qty);
+  function addItem(product, qty, category, selectedCode, selectedColour, unit) {
+    var amount;
+    if (typeof qty === 'number') {
+      amount = qty;
+    } else {
+      amount = parseQty(qty);
+    }
     if (!global.OswalCartStore) return false;
     if (amount < 1) {
       alert('Please select a quantity greater than 0.');
@@ -67,6 +73,7 @@
       quantity: amount,
       category: category,
       image: product.image,
+      unit: unit || 'carton'
     });
     return true;
   }
