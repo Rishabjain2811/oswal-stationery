@@ -11,7 +11,7 @@
     var desktopEl = document.getElementById('cart-count');
     var mobileCartBar = document.getElementById('mobile-cart-bar');
     var mobileCountEl = document.getElementById('mobile-cart-count');
-    var total = store.getTotalCount();
+    var total = store.getUniqueCount();
     
     if (desktopEl) desktopEl.textContent = total;
     if (mobileCountEl) mobileCountEl.textContent = total;
@@ -90,4 +90,3 @@
     if (document.visibilityState === 'visible') updateBadge();
   });
 })(typeof window !== 'undefined' ? window : this);
- 
