@@ -1391,7 +1391,22 @@ section,
 
 .cart-item-quantity {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.quantity-control-group {
+  display: flex;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.quantity-label {
+  font-size: 0.85rem;
+  color: var(--text-subtle);
+  font-weight: 500;
+  min-width: 60px;
 }
 
 .cart-item-quantity .quantity-group {
@@ -2182,6 +2197,11 @@ section,
 /* Mobile Cart Bar - Hidden on desktop by default */
 .mobile-cart-bar {
   display: none;
+}
+
+/* Hide mobile cart bar on cart page */
+body.cart-page .mobile-cart-bar {
+  display: none !important;
 }
 
 /* WhatsApp Floating Button */
