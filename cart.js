@@ -18,14 +18,27 @@
     return qty;
   }
 
-  function updateCartQuantity(productId, newQty) {
+  function updateCartQuantity(productId, unit, change) {
     var cart = store.getCart();
     var item = cart.find(function (i) { return i.id === productId; });
     if (item) {
-      if (newQty < 1) {
+      if (unit === 'carton') {
+        var newCartonQty = (item.cartonQty || 0) + change;
+        if (newCartonQty < 0) newCartonQty = 0;
+        item.cartonQty = newCartonQty;
+      } else if (unit === 'pieces') {
+        var newPiecesQty = (item.piecesQty || 0) + change;
+        if (newPiecesQty < 0) newPiecesQty = 0;
+        item.piecesQty = newPiecesQty;
+      }
+      
+      // Update total quantity
+      item.quantity = (item.cartonQty || 0) + (item.piecesQty || 0);
+      
+      // Remove item if both quantities are 0
+      if (item.cartonQty === 0 && item.piecesQty === 0) {
         removeFromCart(productId);
       } else {
-        item.quantity = newQty;
         store.setCart(cart);
         renderCart();
       }
@@ -86,14 +99,31 @@
       var imageHtml = item.image ? '<img src="' + item.image + '" alt="' + (item.name || 'Product') + '" class="cart-item-image" />' : 
         '<div class="cart-item-placeholder"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect></svg></div>';
       
-      var quantityDisplay = [];
-      if (cartonQty > 0) {
-        quantityDisplay.push(cartonQty + ' CTN');
-      }
-      if (piecesQty > 0) {
-        quantityDisplay.push(piecesQty + ' PCS');
-      }
-      var quantityText = quantityDisplay.length > 0 ? quantityDisplay.join(', ') : '0';
+      var quantityControls = [];
+      
+      // Carton quantity control
+      quantityControls.push(
+        '<div class="quantity-control-group">' +
+        '<span class="quantity-label">Cartons:</span>' +
+        '<div class="quantity-group">' +
+        '<button class="quantity-btn cart-qty-btn" data-action="decrease" data-id="' + item.id + '" data-unit="carton">−</button>' +
+        '<input type="text" class="quantity-input cart-qty-input" min="0" value="' + cartonQty + '" data-id="' + item.id + '" data-unit="carton" readonly />' +
+        '<button class="quantity-btn cart-qty-btn" data-action="increase" data-id="' + item.id + '" data-unit="carton">+</button>' +
+        '</div>' +
+        '</div>'
+      );
+      
+      // Pieces quantity control
+      quantityControls.push(
+        '<div class="quantity-control-group">' +
+        '<span class="quantity-label">Pieces:</span>' +
+        '<div class="quantity-group">' +
+        '<button class="quantity-btn cart-qty-btn" data-action="decrease" data-id="' + item.id + '" data-unit="pieces">−</button>' +
+        '<input type="text" class="quantity-input cart-qty-input" min="0" value="' + piecesQty + '" data-id="' + item.id + '" data-unit="pieces" readonly />' +
+        '<button class="quantity-btn cart-qty-btn" data-action="increase" data-id="' + item.id + '" data-unit="pieces">+</button>' +
+        '</div>' +
+        '</div>'
+      );
       
       return '<div class="cart-item" data-id="' + item.id + '">' +
         '<div class="cart-item-image-wrapper">' + imageHtml + '</div>' +
@@ -101,11 +131,7 @@
         '<h4 class="cart-item-name">' + (item.name || 'Product') + '</h4>' +
         '</div>' +
         '<div class="cart-item-quantity">' +
-        '<div class="quantity-group">' +
-        '<button class="quantity-btn cart-qty-btn" data-action="decrease" data-id="' + item.id + '">−</button>' +
-        '<input type="text" class="quantity-input cart-qty-input" min="1" value="' + quantityText + '" data-id="' + item.id + '" readonly />' +
-        '<button class="quantity-btn cart-qty-btn" data-action="increase" data-id="' + item.id + '">+</button>' +
-        '</div>' +
+        quantityControls.join('') +
         '</div>' +
         '<button class="remove-item-btn" data-id="' + item.id + '">' +
         '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
@@ -144,6 +170,17 @@
     cartItems.querySelectorAll('.remove-item-btn').forEach(function (btn) {
       btn.addEventListener('click', function () {
         removeFromCart(this.getAttribute('data-id'));
+      });
+    });
+
+    // Quantity control buttons
+    cartItems.querySelectorAll('.cart-qty-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var productId = this.getAttribute('data-id');
+        var unit = this.getAttribute('data-unit');
+        var action = this.getAttribute('data-action');
+        var change = action === 'increase' ? 1 : -1;
+        updateCartQuantity(productId, unit, change);
       });
     });
   }
