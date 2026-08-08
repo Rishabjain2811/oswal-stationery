@@ -31,10 +31,10 @@
         if (newPiecesQty < 0) newPiecesQty = 0;
         item.piecesQty = newPiecesQty;
       }
-      
+
       // Update total quantity
       item.quantity = (item.cartonQty || 0) + (item.piecesQty || 0);
-      
+
       // Remove item if both quantities are 0
       if (item.cartonQty === 0 && item.piecesQty === 0) {
         removeFromCart(productId);
@@ -43,6 +43,43 @@
         renderCart();
       }
     }
+  }
+
+  // Long press functionality for quantity buttons
+  var longPressTimers = {};
+  var longPressIntervals = {};
+
+  function setupLongPress(btn) {
+    var productId = btn.getAttribute('data-id');
+    var unit = btn.getAttribute('data-unit');
+    var action = btn.getAttribute('data-action');
+    // Cartons increment by 1, pieces increment by 100
+    var change = action === 'increase' ? (unit === 'carton' ? 1 : 100) : (unit === 'carton' ? -1 : -100);
+
+    function startLongPress() {
+      // Initial delay before rapid increment/decrement
+      longPressTimers[productId + '-' + unit + '-' + action] = setTimeout(function () {
+        // Start rapid increment/decrement every 100ms
+        longPressIntervals[productId + '-' + unit + '-' + action] = setInterval(function () {
+          updateCartQuantity(productId, unit, change);
+        }, 100);
+      }, 500);
+    }
+
+    function clearLongPress() {
+      clearTimeout(longPressTimers[productId + '-' + unit + '-' + action]);
+      clearInterval(longPressIntervals[productId + '-' + unit + '-' + action]);
+    }
+
+    btn.addEventListener('mousedown', startLongPress);
+    btn.addEventListener('touchstart', function (e) {
+      e.preventDefault();
+      startLongPress();
+    });
+
+    btn.addEventListener('mouseup', clearLongPress);
+    btn.addEventListener('mouseleave', clearLongPress);
+    btn.addEventListener('touchend', clearLongPress);
   }
 
   function removeFromCart(productId) {
@@ -179,9 +216,13 @@
         var productId = this.getAttribute('data-id');
         var unit = this.getAttribute('data-unit');
         var action = this.getAttribute('data-action');
-        var change = action === 'increase' ? 1 : -1;
+        // Cartons increment by 1, pieces increment by 100
+        var change = action === 'increase' ? (unit === 'carton' ? 1 : 100) : (unit === 'carton' ? -1 : -100);
         updateCartQuantity(productId, unit, change);
       });
+
+      // Setup long press functionality
+      setupLongPress(btn);
     });
   }
 
