@@ -48,6 +48,7 @@
   // Long press functionality for quantity buttons
   var longPressTimers = {};
   var longPressIntervals = {};
+  var isLongPress = {};
 
   function setupLongPress(btn) {
     var productId = btn.getAttribute('data-id');
@@ -57,8 +58,14 @@
     var change = action === 'increase' ? (unit === 'carton' ? 1 : 100) : (unit === 'carton' ? -1 : -100);
 
     function startLongPress() {
+      // Reset long press flag
+      isLongPress[productId + '-' + unit + '-' + action] = false;
+      
       // Initial delay before rapid increment/decrement
       longPressTimers[productId + '-' + unit + '-' + action] = setTimeout(function () {
+        // Mark as long press
+        isLongPress[productId + '-' + unit + '-' + action] = true;
+        
         // Start rapid increment/decrement every 100ms
         longPressIntervals[productId + '-' + unit + '-' + action] = setInterval(function () {
           updateCartQuantity(productId, unit, change);
@@ -71,15 +78,23 @@
       clearInterval(longPressIntervals[productId + '-' + unit + '-' + action]);
     }
 
+    function handleInteractionEnd() {
+      clearLongPress();
+      // If it wasn't a long press, trigger single increment/decrement
+      if (!isLongPress[productId + '-' + unit + '-' + action]) {
+        updateCartQuantity(productId, unit, change);
+      }
+    }
+
     btn.addEventListener('mousedown', startLongPress);
     btn.addEventListener('touchstart', function (e) {
       e.preventDefault();
       startLongPress();
     });
 
-    btn.addEventListener('mouseup', clearLongPress);
+    btn.addEventListener('mouseup', handleInteractionEnd);
     btn.addEventListener('mouseleave', clearLongPress);
-    btn.addEventListener('touchend', clearLongPress);
+    btn.addEventListener('touchend', handleInteractionEnd);
   }
 
   function removeFromCart(productId) {
@@ -212,16 +227,7 @@
 
     // Quantity control buttons
     cartItems.querySelectorAll('.cart-qty-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var productId = this.getAttribute('data-id');
-        var unit = this.getAttribute('data-unit');
-        var action = this.getAttribute('data-action');
-        // Cartons increment by 1, pieces increment by 100
-        var change = action === 'increase' ? (unit === 'carton' ? 1 : 100) : (unit === 'carton' ? -1 : -100);
-        updateCartQuantity(productId, unit, change);
-      });
-
-      // Setup long press functionality
+      // Setup long press functionality (now handles both single and long press)
       setupLongPress(btn);
     });
   }
