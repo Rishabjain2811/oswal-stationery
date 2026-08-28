@@ -1673,7 +1673,7 @@
         });  
       }
     }
-
+  
     return results;
   }
 
