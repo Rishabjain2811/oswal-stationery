@@ -1603,12 +1603,56 @@
     var results = [];
     var normalizedQueryLower = normalizedQuery.toLowerCase();
     
+    // Also create a version with spaces for better matching
+    var queryWithSpaces = normalizeName(query);
+    var queryWords = queryWithSpaces.split(' ').filter(function(word) { return word.length > 0; });
+    
     for (var i = 0; i < products.length; i++) {
       var product = products[i];
       var searchName = product.searchName;
+      var productName = product.productName;
+      var category = product.category;
       var codes = product.codes || [];
 
-      var nameMatch = searchName.indexOf(normalizedQueryLower) !== -1;
+      // Normalize the search name for comparison
+      var normalizedSearchName = normalizeName(searchName);
+      var normalizedProductName = normalizeName(productName);
+      var normalizedCategory = normalizeName(category);
+      
+      // Check for exact match in normalized names (preserves spaces)
+      var nameMatch = normalizedSearchName.indexOf(normalizedQueryLower) !== -1 || 
+                     normalizedProductName.indexOf(normalizedQueryLower) !== -1;
+      
+      // Check for category match
+      var categoryMatch = normalizedCategory.indexOf(normalizedQueryLower) !== -1;
+      
+      // Check for word-by-word matching (handles "wall hanger" matching "wall hanger")
+      if (!nameMatch && !categoryMatch && queryWords.length > 0) {
+        var wordMatchCount = 0;
+        for (var k = 0; k < queryWords.length; k++) {
+          var word = queryWords[k];
+          // Check if this word appears in either search name, product name, or category
+          if (normalizedSearchName.indexOf(word) !== -1 || 
+              normalizedProductName.indexOf(word) !== -1 ||
+              normalizedCategory.indexOf(word) !== -1) {
+            wordMatchCount++;
+          }
+        }
+        // If all words match or at least 2 words match (for longer queries), consider it a match
+        if (wordMatchCount === queryWords.length || wordMatchCount >= 2) {
+          nameMatch = true;
+        }
+      }
+      
+      // Check for partial matches (handles "hang" matching "hanger")
+      if (!nameMatch && !categoryMatch && normalizedQueryLower.length >= 3) {
+        if (normalizedSearchName.indexOf(normalizedQueryLower.substring(0, 3)) !== -1 ||
+            normalizedProductName.indexOf(normalizedQueryLower.substring(0, 3)) !== -1 ||
+            normalizedCategory.indexOf(normalizedQueryLower.substring(0, 3)) !== -1) {
+          nameMatch = true;
+        }
+      }
+      
       var codeMatch = false;
       for (var j = 0; j < codes.length; j++) {
         if (normalizeKey(codes[j]).indexOf(normalizedQuery) !== -1) {
@@ -1617,7 +1661,7 @@
         }
       }
 
-      if (nameMatch || codeMatch) {
+      if (nameMatch || categoryMatch || codeMatch) {
         var matchedCode = codeMatch ? codes[0] : null;
         results.push({
           productId: product.productId,
