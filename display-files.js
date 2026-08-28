@@ -203,7 +203,7 @@ const categoryProducts = [
       "packing": ["1/5/Ctn","1/5/Ctn"],
       "colour": ["Grey","White"]
     },
-    "image": "Info Stand.png",
+    "image": "Info stand.png",
     "imageClass": "product-image-large",
     "featured": true
   },
