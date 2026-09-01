@@ -2016,7 +2016,7 @@
           "White"
         ]
       },
-      "image": "Info Stand.png",
+      "image": "Info stand.png",
       "imageClass": "product-image-large"
     },
     "staticUrl": "product-display-files-10-Folder-A3.html"
