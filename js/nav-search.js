@@ -24,6 +24,98 @@
     return url;
   }
 
+  function standardizeNav() {
+    var navbar = document.querySelector('.navbar');
+    var navLogo = navbar && navbar.querySelector('.nav-logo');
+    if (!navbar || !navLogo || navbar.classList.contains('home-hero-nav')) return;
+
+    var navLinks = navbar.querySelector('.nav-links');
+    var hadNavLinks = !!navLinks;
+    if (!navLinks) {
+      navLinks = document.createElement('ul');
+      navLinks.className = 'nav-links';
+    }
+    var navToggle = navbar.querySelector('.nav-toggle');
+    var existingCartCount = navbar.querySelector('#cart-count');
+    var cartCount = existingCartCount ? existingCartCount.textContent : '0';
+    navbar.appendChild(navLinks);
+    navLogo.innerHTML =
+      '<a class="standard-nav-brand" href="index.html">' +
+      '<img src="colors%20logo.jpg" alt="OSWAL Logo" class="logo-img default-nav-logo" width="120" height="40" loading="lazy">' +
+      '<img src="colors%20logo.png" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">' +
+      '<span class="brand">OSWAL GIFT \'N\' STATIONERY</span>' +
+      '</a>';
+
+    if (!navToggle) {
+      navToggle = document.createElement('button');
+      navToggle.className = 'nav-toggle';
+      navToggle.type = 'button';
+      navToggle.setAttribute('aria-label', 'Toggle navigation menu');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-controls', 'primary-navigation');
+      navToggle.innerHTML = '<span></span><span></span><span></span>';
+      navToggle.addEventListener('click', function () {
+        var isOpen = navbar.classList.toggle('nav-open');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+      });
+    }
+    navbar.insertBefore(navToggle, navLinks);
+    navLinks.id = 'primary-navigation';
+    navLinks.innerHTML =
+      '<li><a href="index.html#home">Home</a></li>' +
+      '<li class="dropdown"><a href="index.html#products" class="dropdown-toggle">Products</a>' +
+      '<ul class="dropdown-menu">' +
+      '<li><a href="report-cover-files.html">Report Cover Files</a></li>' +
+      '<li><a href="sheet-protectors.html">Sheet Protectors</a></li>' +
+      '<li><a href="clip-files.html">Clip Files Series</a></li>' +
+      '<li><a href="clear-books.html">Clear Books Series</a></li>' +
+      '<li><a href="card-holders.html">Visiting Card Holders Series</a></li>' +
+      '<li><a href="button-files.html">Button Bags Series</a></li>' +
+      '<li><a href="zipper-bag-series.html">Zipper Bag Series</a></li>' +
+      '<li><a href="document-bags.html">Documents Bag / Expanding Files Series</a></li>' +
+      '<li><a href="separators.html">Index/Seperators Series</a></li>' +
+      '<li><a href="paper-board-files.html">Paper Board Files Series</a></li>' +
+      '<li><a href="display-files.html">Display Solution Products Series</a></li>' +
+      '<li><a href="leatherite-executive-bags.html">Leatherite Bags Series</a></li>' +
+      '<li><a href="conference-folders.html">PP &amp; Leatherite Conference Files / Hotel Files</a></li>' +
+      '<li><a href="stationery-products.html">Stationery Products</a></li>' +
+      '</ul></li>' +
+      '<li><a href="index.html#about">About</a></li>' +
+      '<li><a href="links.html">Links</a></li>' +
+      '<li class="dropdown"><a href="#" class="dropdown-toggle">Resources</a>' +
+      '<ul class="dropdown-menu">' +
+      '<li><a href="complete-guide-to-office-filing-systems.html">Office Filing Systems Guide</a></li>' +
+      '<li><a href="buying-guide-report-cover-files.html">Report Cover Files Guide</a></li>' +
+      '<li><a href="buying-guide-clear-books.html">Clear Books Guide</a></li>' +
+      '<li><a href="comparison-report-cover-vs-clear-books.html">Product Comparison</a></li>' +
+      '<li><a href="guide-office-document-organization.html">Document Organization Guide</a></li>' +
+      '</ul></li>' +
+      '<li><a href="cart.html" class="cart-link" aria-label="Shopping cart">' +
+      '<svg class="cart-outline-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>' +
+      '<path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>' +
+      '</svg><span id="cart-count">0</span></a></li>';
+    navLinks.querySelector('#cart-count').textContent = cartCount;
+
+    navLinks.querySelectorAll('.dropdown').forEach(function (dropdown, index) {
+      if (hadNavLinks && index === 0) return;
+      var dropdownToggle = dropdown.querySelector('.dropdown-toggle');
+      dropdownToggle.addEventListener('click', function (event) {
+        if (global.innerWidth <= 768) {
+          event.preventDefault();
+          dropdown.classList.toggle('dropdown-open');
+        }
+      });
+    });
+
+    if (!document.querySelector('link[href*="Libre+Baskerville"]')) {
+      var fontLink = document.createElement('link');
+      fontLink.rel = 'stylesheet';
+      fontLink.href = 'https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap';
+      document.head.appendChild(fontLink);
+    }
+  }
+
   function injectSearchBar() {
     var navLinks = document.querySelector('.navbar .nav-links');
     if (!navLinks || document.getElementById('nav-product-search')) return;
@@ -33,8 +125,10 @@
     item.innerHTML =
       '<form class="nav-search-form" id="nav-product-search" role="search" autocomplete="off">' +
       '<label class="nav-search-label" for="nav-search-input">Search products</label>' +
-      '<input type="search" id="nav-search-input" class="nav-search-input" placeholder="Search code or name" aria-label="Search products by code or name" />' +
-      '<button type="submit" class="nav-search-btn" aria-label="Search">Search</button>' +
+      '<input type="search" id="nav-search-input" class="nav-search-input" placeholder="Search" aria-label="Search products by code or name" />' +
+      '<button type="submit" class="nav-search-btn" aria-label="Search">' +
+      '<svg class="nav-search-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><line x1="16" y1="16" x2="21" y2="21"></line></svg><span class="nav-search-button-label">Search</span>' +
+      '</button>' +
       '<div class="nav-search-results" id="nav-search-results" hidden></div>' +
       '</form>';
     var cartItem = navLinks.querySelector('.cart-link');
@@ -251,6 +345,7 @@
   }
 
   function init() {
+    standardizeNav();
     injectSearchBar();
     wireSearchForm();
     injectMobileSearchBar();
