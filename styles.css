@@ -496,7 +496,7 @@ section,
 
 #site-content .navbar.home-hero-nav:not(.nav-over-hero),
 #site-content .navbar.home-hero-nav:not(.nav-over-hero) * {
-      color: #ffffff;
+      color: #020202;
 }
 
 #site-content .navbar.home-hero-nav.nav-over-hero,
@@ -558,8 +558,8 @@ section,
 
 @media (min-width: 769px) {
   #site-content .navbar.home-hero-nav .nav-search-form {
-    width: 161px;
-    gap: 0.45rem;
+    width: 135px;
+    gap: 0.35rem;
     padding: 0 0.2rem 0.25rem;
     border-bottom: 1px solid currentColor;
   }
@@ -574,7 +574,7 @@ section,
     background: transparent;
     color: inherit;
     font: inherit;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
   }
 
   #site-content .navbar.home-hero-nav .nav-search-input::placeholder {
@@ -590,11 +590,11 @@ section,
   #site-content .navbar.home-hero-nav .nav-search-btn {
     order: 0;
     display: inline-flex;
-    flex: 0 0 30px;
+    flex: 0 0 25px;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     border-radius: 0;
     background: transparent;
@@ -604,8 +604,8 @@ section,
 
   #site-content .navbar.home-hero-nav .nav-search-icon {
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
 
   #site-content .navbar.home-hero-nav .nav-search-button-label {
@@ -652,8 +652,8 @@ section,
 
 @media (min-width: 769px) {
   .navbar.minimalist-nav:not(.home-hero-nav) .nav-search-form {
-    width: 161px;
-    gap: 0.45rem;
+    width: 135px;
+    gap: 0.35rem;
     padding: 0 0.2rem 0.25rem;
     border-bottom: 1px solid currentColor;
   }
@@ -668,7 +668,7 @@ section,
     background: transparent;
     color: inherit;
     font: inherit;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
   }
 
   .navbar.minimalist-nav:not(.home-hero-nav) .nav-search-input::placeholder {
@@ -684,11 +684,11 @@ section,
   .navbar.minimalist-nav:not(.home-hero-nav) .nav-search-btn {
     order: 0;
     display: inline-flex;
-    flex: 0 0 30px;
+    flex: 0 0 25px;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     border-radius: 0;
     background: transparent;
@@ -699,8 +699,8 @@ section,
   .navbar.minimalist-nav:not(.home-hero-nav) .nav-search-icon,
   .navbar.minimalist-nav:not(.home-hero-nav) .cart-outline-icon {
     display: block;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
   }
 }
 
