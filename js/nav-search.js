@@ -229,13 +229,38 @@
     var results = document.getElementById('mobile-search-results');
     if (!form || !input || !results || !global.OswalSearchIndex) return;
 
+    function positionHomeResults() {
+      if (!form.closest('#home') || global.innerWidth > 768 || results.hidden) {
+        results.classList.remove('mobile-search-results-overlay');
+        return;
+      }
+
+      var bounds = form.getBoundingClientRect();
+      if (bounds.bottom <= 0 || bounds.top >= global.innerHeight) {
+        hideResults(results);
+        results.classList.remove('mobile-search-results-overlay');
+        return;
+      }
+
+      results.classList.add('mobile-search-results-overlay');
+      results.style.setProperty('--mobile-search-results-left', bounds.left + 'px');
+      results.style.setProperty('--mobile-search-results-width', bounds.width + 'px');
+      results.style.setProperty(
+        '--mobile-search-results-bottom',
+        Math.max(8, global.innerHeight - bounds.top + 8) + 'px'
+      );
+    }
+
     function runSearch() {
       var matches = global.OswalSearchIndex.search(input.value, 8);
       renderMobileResults(matches, results);
+      positionHomeResults();
     }
 
     input.addEventListener('input', runSearch);
     input.addEventListener('focus', runSearch);
+    global.addEventListener('resize', positionHomeResults);
+    global.addEventListener('scroll', positionHomeResults, { passive: true });
 
     form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -258,11 +283,17 @@
     });
 
     document.addEventListener('click', function (event) {
-      if (!form.contains(event.target)) hideResults(results);
+      if (!form.contains(event.target) && !results.contains(event.target)) {
+        hideResults(results);
+        results.classList.remove('mobile-search-results-overlay');
+      }
     });
 
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape') hideResults(results);
+      if (event.key === 'Escape') {
+        hideResults(results);
+        results.classList.remove('mobile-search-results-overlay');
+      }
     });
   }
 
