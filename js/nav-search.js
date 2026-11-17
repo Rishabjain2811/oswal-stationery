@@ -11,6 +11,32 @@
     return new URLSearchParams(global.location.search).get(name);
   }
 
+  function wireNavigationToggle() {
+    document.addEventListener('click', function (event) {
+      var target = event.target;
+      var toggle = target && target.closest ? target.closest('.navbar .nav-toggle') : null;
+      var navbar = toggle ? toggle.closest('.navbar') : null;
+
+      if (toggle && navbar) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        var isOpen = navbar.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', String(isOpen));
+        return;
+      }
+
+      document.querySelectorAll('.navbar.nav-open').forEach(function (openNavbar) {
+        if (openNavbar.contains(target)) return;
+        openNavbar.classList.remove('nav-open');
+        var openToggle = openNavbar.querySelector('.nav-toggle');
+        if (openToggle) openToggle.setAttribute('aria-expanded', 'false');
+        openNavbar.querySelectorAll('.dropdown-open').forEach(function (dropdown) {
+          dropdown.classList.remove('dropdown-open');
+        });
+      });
+    }, true);
+  }
+
   function buildResultUrl(entry) {
     if (global.OswalProductRegistry && global.OswalProductRegistry.buildStaticUrl) {
       var staticUrl = global.OswalProductRegistry.buildStaticUrl(entry.page, entry.productId);
@@ -243,12 +269,6 @@
       }
 
       results.classList.add('mobile-search-results-overlay');
-      results.style.setProperty('--mobile-search-results-left', bounds.left + 'px');
-      results.style.setProperty('--mobile-search-results-width', bounds.width + 'px');
-      results.style.setProperty(
-        '--mobile-search-results-bottom',
-        Math.max(8, global.innerHeight - bounds.top + 8) + 'px'
-      );
     }
 
     function runSearch() {
@@ -376,6 +396,7 @@
   }
 
   function init() {
+    wireNavigationToggle();
     standardizeNav();
     injectSearchBar();
     wireSearchForm();
