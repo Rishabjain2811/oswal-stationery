@@ -4857,3 +4857,41 @@ body.auth-modal-open {
     padding: 5rem 1.25rem 2rem;
   }
 }
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) {
+  padding: 1rem;
+  background: #fff;
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  overflow: visible;
+  border-radius: 0;
+  background: #fff;
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .hero-content::before,
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .category-logo,
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .hero-tagline {
+  display: none;
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .hero-title {
+  order: 1;
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) .cta-btn {
+  display: none;
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) + main > .products-section {
+  border-top: 1px solid #000;
+}
