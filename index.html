@@ -291,61 +291,40 @@
       </a></li>
     </ul>
   </nav>
-  <section class="mobile-search-section" id="mobile-search">
-    <div class="mobile-search-container">
-      <form class="mobile-search-form" id="mobile-product-search" role="search" autocomplete="off">
-        <input type="search" id="mobile-search-input" class="mobile-search-input" placeholder="Search products..." aria-label="Search products" />
-        <button type="submit" class="mobile-search-btn" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-        <div class="mobile-search-results" id="mobile-search-results" hidden></div>
-      </form>
-    </div>
-  </section>
   <header class="hero-section" id="home">
-    <video class="hero-background-video" autoplay loop muted playsinline preload="auto" poster="bg3.png" aria-hidden="true">
-      <source src="finalvideo.mp4" type="video/mp4">
+    <video class="hero-background-video" loop muted playsinline preload="none" poster="bg3.png" aria-hidden="true">
+      <source data-src="finalvideo.mp4" type="video/mp4">
+    </video>
+    <video class="mobile-hero-background-video" loop muted playsinline preload="none" poster="bg3.png" aria-hidden="true">
+      <source data-src="mobilevideofinal.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
       <div class="mobile-hero-copy">
-        <img src="colors logo.png" alt="OSWAL GIFT N STATIONERY Logo - Premium Files Folders Stationery Chennai" width="150" height="60" loading="lazy">
-        <h1 class="hero-title">Elevate Everyday Moments with Beautiful Stationery</h1>
-        <p class="hero-tagline">Leading importer, Stockist &amp; supplier of plastic files, folders, and office stationery.</p>
       </div>
     </div>
+    <section class="mobile-search-section" id="mobile-search">
+      <div class="mobile-search-container">
+        <form class="mobile-search-form" id="mobile-product-search" role="search" autocomplete="off">
+          <input type="search" id="mobile-search-input" class="mobile-search-input" placeholder="Search products..." aria-label="Search products" />
+          <button type="submit" class="mobile-search-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <div class="mobile-search-results" id="mobile-search-results" hidden></div>
+        </form>
+      </div>
+    </section>
   </header>
   
-  <!-- Video Reels Section -->
-  <section class="video-reels-section">
-    <div class="video-reels-container">
-      <div class="video-reels-scroll">
-        <video class="reel-video" autoplay loop muted playsinline>
-          <source src="reel1.mp4" type="video/mp4">
-        </video>
-        <video class="reel-video" autoplay loop muted playsinline>
-          <source src="reel2.mp4" type="video/mp4">
-        </video>
-        <video class="reel-video" autoplay loop muted playsinline>
-          <source src="reel3.mp4" type="video/mp4">
-        </video>
-        <video class="reel-video" autoplay loop muted playsinline>
-          <source src="reel4.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
-  
   <section class="featured-section" id="featured">
-    <h2 class="section-title">Featured Products →<img src="" alt=""></h2>
+    <h2 class="section-title">Featured Products &nbsp &nbsp  →<img src="" alt=""></h2>
     <div id="featured-products"><!-- Rendered by script.js --></div>
   </section>
   <main>
     <section class="products-section" id="products">
       <h2 class="section-title">Product Categories</h2>
-      <p class="section-subtitle">Explore our full range of premium files, folders, and office essentials.</p>
       <div class="category-cards-grid">
         <a href="report-cover-files.html" class="category-card accent-blue">
           <img src="report cover file cover image.png" alt="Report Cover Files" class="category-img" width="300" height="200" loading="lazy">
@@ -806,6 +785,54 @@
         }
       }); 
     });
+  </script>
+  <script>
+    (function () {
+      var mobileViewport = window.matchMedia('(max-width: 768px)');
+
+      function loadHeroVideo() {
+        var mobileVideo = document.querySelector('.mobile-hero-background-video');
+        var desktopVideo = document.querySelector('.hero-background-video');
+        var activeVideo = mobileViewport.matches ? mobileVideo : desktopVideo;
+        var inactiveVideo = mobileViewport.matches ? desktopVideo : mobileVideo;
+
+        if (!activeVideo || !inactiveVideo) return;
+
+        inactiveVideo.pause();
+        inactiveVideo.removeAttribute('autoplay');
+        inactiveVideo.querySelectorAll('source').forEach(function (source) {
+          source.removeAttribute('src');
+        });
+        inactiveVideo.load();
+
+        activeVideo.muted = true;
+        activeVideo.autoplay = true;
+        activeVideo.preload = 'auto';
+        activeVideo.querySelectorAll('source').forEach(function (source) {
+          if (!source.hasAttribute('src')) {
+            source.src = source.dataset.src;
+          }
+        });
+        activeVideo.load();
+        activeVideo.play().catch(function (error) {
+          if (error.name !== 'NotAllowedError') {
+            console.error('Hero video playback failed:', error);
+          }
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', loadHeroVideo);
+      } else {
+        loadHeroVideo();
+      }
+
+      if (mobileViewport.addEventListener) {
+        mobileViewport.addEventListener('change', loadHeroVideo);
+      } else {
+        mobileViewport.addListener(loadHeroVideo);
+      }
+    })();
   </script>
 </body>
 
