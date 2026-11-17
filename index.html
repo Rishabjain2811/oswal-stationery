@@ -222,8 +222,8 @@
 <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -236,9 +236,11 @@
   <div class="wipe"></div>
 
   <div id="site-content">
-    <nav class="navbar minimalist-nav">
+    <nav class="navbar minimalist-nav home-hero-nav nav-over-hero">
       <div class="nav-logo">
-        <img src="colors logo.jpg" alt="OSWAL Logo" class="logo-img" width="120" height="40" loading="lazy">
+        <img src="colors logo.jpg" alt="OSWAL Logo" class="logo-img default-nav-logo" width="120" height="40" loading="lazy">
+        <img src="OGSNAV.png" alt="OGS Logo" class="logo-img hero-nav-logo" width="120" height="40" loading="lazy">
+        <img src="colors logo.png" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">
         <span class="brand">OSWAL GIFT 'N' STATIONERY</span>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -248,7 +250,6 @@
       </button>
       <ul id="primary-navigation" class="nav-links">
       <li><a href="index.html#home">Home</a></li>
-      <li><a href="index.html#featured">Featured</a></li>
       <li class="dropdown">
         <a href="index.html#products" class="dropdown-toggle">Products</a>
         <ul class="dropdown-menu">
@@ -269,8 +270,6 @@
         </ul>
       </li>
       <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#testimonials">Testimonials</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
       <li><a href="links.html">Links</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle">Resources</a>
@@ -282,7 +281,14 @@
           <li><a href="guide-office-document-organization.html">Document Organization Guide</a></li>
         </ul>
       </li>
-      <li><a href="cart.html" class="cart-link"><span class="cart-icon">🛒</span><span id="cart-count">0</span></a></li>
+      <li><a href="cart.html" class="cart-link" aria-label="Shopping cart">
+        <svg class="cart-outline-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span id="cart-count">0</span>
+      </a></li>
     </ul>
   </nav>
   <section class="mobile-search-section" id="mobile-search">
@@ -300,10 +306,15 @@
     </div>
   </section>
   <header class="hero-section" id="home">
+    <video class="hero-background-video" autoplay loop muted playsinline preload="auto" poster="bg3.png" aria-hidden="true">
+      <source src="finalvideo.mp4" type="video/mp4">
+    </video>
     <div class="hero-content">
-      <img src="colors logo.png" alt="OSWAL GIFT N STATIONERY Logo - Premium Files Folders Stationery Chennai" width="150" height="60" loading="lazy">
-      <h1 class="hero-title">Elevate Everyday Moments with Beautiful Stationery</h1>
-      <p class="hero-tagline">Leading importer, Stockist & supplier of plastic files, folders, and office stationery.
+      <div class="mobile-hero-copy">
+        <img src="colors logo.png" alt="OSWAL GIFT N STATIONERY Logo - Premium Files Folders Stationery Chennai" width="150" height="60" loading="lazy">
+        <h1 class="hero-title">Elevate Everyday Moments with Beautiful Stationery</h1>
+        <p class="hero-tagline">Leading importer, Stockist &amp; supplier of plastic files, folders, and office stationery.</p>
+      </div>
     </div>
   </header>
   
@@ -743,6 +754,26 @@
       var toggle = document.querySelector('.nav-toggle');
       var dropdown = document.querySelector('.navbar .dropdown');
       var dropdownToggle = document.querySelector('.navbar .dropdown-toggle');
+      var homeHero = document.querySelector('#home');
+      var homeNav = document.querySelector('.navbar.home-hero-nav');
+
+      if (homeHero && homeNav) {
+        var updateHomeNavHeight = function () {
+          homeNav.style.setProperty('--home-nav-height', homeNav.offsetHeight + 'px');
+        };
+        var updateHomeNavBackground = function () {
+          var heroBounds = homeHero.getBoundingClientRect();
+          homeNav.classList.toggle('nav-over-hero', heroBounds.bottom > 0 && heroBounds.top < window.innerHeight);
+        };
+
+        updateHomeNavHeight();
+        updateHomeNavBackground();
+        window.addEventListener('resize', function () {
+          updateHomeNavHeight();
+          updateHomeNavBackground();
+        });
+        window.addEventListener('scroll', updateHomeNavBackground, { passive: true });
+      }
 
       if (toggle && navbar) {
         toggle.addEventListener('click', function () {
