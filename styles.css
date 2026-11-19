@@ -2631,8 +2631,8 @@ body.cart-page .mobile-cart-bar {
 
 @media (max-width: 768px) {
   .whatsapp-float {
-    bottom: 124px;
-    right: 24px;
+    bottom: 13px;
+    right: 14px;
     width: 42px;
     height: 43px;
   }
@@ -4977,7 +4977,7 @@ header.hero-section[id$="-hero"]:not(#home):not(#links-hero) + main .view-detail
 @media (max-width: 520px) {
   #home.hero-section {
     padding: 0;
-    margin-bottom: -7px;
+    margin-bottom: -127px;
   }
 
   #home .hero-content {
@@ -6137,6 +6137,7 @@ footer a:hover {
     gap: 0.65rem;
     width: 94%;
     margin-left: 12px;
+    margin-bottom: 105px;
   }
 
   #home .mobile-search-input {
@@ -6182,7 +6183,8 @@ footer a:hover {
 
   #site-content .navbar.home-hero-nav.nav-over-hero {
     color: #fff;
-    background: #5d5d5d4a !important;
+    color: #fff;
+        background: #ffffff !important;
     border-bottom: 1px solid #111;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
