@@ -238,11 +238,11 @@
   <div id="site-content">
     <nav class="navbar minimalist-nav home-hero-nav nav-over-hero">
       <div class="nav-logo">
-        <a class="home-nav-brand" href="index.html" aria-label="OSWAL Gift N Stationery homepage">
+        <a class="home-nav-brand" href="index.html" aria-label="OSWAL &nbsp;G I FT &nbsp; 'N' &nbsp; STATIO N E RY homepage">
           <img src="colors logo.jpg" alt="OSWAL Logo" class="logo-img default-nav-logo" width="120" height="40" loading="lazy">
           <img src="OGSNAV.png" alt="OGS Logo" class="logo-img hero-nav-logo" width="120" height="40" loading="lazy">
           <img src="colors logo.jpg" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">
-          <span class="brand">OSWAL GIFT 'N' STATIONERY</span>
+          <span class="brand">OSWAL &nbsp;G I FT &nbsp; 'N' &nbsp; STATIO N E RY</span>
         </a>
       </div>
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
@@ -294,13 +294,11 @@
     </ul>
   </nav>
   <header class="hero-section" id="home">
-    <video class="hero-background-video" loop muted playsinline preload="none" poster="bg3.png" aria-hidden="true">
-      <source data-src="finalvideo.mp4" type="video/mp4">
-    </video>
     <video class="mobile-hero-background-video" loop muted playsinline preload="none" poster="bg3.png" aria-hidden="true">
       <source data-src="mobilevideofinal.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
+      <h1 class="hero-echo-title">OSWAL GIFT ’N’ STATIONERY</h1>
       <div class="mobile-hero-copy">
       </div>
     </div>
@@ -326,7 +324,7 @@
     <div id="featured-products"><!-- Rendered by script.js --></div>
   </section>
   <section class="brand-section" id="brand">
-    <h2 class="section-title">Our Brand</h2>
+    <h2 class="section-title">Our &nbsp;  Brand</h2>
     <img src="colors%20logo.png" alt="COLORS" class="brand-section-logo" width="270" height="120" loading="lazy">
   </section>
   <main>
@@ -442,11 +440,11 @@
     </section>
     <section class="about-section" id="about">
       <div class="about-content">
-        <h2 class="section-title about-title">About Us</h2>
+        <h2 class="section-title about-title">About &nbsp;  Us</h2>
 
         <div class="about-grid">
           <div class="about-main">
-            <h3>Our Story</h3>
+            <h3>Our &nbsp; Story</h3>
             <p>Oswal Gift N Stationery in Sowcarpet, Chennai is known to satisfactorily cater to the demands of its
               customer base. The business came into existence in 2000 and has, since then, been a known name in its
               field. We specialize in manufacturing premium <a href="report-cover-files.html">report cover files</a>,
@@ -457,18 +455,18 @@
               <a href="separators.html">index separators</a>, <a href="paper-board-files.html">paper board files</a>,
               and <a href="display-files.html">display solutions</a> for modern workspaces.</p>
 
-            <h3>Our Location</h3>
+            <h3>Our &nbsp; Location</h3>
             <p>We are located at <strong>No. 76, Tirupalli Street, Sowcarpet,CHENNAI-79</strong>. Our establishment is
               in close proximity to prominent landmarks, making us easily accessible to our valued customers. As the best files and folders wholesaler in Chennai, we serve customers across Tamil Nadu and throughout India with our premium office stationery products.</p>
 
-            <h3>Our Expertise</h3>
+            <h3>Our &nbsp; Expertise</h3>
             <p>With over 24 years of experience in the stationery industry, we have established ourselves as leading
               manufacturers, importers, and distributors of premium plastic files and folders. Our products are crafted
               using high-quality polypropylene (PP), PVC, and other premium materials that are durable, eco-friendly,
               and suitable for long-term document storage. We serve customers across India with wholesale and bulk
               order capabilities, offering customization options including logo printing and custom colors.</p>
 
-            <h3>Our Commitment</h3>
+            <h3>Our &nbsp; Commitment</h3>
             <p>We are committed to delivering exceptional quality, competitive pricing, and outstanding customer service.
               Our products undergo rigorous quality testing to ensure they meet the highest standards. We continuously
               innovate our product range to meet the evolving needs of modern offices, educational institutions, and
@@ -480,7 +478,7 @@
     </section>
 
     <section class="contact-section" id="contact">
-      <h2 class="section-title">Contact Us</h2>
+      <h2 class="section-title">Contact &nbsp;  Us</h2>
       <p class="section-subtitle">Get in touch for wholesale orders, product inquiries, and business partnerships</p>
       <form id="contact-form" class="contact-form" autocomplete="off">
         <div class="form-group">
@@ -502,7 +500,7 @@
         <button type="submit" class="cta-btn">Send Message</button>
       </form>
       <div class="contact-details">
-        <h3>Contact Information</h3>
+        <h3>Contact &nbsp; I n formation</h3>
         <p><strong>WhatsApp:</strong> <a href="https://wa.me/919841137922" target="_blank" rel="noopener">+91 98411 37922</a></p>
         <p><strong>Phone:</strong> <a href="tel:+919841137768">+91 98411 37768</a></p>
         <p><strong>Email:</strong> <a href="mailto:oswalgift00@gmail.com">oswalgift00@gmail.com</a></p>
@@ -511,7 +509,7 @@
       
     </section>
     <section class="faq-section" id="faq">
-      <h2 class="section-title">Frequently Asked Questions</h2>
+      <h2 class="section-title">F r e q u e n t ly Asked &nbsp; Questions</h2>
       <div class="faq-container">
         <div class="faq-item">
           <button class="faq-question" aria-expanded="false">
@@ -744,29 +742,28 @@
 
       function loadHeroVideo() {
         var mobileVideo = document.querySelector('.mobile-hero-background-video');
-        var desktopVideo = document.querySelector('.hero-background-video');
-        var activeVideo = mobileViewport.matches ? mobileVideo : desktopVideo;
-        var inactiveVideo = mobileViewport.matches ? desktopVideo : mobileVideo;
+        if (!mobileVideo) return;
 
-        if (!activeVideo || !inactiveVideo) return;
+        if (!mobileViewport.matches) {
+          mobileVideo.pause();
+          mobileVideo.removeAttribute('autoplay');
+          mobileVideo.querySelectorAll('source').forEach(function (source) {
+            source.removeAttribute('src');
+          });
+          mobileVideo.load();
+          return;
+        }
 
-        inactiveVideo.pause();
-        inactiveVideo.removeAttribute('autoplay');
-        inactiveVideo.querySelectorAll('source').forEach(function (source) {
-          source.removeAttribute('src');
-        });
-        inactiveVideo.load();
-
-        activeVideo.muted = true;
-        activeVideo.autoplay = true;
-        activeVideo.preload = 'auto';
-        activeVideo.querySelectorAll('source').forEach(function (source) {
+        mobileVideo.muted = true;
+        mobileVideo.autoplay = true;
+        mobileVideo.preload = 'auto';
+        mobileVideo.querySelectorAll('source').forEach(function (source) {
           if (!source.hasAttribute('src')) {
             source.src = source.dataset.src;
           }
         });
-        activeVideo.load();
-        activeVideo.play().catch(function (error) {
+        mobileVideo.load();
+        mobileVideo.play().catch(function (error) {
           if (error.name !== 'NotAllowedError') {
             console.error('Hero video playback failed:', error);
           }
