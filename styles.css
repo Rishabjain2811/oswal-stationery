@@ -4395,9 +4395,17 @@ header.hero-section[id$="-hero"]:not(#home):not(#links-hero) + main .product-ima
 #featured .product-image-tight,
 header.hero-section[id$="-hero"]:not(#home):not(#links-hero) + main .product-image,
 #products .category-img {
-  border: 1px solid black;
   border-radius: 13px;
   background: #fff;
+}
+
+#featured .product-image,
+#featured .product-image-tight {
+  border: 1px solid black;
+}
+
+header.hero-section[id$="-hero"]:not(#home):not(#links-hero) + main .product-image {
+  border: 0;
 }
 
 #featured .product-image,
