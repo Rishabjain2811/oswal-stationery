@@ -5021,7 +5021,7 @@ header.hero-section[id$="-hero"]:not(#home):not(#links-hero) {
     display: block;
     overflow: hidden;
     margin: 0 !important;
-    font-size: 0.78rem !important;
+    font-size: 0.85rem !important;
     line-height: 1.2;
     text-align: center;
     text-overflow: ellipsis;
