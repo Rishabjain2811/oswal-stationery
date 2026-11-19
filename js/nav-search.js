@@ -68,7 +68,7 @@
     navLogo.innerHTML =
       '<a class="standard-nav-brand" href="index.html">' +
       '<img src="colors%20logo.jpg" alt="OSWAL Logo" class="logo-img default-nav-logo" width="120" height="40" loading="lazy">' +
-      '<img src="colors%20logo.png" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">' +
+      '<img src="colors%20logo.jpg" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">' +
       '<span class="brand">OSWAL GIFT \'N\' STATIONERY</span>' +
       '</a>';
 
@@ -160,6 +160,32 @@
     var cartItem = navLinks.querySelector('.cart-link');
     var insertBefore = cartItem ? cartItem.closest('li') : null;
     navLinks.insertBefore(item, insertBefore);
+  }
+
+  function positionMobileCart() {
+    var navbar = document.querySelector('.navbar');
+    var navLinks = navbar && navbar.querySelector('.nav-links');
+    var cartItem = navLinks && navLinks.querySelector('.cart-link');
+    cartItem = cartItem && cartItem.closest('li');
+    if (!navbar || !navLinks || !cartItem) return;
+
+    cartItem.classList.add('mobile-cart-nav-item');
+
+    var mobileNav = global.matchMedia('(max-width: 768px)');
+    function syncCartPosition() {
+      if (mobileNav.matches) {
+        if (cartItem.parentElement !== navbar) navbar.appendChild(cartItem);
+      } else if (cartItem.parentElement !== navLinks) {
+        navLinks.appendChild(cartItem);
+      }
+    }
+
+    syncCartPosition();
+    if (mobileNav.addEventListener) {
+      mobileNav.addEventListener('change', syncCartPosition);
+    } else {
+      mobileNav.addListener(syncCartPosition);
+    }
   }
 
   function injectMobileSearchBar() {
@@ -399,6 +425,7 @@
     wireNavigationToggle();
     standardizeNav();
     injectSearchBar();
+    positionMobileCart();
     wireSearchForm();
     injectMobileSearchBar();
     wireMobileSearchForm();
