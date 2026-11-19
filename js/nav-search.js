@@ -69,7 +69,7 @@
       '<a class="standard-nav-brand" href="index.html">' +
       '<img src="colors%20logo.jpg" alt="OSWAL Logo" class="logo-img default-nav-logo" width="120" height="40" loading="lazy">' +
       '<img src="colors%20logo.jpg" alt="COLORS Logo" class="logo-img mobile-nav-logo" width="120" height="40" loading="lazy">' +
-      '<span class="brand">OSWAL GIFT \'N\' STATIONERY</span>' +
+      '<span class="brand">OSWAL &nbsp; G I FT &nbsp;  \'N\' &nbsp; STATI O N E RY</span>' +
       '</a>';
 
     if (!navToggle) {
