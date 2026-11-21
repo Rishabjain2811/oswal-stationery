@@ -222,8 +222,8 @@
 <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@900&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@900&family=Libre+Baskerville:wght@400;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -294,13 +294,11 @@
     </ul>
   </nav>
   <header class="hero-section" id="home">
-    <video class="mobile-hero-background-video" loop muted playsinline preload="none" poster="bg3.png" aria-hidden="true">
-      <source data-src="mobilevideofinal.mp4" type="video/mp4">
-    </video>
     <div class="hero-content">
-      <h1 class="hero-echo-title">OSWAL GIFT ’N’ STATIONERY</h1>
-      <div class="mobile-hero-copy">
-      </div>
+      <picture class="hero-feature-picture">
+        <source media="(max-width: 768px)" srcset="hero.png?v=2">
+        <img class="hero-feature-image" src="herosec.png?v=2" alt="" fetchpriority="high">
+      </picture>
     </div>
     <section class="mobile-search-section" id="mobile-search">
       <div class="mobile-search-container">
@@ -735,53 +733,6 @@
         }
       }); 
     });
-  </script>
-  <script>
-    (function () {
-      var mobileViewport = window.matchMedia('(max-width: 768px)');
-
-      function loadHeroVideo() {
-        var mobileVideo = document.querySelector('.mobile-hero-background-video');
-        if (!mobileVideo) return;
-
-        if (!mobileViewport.matches) {
-          mobileVideo.pause();
-          mobileVideo.removeAttribute('autoplay');
-          mobileVideo.querySelectorAll('source').forEach(function (source) {
-            source.removeAttribute('src');
-          });
-          mobileVideo.load();
-          return;
-        }
-
-        mobileVideo.muted = true;
-        mobileVideo.autoplay = true;
-        mobileVideo.preload = 'auto';
-        mobileVideo.querySelectorAll('source').forEach(function (source) {
-          if (!source.hasAttribute('src')) {
-            source.src = source.dataset.src;
-          }
-        });
-        mobileVideo.load();
-        mobileVideo.play().catch(function (error) {
-          if (error.name !== 'NotAllowedError') {
-            console.error('Hero video playback failed:', error);
-          }
-        });
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadHeroVideo);
-      } else {
-        loadHeroVideo();
-      }
-
-      if (mobileViewport.addEventListener) {
-        mobileViewport.addEventListener('change', loadHeroVideo);
-      } else {
-        mobileViewport.addListener(loadHeroVideo);
-      }
-    })();
   </script>
 </body>
 
