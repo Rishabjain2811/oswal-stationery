@@ -4207,6 +4207,7 @@ body.auth-modal-open {
   padding: 80px 20px;
   max-width: 900px;
   margin: 0 auto;
+  margin-top: -312px;
 }
 
 .faq-container {
@@ -4292,8 +4293,34 @@ body.auth-modal-open {
   padding-top: 16px;
 }
 
+.founders-section {
+  width: 100%;
+  margin: 0;
+  line-height: 0;
+}
+
+.founders-section img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Responsive FAQ */
 @media (max-width: 768px) {
+  .founders-section {
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+  }
+
+  .founders-section img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+        margin-top: -100px;
+  }
+
   .faq-section {
     padding: 60px 16px;
   }
